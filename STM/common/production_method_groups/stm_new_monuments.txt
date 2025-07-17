@@ -1,0 +1,21 @@
+﻿pmg_base_building_reichstag = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_reichstag
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_culture_monument = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_culture_monument
+		pm_monument_no_effects
+	}
+}

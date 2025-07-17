@@ -1,0 +1,13 @@
+1.fix growth rate
+transition[birth rate starts to fall at] will be 5 now
+child labor reduced mortality [5 3 and 0 instead of 10 5 0] but also reduces wages[-20%] and increases birth rate [3 1 0]
+2. add etfaming flavor
+3. more laws
+4. increase naval bases gain from techs
+5. give fractional distillation something
+6. tech schools
+7. doctrines
+8. add kiel canal
+9. Stop conquest overseas without colonisation
+10. rework acceptance statues and levels
+11. 6 lvls of institutions

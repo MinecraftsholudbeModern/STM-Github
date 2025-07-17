@@ -1,0 +1,13 @@
+{
+  "name" : "Small Tweaks Mod",
+  "id" : "",
+  "version" : "1.1.0",
+  "game_id" : "victoria3",
+  "picture" : "thumbnail.png",
+  "supported_game_version" : "1.9.*",
+  "short_description" : "Small Tweaks Mod",
+  "tags" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

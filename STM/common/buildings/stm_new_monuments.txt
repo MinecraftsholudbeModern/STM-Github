@@ -1,0 +1,69 @@
+﻿building_reichstag = {
+	building_group = bg_monuments
+	icon = "gfx/interface/icons/building_icons/reichstag.dds"
+	expandable = no
+	downsizeable = no
+	unique = yes
+	locator = "reichstag_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { "building_construction_3x3_entity" }
+	entity_constructed = { "wonder_forbidden_city_01_entity" }
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 4
+	}
+	
+	production_method_groups = {
+		pmg_base_building_reichstag
+	}
+
+	unlocking_technologies = { 
+		steel_frame_buildings 
+	}
+	
+	required_construction = construction_cost_monument
+	
+	potential = {
+		state_region = s:STATE_BRANDENBURG
+	}
+	
+	ai_value = 10000
+	
+}
+
+building_neuschwanstein = {
+	building_group = bg_monuments
+	icon = "gfx/interface/icons/building_icons/neuschwanstein.dds"
+	expandable = no
+	downsizeable = no
+	unique = yes
+	locator = "neuschwanstein_locator"
+	
+	entity_not_constructed = { }
+	entity_under_construction = { "building_construction_3x3_entity" }
+	entity_constructed = { "wonder_forbidden_city_01_entity" }
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 4
+	}
+	
+	production_method_groups = {
+		pmg_base_culture_monument
+	}
+
+	unlocking_technologies = { 
+		steel_frame_buildings 
+	}
+	
+	required_construction = construction_cost_monument
+	
+	potential = {
+		state_region = s:STATE_BAVARIA
+	}
+	
+	ai_value = 10000
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}

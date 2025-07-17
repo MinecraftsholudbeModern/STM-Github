@@ -1,0 +1,271 @@
+﻿NAI = {
+	DEFAULT_STRATEGY_STRING = "ai_strategy_default"
+
+	STRATEGY_RANDOM_FACTOR = 2.0 # The higher this is, the more random AI strategy selection will be
+
+	
+	MOBILIZATION_BASE_DESIRED_RATIO_TO_ENEMY = 0.75   		# AI wants to have a total amount of mobilized army power that is equal to enemy mobilized army power * this
+	MOBILIZATION_MAIN_ATTACKER_ADDED_RATIO = 1.0  			# Add this to desired ratio for the main attacker in the war
+	MOBILIZATION_MAIN_DEFENDER_ADDED_RATIO = 1.0  			# Add this to desired ratio for the main defender in the war
+	MOBILIZATION_LOYAL_SUBJECT_OF_MAIN_PARTICIPANT_ADDED_RATIO = 0.75 # Add this to desired ratio for loyal subjects of main attacker/defender in the war
+	
+	UNIFICATION_MIN_SUPPORT_SCORE = 25	# Support for one country-formation candidate needs to be at least this much above all competitors to support unification
+	UNIFICATION_BASE_VALUE = 0
+	UNIFICATION_SUPPORTER_DEFAULT_RANK_VALUE = 4 # Rank value is compared to this value for computing supporter rank factor
+	UNIFICATION_SUPPORTER_RANK_FACTOR = -10 # Multiplied by rank value delta to supporter default rank
+	UNIFICATION_CANDIDATE_DEFAULT_RANK_VALUE = 6 # Rank value is compared to this value for computing candidate rank factor
+	UNIFICATION_CANDIDATE_RANK_FACTOR = 10 # Multiplied by rank value delta to candidate default rank
+	UNIFICATION_RELATIONS_HOSTILE_FACTOR = -50
+	UNIFICATION_RELATIONS_COLD_FACTOR = -25
+	UNIFICATION_RELATIONS_POOR_FACTOR = -10
+	UNIFICATION_RELATIONS_CORDIAL_FACTOR = 10
+	UNIFICATION_RELATIONS_AMICABLE_FACTOR = 25
+	UNIFICATION_RELATIONS_FRIENDLY_FACTOR = 50
+	UNIFICATION_ATTITUDE_DISINTERESTED_FACTOR = 0
+	UNIFICATION_ATTITUDE_CAUTIOUS_FACTOR = -25
+	UNIFICATION_ATTITUDE_CONCILIATORY_FACTOR = 0
+	UNIFICATION_ATTITUDE_COOPERATIVE_FACTOR = 25
+	UNIFICATION_ATTITUDE_GENIAL_FACTOR = 50
+	UNIFICATION_ATTITUDE_WARY_FACTOR = -50
+	UNIFICATION_ATTITUDE_BELLIGERENT_FACTOR = -100
+	UNIFICATION_ATTITUDE_ANTAGONISTIC_FACTOR = -100
+	UNIFICATION_ATTITUDE_LOYAL_FACTOR = 100
+	UNIFICATION_ATTITUDE_ALOOF_FACTOR = 25
+	UNIFICATION_ATTITUDE_DEFIANT_FACTOR = -50
+	UNIFICATION_ATTITUDE_REBELLIOUS_FACTOR = -100
+	UNIFICATION_ATTITUDE_PROTECTIVE_FACTOR = -50
+	UNIFICATION_ATTITUDE_DOMINEERING_FACTOR = -100
+	UNIFICATION_POWER_BLOC_FACTOR = 25					# Added to the unification support if both countries are in the same power bloc
+
+	CHANGE_TAX_START_OF_GAME_DAYS_TO_WAIT = 90 # Don't change any tax levels for this amount of days after bookmark initialization, so that economic state has a chance to stabilize
+	
+	
+	# Below data is used to determine which wargoals the AI will pick
+	WAR_GOAL_RANDOM_FACTOR = 1.0 					# The higher this is, the more random AI wargoal selection will be
+	WAR_GOAL_UNDESIRABLE_INFAMY_FACTOR = 0.5 		# Wargoal value is multiplied by this if it would bring the country above undesirable infamy levels
+	WAR_GOAL_UNACCEPTABLE_INFAMY_FACTOR = 0			# Wargoal value is multiplied by this if it would bring the country above unacceptable infamy levels
+	WAR_GOAL_NOT_PRIMARY_DEMAND_FACTOR = 0.5		# Wargoal value for sway offers is multiplied by this if it would not be added as a primary demand
+
+	
+	# Below data is used to calculate how much weight the AI places on different things it can spend its authority on
+	AUTHORITY_SPENDING_RANDOM_FACTOR = 0.25 # The higher this is, the more random new AI authority spending will be
+
+	COMPANY_CHARTER_AUTHORITY_SPENDING_PERCENTAGE = 0.25 #Ratio of authority expenses that we want country to spend on authority
+
+	# GDP limiters on where the AI will construct Trade Centers - note that decreasing these can adversely affect performance!
+	TRADE_CENTER_MINIMUM_GDP_MARKET_CAPITAL = 100000			# For market capital states, yearly GDP
+	TRADE_CENTER_MINIMUM_GDP_NON_MARKET_CAPITAL = 500000		# For all other states, yearly GDP
+	TRADE_CENTER_MINIMUM_GDP_NON_COASTAL_MULT = 2.0 			# Multiplies the GDP threshold for non-coastal states (additive)
+	TRADE_CENTER_MINIMUM_GDP_UNRECOGNIZED_MULT = 2.0 			# Multiplies the GDP threshold for unrecognized countries (additive)
+	TRADE_CENTER_MINIMUM_GDP_PASSED_YEARS_MULT = 0.02 			# Above values are multiplied by 1 + ( number of years since game start * this ) (additive)
+
+	# Below data is used to calculate how much weight the AI places on a production building
+	PRODUCTION_BUILDING_RANDOM_FACTOR = 1.0 # The higher this is, the more random AI construction will be
+	PRODUCTION_BUILDING_STATE_RANDOM_FACTOR = 1.0 # The higher this is, the more random AI state selection for building types will be
+	PRODUCTION_BUILDING_BASE_VALUE = 1000 # If no ai_value is scripted in the building
+	PRODUCTION_BUILDING_NO_AVAILABLE_WORKFORCE_FACTOR = 0.25 # Total weight is multiplied by this if the state lacks enough workforce to staff the building
+	PRODUCTION_BUILDING_GOODS_PROFIT_FACTOR = 5000 # Per pound of predicted building profit (divided by employee count per level)
+	PRODUCTION_BUILDING_GOODS_DEFICIT_FACTOR = 10000 # Per pound of predicted building deficit (divided by employee count per level and multiplies a negative value)
+	PRODUCTION_BUILDING_GOODS_DEFICIT_SUBSIDIZE_FACTOR = 5000 # Overrides PRODUCTION_BUILDING_GOODS_DEFICIT_FACTOR for subsidized buildings
+	PRODUCTION_BUILDING_PRODUCED_VALUE_FACTOR = 0.25 # Per pound of produced goods in base value
+	PRODUCTION_BUILDING_PRODUCED_TRADE_CAPACITY_FACTOR = 10000 # Per produced trade capacity, multiplied by the available potential for trade in the state and divided by state GDP
+	PRODUCTION_BUILDING_PRODUCED_TRADE_CAPACITY_GDP_ADDED_FOR_DIVISOR = 10000 # Added to state GDP when dividing PRODUCTION_BUILDING_PRODUCED_TRADE_CAPACITY_FACTOR
+	PRODUCTION_BUILDING_PRODUCED_TRADE_CAPACITY_EXPECTED_REVENUE_PER_UNIT = 25 # Each trade capacity is loosely expected to generate about this much revenue, used when predicting revenue from new TCs
+	PRODUCTION_BUILDING_PRODUCED_CONVOYS_FACTOR = 10 # Per produced convoy
+	PRODUCTION_BUILDING_PRODUCED_CONVOYS_LOW_SUPPLY_NETWORK_STRENGTH_FACTOR = 10 # Convoy value is multiplied by this when supply network strength is low
+	PRODUCTION_BUILDING_PRODUCED_CONVOYS_WELL_SUPPLIED_ARMY_FACTOR = 0.1 # Convoy value is multiplied by this when there are enough free convoys to support the army
+	PRODUCTION_BUILDING_INCORPORATED_INFRASTRUCTURE_USAGE_FACTOR = 0.05 # Total weight is divided by ( 1 + this * building infrastructure usage ) in incorporated states
+	PRODUCTION_BUILDING_UNINCORPORATED_INFRASTRUCTURE_USAGE_FACTOR = 1.0 # Total weight is divided by ( 1 + this * building infrastructure usage ) in unincorporated states
+	PRODUCTION_BUILDING_INPUT_NO_LOCAL_PRODUCTION_FACTOR = -0.5 # Add this value to a building for each unit of money worth of goods consumed that are not produced in the state but *are* produced by buildings in the market
+	PRODUCTION_BUILDING_OUTPUT_NO_LOCAL_CONSUMPTION_FACTOR = -0.5 # Add this value to a building for each unit of money worth of goods produced that are not consumed in the state but *are* consumed by buildings in the market
+	PRODUCTION_BUILDING_OUTPUT_HIGH_PRICE_THRESHOLD = 1.25 # Lower threshold multiplier of base price for applying 'high price' modifier below
+	PRODUCTION_BUILDING_OUTPUT_HIGH_PRICE_FACTOR = 0.25 # Add this value to a building for each unit of money worth of goods above high price threshold that this building produces
+	PRODUCTION_BUILDING_OUTPUT_HIGH_PRICE_WANTS_HIGH_SUPPLY_FACTOR = 0.75 # Add this value to a building for each unit of money worth of goods above high price threshold that this building produces and which we want a high supply of
+	PRODUCTION_BUILDING_OUTPUT_HIGH_PRICE_LOCAL_CONSUMPTION_MULTIPLIER = 2.0 # All factors for high prices are multiplied by this value if any buildings in the state consume the good in question
+	PRODUCTION_BUILDING_OUTPUT_LOW_PRICE_THRESHOLD = 0.75 # Upper threshold multiplier of base price for applying 'low price' modifier below
+	PRODUCTION_BUILDING_OUTPUT_LOW_PRICE_FACTOR = -0.5 # Add this value to a building for each unit of money worth of goods below low price threshold that this building produces
+	PRODUCTION_BUILDING_SUBSIDIZE_PRICE_FACTOR_MULT = 1.25 # Multiply the effects of price factors on buildings that the AI will consider subsidizing
+	PRODUCTION_BUILDING_OUTPUT_NEW_GOODS_FACTOR = 100.0 # Add this value to a building for each unit of money worth of goods that currently isn't available in our market/state but the AI wants to prioritize
+	PRODUCTION_BUILDING_OUTPUT_NEW_GOODS_STATE_INCORPORATED_POPULATION_THRESHOLD = 250000 # When the AI prioritizes 'new goods' in a state rather than a market (because of local goods) it only cares about incorporated states with at least this much population
+	PRODUCTION_BUILDING_OUTPUT_NEW_GOODS_STATE_UNINCORPORATED_POPULATION_THRESHOLD = 1000000 # When the AI prioritizes 'new goods' in a state rather than a market (because of local goods) it only cares about unincorporated states with at least this much population
+	PRODUCTION_BUILDING_OUTPUT_WANTED_INDUSTRIAL_GOODS_FACTOR = 0.25 # Add this value to a building for each unit of money worth of industrial goods that aren't overproduced in the country and are used by buildings
+	PRODUCTION_BUILDING_OUTPUT_WANTED_MILITARY_GOODS_FACTOR = 0.25 # Add this value to a building for each unit of money worth of military goods that aren't overproduced in the country and are used by buildings
+	PRODUCTION_BUILDING_OUTPUT_NEEDED_INDUSTRIAL_GOODS_FACTOR = 0.5 # Add this value to a building for each unit of money worth of industrial goods that are underproduced in the country and are used by buildings
+	PRODUCTION_BUILDING_OUTPUT_NEEDED_MILITARY_GOODS_FACTOR = 0.5 # Add this value to a building for each unit of money worth of military goods that are underproduced in the country and are used by buildings
+	PRODUCTION_BUILDING_FAVORED_GOODS_FACTOR = 0.5 # Add this value to a building for each unit of money worth of building goods output that the AI favors
+	PRODUCTION_BUILDING_DISFAVORED_GOODS_FACTOR = -0.25 # Add this value to a building for each unit of money worth of building goods output that the AI disfavors
+	PRODUCTION_BUILDING_MISSING_QUALIFICATIONS_MULT = 0.50 # Multiply score by this if there's not enough qualifications to staff the building (disabled for now)
+	PRODUCTION_BUILDING_DESIRED_INFRASTRUCTURE_SURPLUS = 2 # If infrastructure 'surplus' in state is less than this, AI wants to improve it
+	PRODUCTION_BUILDING_FREE_INFRASTRUCTURE_TARGET_WHEN_LACKING_WORKFORCE = 5 # When lacking workforce, the AI will stop building in the state once available infrastructure is this or less
+	PRODUCTION_BUILDING_EXCESSIVE_INFRASTRUCTURE_SURPLUS = 10 # If infra 'surplus' in state is at least this, AI doesn't want to improve it
+	PRODUCTION_BUILDING_REDUCE_SHORTAGE_MULT = 5 # Multiply score by this if we're reducing the state region's shortages
+	PRODUCTION_BUILDING_INCREASE_SHORTAGE_MULT = 0.01 # Multiply score by this if we're increasing the state region's shortages
+	PRODUCTION_BUILDING_OTHER_BUILDING_TYPES_UNDER_CONSTRUCTION_DIV = 0.5 # Divide score by (1 + this * number of other building types queued in the state)
+	PRODUCTION_BUILDING_LONG_CONSTRUCTION_TIME_THRESHOLD = 40
+	PRODUCTION_BUILDING_LONG_CONSTRUCTION_TIME_MULT = 0.5 # Multiply score by this if construction time would take more than PRODUCTION_BUILDING_LONG_CONSTRUCTION_TIME_THRESHOLD weeks at full construction industry usage (ignores MAX_WEEKLY_CONSTRUCTION_PROGRESS)
+	PRODUCTION_BUILDING_VERY_LONG_CONSTRUCTION_TIME_THRESHOLD = 60
+	PRODUCTION_BUILDING_VERY_LONG_CONSTRUCTION_TIME_MULT = 0.25 # Multiply score by this if construction time would take more than PRODUCTION_BUILDING_VERY_LONG_CONSTRUCTION_TIME_THRESHOLD weeks at full construction industry usage (ignores MAX_WEEKLY_CONSTRUCTION_PROGRESS)
+	PRODUCTION_BUILDING_FOREIGN_INVESTMENT_HAS_RECENT_NATIONALIZATION_MULT = 0.1 # Multiply score by this if the construction is a foreign investment into a country that has recently nationalized buildings held by investor country
+	PRODUCTION_BUILDING_FOREIGN_INVESTMENT_COMPANY_MULT = 1.5 # Multiply score by this if the construction is a foreign investment by the country that has at least one established company for the building type
+
+	# Government construction applies this multiplier to domestic states when determining where to construct
+	GOVERNMENT_CONSTRUCTION_DOMESTIC_INVESTMENT_BIAS = 2.5
+	GOVERNMENT_CONSTRUCTION_SUBJECT_INVESTMENT_BIAS = 1.5
+
+	# The AI is much more likely to select a state that fulfills the ai_construction_targets criteria for the next company it's planning to form
+	# For example, when trying to form company_lkab it is much more likely to select Norrland as the
+	# Values below determine the exact weight for this for government vs private investment
+	# There are two sets of weights: One applied for the building type as a whole (when compared to other building types), and a second applied only when selecting the state for the building type
+	GOVERNMENT_COMPANY_TARGET_BUILDING_TYPE_CONSTRUCTION_FACTOR = 5
+	GOVERNMENT_COMPANY_TARGET_STATE_NO_BUILDING_CONSTRUCTION_FACTOR = 20 	# Applied when the state does not already have the target building type
+	GOVERNMENT_COMPANY_TARGET_STATE_WITH_BUILDING_CONSTRUCTION_FACTOR = 50	# Applied when the state *does* already have the target building type
+	AUTONOMOUS_INVESTMENT_COMPANY_TARGET_BUILDING_TYPE_CONSTRUCTION_FACTOR = 5
+	AUTONOMOUS_INVESTMENT_COMPANY_TARGET_STATE_NO_BUILDING_CONSTRUCTION_FACTOR = 20 # Applied when the state does not already have the target building type
+	AUTONOMOUS_INVESTMENT_COMPANY_TARGET_STATE_WITH_BUILDING_CONSTRUCTION_FACTOR = 50 # Applied when the state *does* already have the target building type
+
+	PRODUCTION_BUILDING_TREATY_PORT_TRADE_CENTER_FACTOR = 5.0 		# Score for Trade Center buildings in Treaty Ports is multiplied by this when selecting state for a construction
+	PRODUCTION_BUILDING_TREATY_PORT_NON_TRADE_CENTER_FACTOR = 0.01 	# Score for non Trade Center buildings in Treaty Ports is multiplied by this when selecting state for a construction
+
+	# The factors below are only applied to government constructions
+	PRODUCTION_BUILDING_GOVERNMENT_CONSTRUCTION_MONOPOLY_MULT = 1.5 # Multiply score by this if we have a government monopoly for the buildng type
+
+	PRODUCTION_BUILDING_LOW_EMPLOYMENT_THRESHOLD = 0.75 # The AI will not expand buildings with less than this employment unless those buildings hired last week
+
+	# The factors below are only applied to autonomous investments
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_COMPANY_MULT = 2.0 # Multiply score by 1 + this if we have at least one established company for the building type, scales by fraction of investment pool coming from companies compared to historical amount of investment by companies
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_COMPANY_MONOPOLY_MULT = 3.0 # Replaces PRODUCTION_BUILDING_COMPANY_MULT for buildings on which a company has a monopoly
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_COMPANY_CHARTERED_COUNTRY_MULT = 2.0 # Additional multiplier to company weights above if the investment is targeting a company's chartered country
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_WANTED_COST_COVERAGE = 1 # If investment pool has less money than this in it, don't do any autonomous construction
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_CONSTRUCTION_COST_DIVISOR_SCALING = 0.001 # Value for autonomous investment pool constructions is divided by ( 1 + construction point cost * this )
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_RANDOM_FACTOR_MULT = 1.0 # Multiplies PRODUCTION_BUILDING_RANDOM_FACTOR for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_STATE_RANDOM_FACTOR_MULT = 1.0 # Multiplies PRODUCTION_BUILDING_RANDOM_FACTOR for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PROFIT_FACTOR_MULT = 1.5 # Multiplies PRODUCTION_BUILDING_GOODS_PROFIT_FACTOR for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PROFIT_PRIVATIZE_FACTOR_MULT = 5.0 # Multiplies PRODUCTION_BUILDING_GOODS_PROFIT_FACTOR for autonomous investment pool constructions, gives higher weight to buildings that have levels to privatize
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PRODUCED_VALUE_FACTOR_MULT = 1.25 # Multiplies PRODUCTION_BUILDING_PRODUCED_VALUE_FACTOR for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PRODUCED_VALUE_PRIVATIZE_FACTOR_MULT = 0.5 # Multiplies PRODUCTION_BUILDING_PRODUCED_VALUE_FACTOR for autonomous investment pool constructions, gives higher weight to buildings that have levels to privatize
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PRODUCED_TRADE_CAPACITY_FACTOR_MULT = 1.5 # Multiplies value from produced trade capacity for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PRODUCED_MODIFIER_FACTOR_MULT = 0.75 # Multiplies value from produced modifiers for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PRICE_COMPENSATION_FACTOR_MULT = 1.0 # Multiplies high/low price compensation factors for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_BELOW_DESIRED_INFRASTRUCTURE_FACTOR_MULT = 0.25 # Multiplies PRODUCTION_BUILDING_BELOW_DESIRED_INFRASTRUCTURE_FACTOR for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_LOW_INVESTMENT_RESET_TIME = 12  # Every this number of months, reset the historical construction values for each pop type to ensure system can handle significant economic changes over time
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_MILITARY_GOODS_FACTOR_MULT = 1.5 # Multiplies PRODUCTION_BUILDING_OUTPUT_NEEDED_MILITARY_GOODS_FACTOR & PRODUCTION_BUILDING_OUTPUT_WANTED_MILITARY_GOODS_FACTOR for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_INDUSTRIAL_GOODS_FACTOR_MULT = 4.0 # Multiplies PRODUCTION_BUILDING_OUTPUT_NEEDED_INDUSTRIAL_GOODS_FACTOR & PRODUCTION_BUILDING_OUTPUT_WANTED_INDUSTRIAL_GOODS_FACTOR for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PROFIT_PRIVATIZE_SELF_OWNED_BUILDING_MULT = 0.75 # Multiply the total score for privatizing self-owned building levels by this
+
+	# If a country's investment pool fails to execute for this number of ticks, we force a refresh of all autonomous investment priorities to ensure investment pool isn't permanently stuck
+	AUTONOMOUS_INVESTMENT_NUM_FAILED_INVESTMENTS_FOR_REFRESH_BASE = 150
+	AUTONOMOUS_INVESTMENT_NUM_FAILED_INVESTMENTS_FOR_REFRESH_DYNAMIC = 50 # A random amount of this is added to the above to spread out refreshes
+	AUTONOMOUS_INVESTMENT_NUM_FAILED_INVESTMENTS_FOR_REFRESH_PLAYER = 20 # Replaces above defines for player controlled countries
+
+	# For each this amount of money going into the investment pool, we execute one autonomous investment update per tick (minimum of 1)
+	# This is to ensure that even very large investment pools can be properly utilized
+	# Be careful with this value as setting it too low can badly impact performance
+	AUTONOMOUS_INVESTMENT_UPDATE_COUNT_DIVISOR = 500000
+
+	# When the amount of saved value for foreign investment exceeds saved value for domestic investment, we start applying this bias to score for domestic autonomous constructions
+	# This is calculated as 1 + ( ( foreign investment / domestic investment - 1 ) * AUTONOMOUS_INVESTMENT_DOMESTIC_INVESTMENT_BIAS )
+	# The resulting multiplier is capped at AUTONOMOUS_INVESTMENT_DOMESTIC_INVESTMENT_BIAS_MAX
+	AUTONOMOUS_INVESTMENT_DOMESTIC_INVESTMENT_BIAS = 2.5
+	AUTONOMOUS_INVESTMENT_DOMESTIC_INVESTMENT_BIAS_MAX = 10.0
+
+	# Every this number of months, the saved values for domestic/foreign investment are reset to 0
+	# This is to ensure that a prolonged period of domestic investment early game doesn't produce such high saved numbers that anything that comes after it doesn't matter
+	AUTONOMOUS_INVESTMENT_DOMESTIC_INVESTMENT_BIAS_RESET_TIME_IN_MONTHS = 60
+
+	# The AI for autonomous investment weights alters the weights for buildings based on how much of the investment pool originates from a certain ownership type building
+	# For example, if a high proportion of investment pool income is from Manor Houses, the building groups that manor houses have high investment weights for are weighted up
+	# Here we clamp the bounds for this effect, ie how low/high is the weight allowed to get
+	AUTONOMOUS_INVESTMENT_MIN_PROPORTIONAL_INVESTMENT_WEIGHT = 0.25
+	AUTONOMOUS_INVESTMENT_MAX_PROPORTIONAL_INVESTMENT_WEIGHT = 1.0
+
+	# When scoring an ownership building for a new investment, always consider them to be contributing a minimum of this amount of the investment pool
+	# This is to ensure that financial centers can appear in countries that lack them, etc
+	AUTONOMOUS_INVESTMENT_MIN_OWNERSHIP_BUILDING_INVESTMENT_SHARE = 0.25
+
+	AUTONOMOUS_INVESTMENT_PREVIOUS_INVESTMENT_LOG_SIZE = 20 # Maximum number of previous investments that a country will have in its investment log at the same time
+	AUTONOMOUS_INVESTMENT_PREVIOUS_INVESTMENT_DURATION_DAYS = 365 # Number of days before a previous investment is removed from the log
+
+	# Chance for ai to do privatization instead of building a new building level when evaluating an existing building
+	BUILDING_PRIVATIZATION_CHANCE = 100.0
+
+	# Investment AI owner building location selection weights and multipliers
+	OWNER_BUILDING_LOCATION_BASE_SCORE = 1							# Base score for selecting state as owner building location
+	OWNER_BUILDING_LOCATION_POPULATION_SCORE = 1					# For each 10000 population, increase score for selecting state as owner building location by this
+	OWNER_BUILDING_LOCATION_GDP_SCORE = 1							# For each INVESTMENT_LOCATION_GDP_DIVISOR yearly state gdp, increase score for selecting state as owner building location by this
+	OWNER_BUILDING_LOCATION_GDP_DIVISOR = 100000
+	OWNER_BUILDING_LOCATION_HAS_OWNER_BUILDING_MULT = 2.0			# Multiply owner building location score by this for any state which already has the requisite owner building type
+	OWNER_BUILDING_LOCATION_CAPITAL_MULT = 4.0						# Multiply owner building location score by this for our capital
+	OWNER_BUILDING_LOCATION_SAME_STATE_MULT = 4.0					# Multiply owner building location score by this for the same state we're building/privatizing in
+	OWNER_BUILDING_LOCATION_NOT_HOMELANDS_MULT = 0.25				# Multiply owner building location score by this if the state isn't a homeland of the country's primary cultures
+	OWNER_BUILDING_LOCATION_LOWER_GDP_MULT = 0.25					# Multiply owner building location score by this for any state that has lower GDP than the state we're building/privatizing in
+	OWNER_BUILDING_LOCATION_NO_AVAILABLE_WORKFORCE_MULT = 0.1		# Multiply owner building location score by this if the state lacks workers
+	OWNER_BUILDING_LOCATION_NO_AVAILABLE_INFRASTRUCTURE_MULT = 0.1	# Multiply owner building location score by this if the state lacks infrastructure
+	OWNER_BUILDING_LOCATION_UNINCORPORATED_MULT = 0.01				# Multiply owner building location score by this if the state is unincorporated
+	OWNER_COMPANY_EXPANSION_CHANCE_MULTIPLIER = 0.5					# Base chance for a company to be selected as the owner of a new investment of one of their relevant building types, scales by fraction of investment pool coming from companies compared to historical amount of investment by companies
+	OWNER_COMPANY_PRIVATIZATION_CHANCE_MULTIPLIER = 0.75			# Used instead of OWNER_COMPANY_EXPANSION_CHANCE for privatization, uses the same scaling
+	OWNER_COMPANY_OWN_STATE_MULT = 100.0							# Multiply the chance for a company to be selected as the owner of a building (compared to other companies) if it's being built/invested in their HQ state
+
+	
+	# Below data is used to calculate how much weight the AI places on a production method
+	PRODUCTION_METHOD_BASE_VALUE = 1000
+	PRODUCTION_METHOD_PROFIT_FACTOR = 1 # Per pound of profit the produced goods would generate
+	PRODUCTION_METHOD_DEFICIT_FACTOR = 1.5 # Per pound of deficit the produced goods would generate (multiplies a negative value)
+	PRODUCTION_METHOD_PRODUCED_VALUE_FACTOR = 0.25 # Per pound of produced goods in base value
+	PRODUCTION_METHOD_EMPLOYMENT_CHANGE_FACTOR = 2.0 # The total score of a PM will be multiplied or divided by 1 + ( this * the proportion of labor that is added or saved by the change )
+	PRODUCTION_METHOD_REDUCE_OUTPUT_PENALTY_FACTOR = 10 # Multiply method score by this if we're reducing the building's output penalties
+	PRODUCTION_METHOD_INCREASE_OUTPUT_PENALTY_FACTOR = 0.01 # Multiply method score by this if we're increasing the building's output penalties
+	PRODUCTION_METHOD_FAVORED_GOODS_FACTOR = 0.25 # Per base cost * units of goods produced that the AI favors (for non military goods)
+	PRODUCTION_METHOD_FAVORED_MILITARY_GOODS_FACTOR = 0.5 # Per base cost * units of goods produced that the AI favors (for military goods)
+	PRODUCTION_METHOD_DISFAVORED_GOODS_FACTOR = -0.25 # Per base cost * units of goods produced that the AI disfavors
+	PRODUCTION_METHOD_UNDESIRABLE_GOODS_PRICE_THRESHOLD = 1.5 # If a PM using the 'most productive' logic makes use of a good whose price is above ( base * this ), reduce the score
+	PRODUCTION_METHOD_UNDESIRABLE_GOODS_PRICE_FACTOR = -0.25 # Per base cost * units of goods whose price is above undesirable price threshold
+	PRODUCTION_METHOD_STICKINESS_UPGRADE = 0.95 # Score of non-current method is multiplied by this when it produces more goods base value in total
+	PRODUCTION_METHOD_STICKINESS_DOWNGRADE = 0.75 # Score of non-current method is multiplied by this when it produces less (or equal) goods base value in total
+	PRODUCTION_METHOD_CHANCE_TO_CHANGE = 0.1 # Chance that the AI will consider changing a production method when evaluating methods
+	PRODUCTION_METHOD_LOW_POP_THRESHOLD = 50000 # If a state's population is less than this, use the scoring factor below for low-pop PMs
+	PRODUCTION_METHOD_LOW_POP_FACTOR = 100000 # If a state's population is less than PRODUCTION_METHOD_LOW_POP_THRESHOLD, add this score for low-pop PMs
+
+	
+	AUTONOMOUS_TRADE_RANDOM_FACTOR = 0.5		# The higher this is, the more random autonomous trade will be in goods selection
+	AUTONOMOUS_TRADE_STICKYNESS = 2.0 			# A new trade has to generate at least this many times more revenue to replace an older trade when trade capacity is fully used up
+	AUTONOMOUS_TRADE_WEEKS_BEFORE_TRADE_REDUCTION = 8 # For this many weeks after increasing trade in a good, a state won't reduce the trade volume for that same good, so that effects such as goods substitution have time to kick in
+	AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_MAINTAIN_TRADE = 25 # If a current trade has lower desirability than this per base traded quantity, decrease trade volume
+	AUTONOMOUS_TRADE_MIN_DESIRABILITY_PER_QUANTITY_TO_INCREASE_TRADE = 50 # If a new trade has lower desirability than this per base traded quantity, don't increase trade volume
+	AUTONOMOUS_TRADE_MIN_DESIRABILITY_INITIALIZATION_MULTIPLIER = 0.75 # During bookmark initialization, desirability requirements for trade are multiplied by this
+
+	# When determining trade potential for a good in a state, the revenue per unit is normalized against the good base cost * this, to account for the fact that revenue will drop as trades increase
+	AUTONOMOUS_TRADE_POTENTIAL_REVENUE_BASE_COST_FACTOR = 0.25
+
+	# Factors that impact desirability for trades
+	# The base desirability of a trade is equal to revenue per traded quantity after tariffs and subventions
+	AUTONOMOUS_TRADE_DESIRE_SUBVENTIONS_FACTOR = 100 # Desire for a trade is increased by ( subventions as percentage * this ), this is an additional factor on top of the impact on revenue. This is also applied in reverse for subventions in the opposite direction (ie, export subventions reduce desire for imports)
+	AUTONOMOUS_TRADE_DESIRE_SUBVENTIONS_FACTOR_NEW_GOODS_MULT = 20.0 # The subventions impact on desire for a trade is multiplied by this for importing goods that don't exist in the market
+	AUTONOMOUS_TRADE_DESIRE_TARIFFS_FACTOR = 25 # Desire for a trade is decreased by ( tariffs as percentage * this ), this is an additional factor on top of the impact on revenue
+	AUTONOMOUS_TRADE_DESIRE_OPPOSITE_MARKET_SHARE_FACTOR = -1000 # Desire for a trade is changed by this * the share of opposite-direction trade in the world market coming from the country
+	AUTONOMOUS_TRADE_DESIRE_SHORTAGE_FACTOR = 300 # Desire to import goods in shortage is increased by this, scaled by the severity of the shortage penalty
+
+	# Whenever a Trade Center successfully excecutes a trade, it uses up one of its weekly trades
+	# Whenever it *fails* to execute a trade, it uses up this fraction of its total amount of weekly trades
+	# This is so that Trade Centers with hundreds of weekly trades do not try and trade over and over again, using up tons of performance for no gain
+	AUTONOMOUS_TRADE_WEEKLY_TRADES_FRACTION_USED_FOR_FAILED_TRADE = 0.2
+
+	TRADE_VALUE_DELTA_FACTOR = 3.0							# When calculating treaty trade value, the delta between production/consumption counts for this much more than base production/consumption values
+	TRADE_VALUE_BASE_MULTIPLIER = 0.001							# Base multiplier applied to the value for treaty trade based purely on production & consumption
+	TRADE_VALUE_RELATIVE_MULTIPLIER = 100						# Relative multiplier applied to the value for treaty trade and divided by the total value in the market
+	TRADE_VALUE_FAVORED_GOODS_DIRECTION_MULT = 1.25 			# Potential for trading a good is multiplied by this when determining AI trade value, if the trade direction matches the AI's goods stance
+	TRADE_VALUE_DISFAVORED_GOODS_DIRECTION_MULT = 0.25 			# Potential for trading a good is multiplied by this when determining AI trade value, if the trade direction is opposite of the AI's goods stance
+
+	UNUSED_CAPPED_RESOURCE_RATIO_TO_START_DISCOURAGING_EXPORT = 0.5	# If the untapped potential production of a resource-capped good in the country is not at least market buy orders * this, switch to punitive export tariffs
+	UNUSED_CAPPED_RESOURCE_RATIO_TO_STOP_DISCOURAGING_EXPORT = 1.0	# If the untapped potential production of a resource-capped good in the country is at least market buy orders * this, stop applying punitive export tariffs
+
+	COMPANY_TYPE_DEFAULT_BASE_WEIGHT = 1	 			# Base weight for companies, can be overriden by ai_weight in database
+	COMPANY_TYPE_RANDOM_FACTOR = 1						# The higher this is, the more random AI selection of companies will be
+	COMPANY_TYPE_STICKYNESS = 3							# The weight for the company the AI is already planning to create is multiplied by this
+	COMPANY_TYPE_PRODUCTIVITY_FACTOR = 0.25				# Multiplier for AI weight of companies is increased by ( this * predicted building productivity )
+	COMPANY_TYPE_PRODUCTIVITY_MAX = 4.0					# Effects of COMPANY_TYPE_PRODUCTIVITY_FACTOR  cannot be higher than this
+	COMPANY_TYPE_BUILDING_LEVELS_FACTOR	= 0.1			# Multiplier for AI weight of companies is increased by ( this * num building levels )
+	COMPANY_TYPE_BUILDING_LEVELS_MAX = 2.0				# Effects of COMPANY_TYPE_NUM_BUILDING_LEVELS_FACTOR cannot be higher than this
+	COMPANY_TYPE_COMPETITION_FACTOR = 2					# Divisor for AI weight of companies is increased by 1 + ( number of building types on existing companies that compete * this )
+	COMPANY_TYPE_BUILDING_GROUP_WEIGHT_IMPACT = 1.5		# The AI's average strategy weight mult for the building groups associated with this company is modulated towards 1 by this value and applied to AI preference for the company (ie; if this is 0.5, then the difference between the average AI preference and 1 is halved - 1.5 becomes 1.25, 0.5 becomes 0.75 etc)
+
+}

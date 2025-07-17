@@ -1,0 +1,43 @@
+﻿pm_default_building_reichstag = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = 200
+			country_influence_add = 200
+			country_authority_add = 200
+			country_prestige_add = 50
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_tax_capacity_add = 50
+		}
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_clerks_add = 3000
+			building_employment_bureaucrats_add = 2000
+		}
+	}
+}
+
+pm_default_culture_monument = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+	
+	country_modifiers = {
+		level_scaled = {
+			country_influence_add = 100
+			country_authority_add = 100
+			country_prestige_add = 50
+		}
+	}
+
+	state_modifiers = {
+	}
+	
+	building_modifiers = {
+	}
+}

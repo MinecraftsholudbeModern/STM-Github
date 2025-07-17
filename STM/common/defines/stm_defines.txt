@@ -1,0 +1,528 @@
+﻿NPolitics = {
+	GOVERNANCE_PRINCIPLES_GROUP = "lawgroup_governance_principles"	# Law from this group is used for the power_bloc_worst_progressiveness_difference_government_type trigger to represent the Governance Principle
+	DISTRIBUTION_OF_POWER_GROUP = "lawgroup_distribution_of_power"	# Law from this group is used for the power_bloc_worst_progressiveness_difference_government_type trigger to represent the Distribution of Power
+	TARIFF_LAW_GROUP = "lawgroup_trade_policy"	# Law from this group is shown to player as their tariff law
+	TAX_LAW_GROUP = "lawgroup_taxation"	# Law from this group is shown to player as their tax law
+
+	DEFAULT_IDEOLOGY = "ideology_moderate" # Used as a fallback if an ideology cannot be selected for a character
+
+	# Movements with less radicalism than this do not impact law enactment chances
+	# Additionally, movement radicalism won't drop lower than than this when enactment of a law they care about is underway, so lowered radicalism from enactment doesn't end up counterproductive
+	MOVEMENT_MIN_RADICALISM_FOR_LAW_ENACTMENT_IMPACT = 0.25
+
+	BASE_IG_APPROVAL = 0				# Baseline IG approval
+	MIN_IG_APPROVAL = -20				# Minimum IG approval
+	MAX_IG_APPROVAL = 20				# Maximum IG approval
+	MIN_IG_APPROVAL_FROM_LAWS = -5		# IG cannot have approval lower than this as a total from laws 'on the book'
+	MAX_IG_APPROVAL_FROM_LAWS = 5		# IG cannot have approval higher than this as a total from laws 'on the book'
+	IG_APPROVAL_FROM_LOYALISTS = 15		# If 100% of the political strength of the IG is loyalist, change approval by this amount
+	IG_APPROVAL_FROM_RADICALS = -15		# If 100% of the political strength of the IG is radical, change approval by this amount
+	IG_LAW_DESIRE_RADICAL_CHANGE_THRESHOLD = 2 # A difference in positions this or higher is considered radical
+	IG_LAW_DESIRE_EXTREME_CHANGE_THRESHOLD = 3 # A difference in positions this or higher is considered extreme
+	IG_APPROVAL_FROM_LAW = 1 		# IG approval/disapproval for laws that are for/against their ideologies
+	IG_APPROVAL_FROM_LAW_STRONG_STANCE = 2 		# IG approval/disapproval for laws that are strongly for/against their ideologies
+	IG_APPROVAL_FROM_LAW_CHANGE = 5		# IG approval/disapproval for changing to another law
+	IG_APPROVAL_FROM_RADICAL_LAW_CHANGE = 10 		# IG approval/disapproval for changing to another law, if the change is a major one
+	IG_APPROVAL_FROM_EXTREME_LAW_CHANGE = 20 		# IG approval/disapproval for changing to another law, if the change is extreme
+	IG_IN_GOVERNMENT_APPROVAL = 0		# Added if IG is in government
+	IG_IN_OPPOSITION_APPROVAL = 0		# Added if IG is in opposition (and not powerful)
+	IG_POWERFUL_IN_OPPOSITION_APPROVAL = -1 # Added if powerful IG in opposition
+	STARTUP_MIN_LEGITIMACY_IG_BARRIER = 40 # Min legitimacy when on startup we allow to remove IGs from goverment that decrease legitimacy
+	APPROVAL_THRESHOLD_ANGRY = -10		# At this or below approval, IG is considered angry
+	APPROVAL_THRESHOLD_UNHAPPY = -5		# At this or below approval, IG is considered unhappy
+	APPROVAL_THRESHOLD_HAPPY = 5		# At this or above approval, IG is considered happy
+	APPROVAL_THRESHOLD_LOYAL = 10		# At this or above approval, IG is considered loyal
+	CHANGED_LAW_APPROVAL_MONTHS = 60 # How many months does the approval/disapproval for a law change linger after said law chain
+
+	# If the difference in progressiveness between the currently active law and an alternative law is this, then it's considered a radical petition
+	# Radical petitions will only happen if there isn't a less extreme alternative that the government could petition for instead
+	GOVERNMENT_RADICAL_PETITION_THRESHOLD = 100
+
+	LAW_ENACTMENT_MIN_TOTAL_DAYS = 1		# Minimum number of total days that an enactment checkpoint can take [>=1]
+	LAW_ENACTMENT_DEFAULT_BASE_DAYS = 100	# Default number of base days required to reach an enactment checkpoint [>=1]
+	LAW_ENACTMENT_COOLDOWN_DAYS = 730		# When an enactment fails, or is manually stopped after at least one checkpoint, that law can't be tried to be enacted for this many days [>=0]
+	LAW_ENACTMENT_ADVANCE_FACTOR = 2		# The _base_ advance chance is the success chance multiplied by this factor [>=1]
+	LAW_ENACTMENT_RULER_IDEOLOGY_EFFECT = 0.05 # Ruler ideology has this impact on a law's chance to pass or stall depending on relative approval
+	LAW_ENACTMENT_LAW_COMMITMENT_EFFECT = 0.05 # Committing to enacting a law via treaty adds this much to pass chance, scaled by the number of ranks the country the comittee has on the committer
+	LAW_ENACTMENT_MOVEMENT_SUPPORT_PASS_EFFECT = 1.0 # Movement support has this impact on a law's chance to pass
+	LAW_ENACTMENT_MOVEMENT_SUPPORT_STALL_EFFECT = 1.0 # Movement support has this impact on a law's chance to stall
+	LAW_ENACTMENT_IG_CLOUT_STALL_EFFECT = 1.0 # Opposing IG clout has this base impact on a law's chance to stall
+	LAW_ENACTMENT_IG_NEUTRAL_MULT = 0.5 # Stall effect of opposing IG is multiplied by this for neutral IGs
+	LAW_ENACTMENT_IG_UNHAPPY_MULT = 1.0 # Stall effect of opposing IG is multiplied by this for unhappy	IGs
+	LAW_ENACTMENT_IG_ANGRY_MULT = 1.5 # Stall effect of opposing IG is multiplied by this for angry IGs
+	LAW_ENACTMENT_MAX_PHASES = 3			# Law enactment is successfully completed when it advances to this phase
+	LAW_MIN_SUCCESS_CHANCE = 0.01			# Law must have at least this minimum chance to be considered.
+
+	POWERFUL_IG_THRESHOLD = 0.20		# Interest groups with more Clout than this are considered to be influential
+	POWERFUL_IG_CUTOFF = 0.18			# Powerful interest groups with less Clout than this will stop being influential
+	POWERFUL_IG_TRAIT_BONUS = 1			# The effects of all trait modifiers from influential IGs are increased by this, 1 = +100%
+	IG_TRAIT_STICKINESS = 2				# If an IG trait is already active, this is the amount of Approval difference required to deactivate it
+	MARGINAL_IG_THRESHOLD = 0.05		# Interest Groups with Clout above this value are considered relevant while those below are marginal (if not also In Government)
+	MARGINAL_IG_CUTOFF = 0.04			# Interest Groups who are already relevant will only become marginal again if they drop below this value.
+
+	RECENT_PARTY_DAYS = 14				# Party is considered recently formed if activated within RECENT_PARTY_DAYS days range
+
+	DEFAULT_LAW_ACTIVATION_DATE = "1836.1.1"
+
+	CIVIL_WAR_COOLDOWN_MONTHS = 6									# After a civil war concludes, it takes this long before another one can start
+
+	# If there are multiple civil wars that could start, and the current active one has lower activism, it can potentially be replaced by a more viable civil war
+	# This is the minimum delta required for another civil war to replace the active one
+	MIN_ACTIVISM_DELTA_TO_REPLACE_OTHER_CIVIL_WAR = 0.1
+
+	
+	CIVIL_WAR_MAX_PROGRESS_AT_CHECKPOINT = 0.5	# A civil war can advance at most this amount per checkpoint, regardless of radicalism
+	MIN_RADICALISM_FOR_CIVIL_WAR_PROGRESSION = 1.0	# A political movement must have this much radicalism for a civil war to start organizing
+	MIN_RADICALISM_FOR_CIVIL_WAR_START = 1.0		# Allow a civil war to start at this amount of radicalism or more
+	CIVIL_WAR_PROGRESS_DECAY = 0.1					# The progress of civil wars with insufficient support decays at this rate
+	CIVIL_WAR_PROGRESS_RADICALISM_WEIGHT = 0.2  	# civil wars gain progress based on the movement's radicalism, multiplied by this weight (may be affected by modifiers)
+	CIVIL_WAR_CHECKPOINT_INTERVAL_BASE_WEEKS = 8   # civil war progress will be updated every this many weeks (may be affected by modifiers)
+	CIVIL_WAR_CHECKPOINT_INTERVAL_MAXIMUM_WEEKS = 52	# This serves as a limit, to protect modifiers from reducing the progress speed to zero
+
+	DEFAULT_GOODS_TAX_COST = 75					# The amount of AUT it costs to tax a good by default
+
+	MIN_INSTITUTION_INVESTMENT = 1						# Lowest Investment Level for active Institutions (modifier is clamped to this)
+	MAX_INSTITUTION_INVESTMENT = 5						# Highest Investment Level for active Institutions (modifier is clamped to this)
+	DAILY_INSTITUTION_SIZE_CHANGE = 0.0028				# Percent increase / decrease in Institution Size per day (0.0028 ~ 1/365)
+
+	INITIAL_MOMENTUM_VARIANCE = 0.5						# How much Momentum should vary at the start of the election period
+	POPULARITY_MOMENTUM_FACTOR = 0.005					# How much Momentum does a party gain or lose from their leader's popularity
+	ELECTION_INTERVAL_YEARS = 4							# How many years normally pass between elections
+	CAMPAIGN_PERIOD_MONTHS = 6							# How long the Campaign Period before the election is
+
+	REFORM_GOVERNMENT_PERIOD = 6 						# How many months after election you can reform government for free
+	REFORM_GOVERNMENT_RADICALIZATION_RATE = 0.25 		# How many percent of a IG's supporters that will get radicalized when removed from government.
+
+	RADICALISM_AGITATING_THRESHOLD = 0.25
+	RADICALISM_PROTESTING_THRESHOLD = 0.50
+	RADICALISM_MILITANT_THRESHOLD = 0.75
+
+	SUPPORT_RELEVANT_THRESHOLD = 0.05
+	SUPPORT_SIGNIFICANT_THRESHOLD = 0.25
+	SUPPORT_DOMINANT_THRESHOLD = 0.5
+	SUPPORT_UNIVERSAL_THRESHOLD = 0.75
+
+	MIN_DECREE_COST = 0.1									# The cost of a decree cannot drop below this fraction of the base cost, regardless of how many modifier discounts you have
+}
+
+NEconomy = {
+	MIN_CONSTRUCTION_EFFICIENCY = 0.05					# Construction efficiency cannot go below this amount
+
+	# The more times you run this the more accurate setup will be for Pop wealth compared to income
+	NUM_TIMES_TO_INITIALIZE_WEALTH = 20
+	NUM_TIMES_TO_UPDATE_TRADE_DURING_INITIALIZATION = 20 # Extra times that separate trade update step is run
+
+	COUNTRY_GDP_MODIFIER_DIVISOR = 1000					# Scale the country_gdp static modifier by this divisor
+	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER = 200000000		# The country_gdp modifier multiplier cannot be higher than this
+
+	ECONOMY_OF_SCALE_START_LEVEL = 1					# Level at which buildings start getting economy of scale bonuses. Levels lower than this value provide no bonus [>=1]
+	ECONOMY_OF_SCALE_NATIONALIZED_FRACTION_MULT = 0.75	# Non-government building economy of scale modifier if multiplied by (1 - the fraction of nationalized levels * this)
+
+	IN_DEFAULT_MINIMUM_PENALTY_SCALE = 0.1				# This amount of the 'in default' throughput penalty is applied right away
+	IN_DEFAULT_DAYS_TO_FULL_PENALTY = 365				# How many days of being in default does it take to get the full throughput penalty
+	DECLARE_BANKRUPTCY_PENALTY_DURATION_YEARS = 10		# How many years does it take for penalties from declaring bankruptcy to fully decay
+	DECLARE_BANKRUPTCY_RADICALIZATION_BASE_FACTOR = 0.1 # Radicalize this percentage of all pops when declaring bankruptcy
+	DECLARE_BANKRUPTCY_RADICALIZATION_SHARES_FACTOR = 0.05 # For each per-pop shares in their building, radicalize this percentage of a pop on declaring bankruptcy
+
+	FIRED_POP_RADICALIZATION_FRACTION = 0.1				# This percentage of a pop becomes radicalized when they lose their job, for instance due to a building being downsized
+
+	
+	GOODS_LEADERBOARD_SIZE = 10					# How many spots there are on each goods leaderboard
+	MIN_SPOT_PRESTIGE_AWARD = 3					# How many spots on the goods leaderboard get awarded Prestige
+
+	MIN_GOODS_PRICE	= 1							# A good cannot have a lower base price than this
+	PRICE_RANGE = 1.0							# min price of a good is base * (1 - PRICE_RANGE), Max price is base * (1 + PRICE_RANGE), PRICE_RANGE is locked to [0-1]
+	BUY_SELL_DIFF_AT_MAX_FACTOR = 3				# the difference between buy/consumption and sell/production at min/max pricing, e.g. if set to 4 then if buy orders are 4x sell orders price is maxed
+
+	GOODS_SHORTAGE_PENALTY_THRESHOLD = 0.33		# If supply / demand is lower than this, start applying output penalties, by default this should be ( 1 / BUY_SELL_DIFF_AT_MAX_FACTOR )
+	GOODS_SHORTAGE_PENALTY_INCREASE_SPEED = 0.01  	# Goods shortage penalty increases by this fraction of the target each day
+    GOODS_SHORTAGE_PENALTY_DECREASE_SPEED = 0.01  	# Goods shortage penalty goes down by this fraction of GOODS_SHORTAGE_PENALTY_MAX each day
+    GOODS_SHORTAGE_PENALTY_MIN = 0.05			# Goods shortage penalty can't be lower than this if there is any shortage
+	GOODS_SHORTAGE_PENALTY_MAX = 0.5			# Goods shortage penalty can't be higher than this, so long as all the input goods exist in some quantity
+	GOODS_SHORTAGE_PENALTY_MISSING_INPUTS = 0.75  # This penalty is applied when an input good is missing entirely from local supply
+	GOODS_SHORTAGE_PENALTY_MILITARY_BUILDING_SPEED_MULT = 5.0 # Shortage penalties increase and decrease at this multiplier rate for military buildings
+
+	POP_NEED_BASIC_FOOD = "popneed_basic_food"
+
+	MINIMUM_GOODS_TRADED_QUANTITY = 0.5 # Traded quantity for a good can never be lower than this
+
+	# The below value exists to ensure the world market imports are seeded with 'new' goods by adding the trade quantity of the good * times this to world market demand
+	# This is so that it's always profitable to be the first country exporting something
+	WORLD_MARKET_GOODS_DEMAND_BUFFER = 10
+
+	WORLD_MARKET_HUB_SCORE_STICKYNESS = 3.0			# If a state is a World Market Hub, another state needs to exceed its hub score by this factor to replace it as the new hub
+	WORLD_MARKET_HUB_SCORE_PORT_FACTOR = 10  # Applied to hub score for each level of port present
+	WORLD_MARKET_HUB_SCORE_GDP_FACTOR_DIVISOR = 100000		# 1 hub score is added for each this amount of GDP in the state
+	WORLD_MARKET_HUB_SCORE_TRADE_CAPACITY_FACTOR = 0.1  	# Applied to hub score for each Trade Capacity in the state
+	WORLD_MARKET_HUB_SCORE_MARKET_CAPITAL_FACTOR = 100		# This amount of hub score is added for the market capital
+
+	# How many days must pass between updating trade potential in states that do not have a Trade Center
+	# The lower this is the more recent data the AI will have for evaluating new Trade Center construction, but performance will be impacted
+	NON_TRADE_CENTER_STATE_TRADE_POTENTIAL_UPDATE_FREQUENCY = 30
+
+	# This much of relative advantage translates into a multiplier on price
+	# Applied to the delta between relative advantage and 1
+	# For example, if TRADE_CENTER_ADVANTAGE_PRICE_MULTIPLIER is 0.5 and relative advantage is 2, then the price multiplier is 1 + ( ( 2 - 1 ) * 0.5 ) = 1.5
+	TRADE_CENTER_ADVANTAGE_PRICE_MULTIPLIER = 0.25
+
+	TRADE_CENTER_ADVANTAGE_BASE = 100 										# Base amount of advantage that Trade Centers have
+	TRADE_CENTER_ADVANTAGE_MARKET_AREA_PRODUCTION_FACTOR = 200 				# Trade Centers get this amount of export advantage for market area production (scaled against global production/consumption, multiplied by Market Access)
+	TRADE_ADVANTAGE_COMPANY_CHARTER_FACTOR = 50								# Company charters get this amount of export advantage for market production
+	TRADE_CENTER_ADVANTAGE_MARKET_PRESTIGE_GOOD_FACTOR = 100 				# Trade Centers get this amount of export advantage based on the fraction of goods production in their market that is prestige goods (prestige goods have no effect on import advantage)
+	TRADE_CENTER_ADVANTAGE_TRADE_AGREEMENT_FACTOR = 200 					# Trade Centers get this amount of export/import advantage, scaled against % of opposite-direction trade is from markets covered by trade agreements
+	TRADE_CENTER_ADVANTAGE_TREATY_PORT_FACTOR = 200 						# Trade Centers get this amount of export/import advantage, scaled against % of opposite-direction trade from Treaty Ports owned by their parent country
+
+	# Only one of the penalties below is ever applied, in the following priority order: Embargo, War, Lack of Interest
+	TRADE_CENTER_ADVANTAGE_NO_INTEREST_FACTOR = -25 						# Trade Centers lose this amount of export/import advantage, scaled against % of opposite-direction trade is from markets where the owner has no interest
+	TRADE_CENTER_ADVANTAGE_AT_WAR_FACTOR = -75 								# Trade Centers lose this amount of export/import advantage, scaled against % of opposite-direction trade is from markets where the owner is at war with the market controller
+	TRADE_CENTER_ADVANTAGE_EMBARGO_FACTOR = -100							# Trade Centers lose this amount of export/import advantage, scaled against % of opposite-direction trade is from markets where the owner is embargoed by the market controller
+
+	# Weights for Trade Center preference in importing/exporting to other specific Trade Centers
+	TRADE_CENTER_PREFERENCE_BASE = 1										# Base weight in preference for each other Trade Center
+	TRADE_CENTER_PREFERENCE_SAME_POWER_BLOC_MULTIPLIER = 0.5				# Added to weight multiplier if both Trade Centers are part of the same Power Bloc
+	TRADE_CENTER_PREFERENCE_TRADE_AGREEMENT_MULTIPLIER = 4.0				# Added to weight multiplier for each Trade Agreement between the two countries
+	TRADE_CENTER_PREFERENCE_EMBARGO_DIVISOR = 2.0							# Added to weight divisor for each Embargo between the two countries
+	TRADE_CENTER_PREFERENCE_NO_INTEREST_DIVISOR = 0.25						# Added to weight divisor for each side that lacks an Interest in the other's market
+	TRADE_CENTER_PREFERENCE_DISTANCE_DIVISOR = 0.25							# Weight is divided by 1 + ( distance in sea nodes * this ) between the two Trade Centers' hubs, this is done last after other multipliers/divisors
+
+
+	GOLD_RESERVE_RATIO_AT_START = 0.75			# Unless a country history's 'treasury' parameter is set to a non-zero value, countries start with this ratio of their gold reserve in gold
+
+	QUALITY_OF_LIFE_MIN = 1
+	QUALITY_OF_LIFE_MAX = 100
+	SUBSISTENCE_OUTPUT_AVERAGE_WAGE_RATE_FACTOR = 150   # Each 1.0 of subsistence output counts as this much wage rate when setting normal wages
+	PEASANT_STARTING_WAGE_RATE_FACTOR = 1.0		# For the sake of calculating starting normal wages, treat peasants as having this pop type wage multiplier
+	STARTING_WAGE_RATE_MULTIPLIER = 1.0			# Starting wage rate is multiplied by this (for easy balancing)
+	STARTING_WAGE_RATE_SUBSISTENCE_MULTIPLIER = 0.5		# STARTING_WAGE_RATE_MULTIPLIER is further multiplied by this for subsistence buildings
+	NORMAL_WAGE_RATE_FALLBACK = 500.0			# If it's impossible to compute a normal wage rate (e.g. if every incorporated pop works in government buildings) set it to this (weekly £ per POP_SIZE_PACKAGE employees)
+	MINIMUM_WAGE_RATE = 50.0					# The wage rate can never drop below this, no matter what (weekly £ per POP_SIZE_PACKAGE employees)
+	MAXIMUM_WAGE_RATE = 2500.0				# The absolute maximum that a building's wage rate can be increased to.
+
+
+	
+	DEFAULT_EXPORT_TARIFFS = no_tariffs_or_subventions					# The default export tariff level that is applied when nothing is set in history
+	DEFAULT_IMPORT_TARIFFS = no_tariffs_or_subventions					# The default import tariff level that is applied when nothing is set in history
+	TARIFF_LEVEL_COOLDOWN_GRACE_PERIOD_DAYS = 7					# After changing a tariff level, it takes this many days before the cooldown activates (to give you a chance to change your mind)
+	TARIFF_LEVEL_COOLDOWN_MONTHS = 3					# After changing a tariff level, you must wait this long to change it again
+
+	TARIFF_LEVEL_EFFECT_LOW = 0.25						# The fraction of tariff rate applied at low level
+	TARIFF_LEVEL_EFFECT_HIGH = 0.5						# The fraction of tariff rate applied at high level
+	TARIFF_LEVEL_EFFECT_MAXIMUM = 1.0					# The fraction of tariff rate applied at maximum level
+
+	SUBVENTION_LEVEL_EFFECT_LOW = 0.25					# The fraction of subvention rate applied at low level
+	SUBVENTION_LEVEL_EFFECT_HIGH = 0.5					# The fraction of subvention rate applied at high level
+	SUBVENTION_LEVEL_EFFECT_MAXIMUM = 1.0				# The fraction of subvention rate applied at maximum level
+
+	REINVESTMENT_EFFICIENCY_MAX = 3.0					# Maximum conversion of reinvestment to investment pool
+	REINVESTMENT_BASE_EFFICIENCY_THRESHOLD = 50000000	# Below this amount of GDP, increase reinvestment multiplier on a linear scale up to REINVESTMENT_EFFICIENCY_MAX at 0
+	REINVESTMENT_SUBSISTENCE_FRACTION_REDUCTION = 0.5	# Reinvestment from pops in ownership buildings is multiplied by ( 1 - this * the share of levels owned that are subsistence buildings )
+
+	
+	COMPANY_CHARTER_AUTHORITY_COST = 75				# Cost of establishing a company charter
+
+	MONOPOLY_PRICE_IMPACT = 0.2							# The price of a good is increased by this multiplier based on how much of its supply is considered to be under a monopoly
+
+	PRIVATIZATION_DISCOUNT_MONOPOLY = 0.25				# The cost of privatizing a building is multiplied by this for companies with a monopoly on that building type
+
+	PRESTIGE_GOODS_INPUT_THROUGHPUT_BONUS = 0.25			# Bonus to throughput, scaled against proportion of input goods base value that is prestige goods
+}
+
+NMilitary = {
+	POWER_PROJECTION_DIVISOR = 1000 				# Average of Offense and Defense is multiplied by manpower and divided by this to determine a unit's power projection
+	INITIAL_MANPOWER_COST_MULTIPLIER = 10 			# there is an extra cost for training new recruits, compared to maintenence of said recruits
+	MANPOWER_DIVISOR = 10000 						# the strategic goods needed by soldiers are counted in sets of
+	ATTRITION_RISK_EXILED_ARMY_ADD = 0.2			# Exiled formation has attrition risk increased by this
+	ATTRITION_RISK_ON_ENEMY_TERRITORY_ADD = 0.3		# Exiled formation on enemy territory has attrition risk additionally increased by this
+	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MIN = 0.01 	# The minimum percentage of manpower a unit can lose each week due to attrition
+	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MAX = 0.1 	# The maximum percentage of manpower a unit can lose each week due to attrition
+	ATTRITION_RECOVERY_RATE_BASE = 0.7				# Base recovery rate for units not participating in battles affected by attrition, e.g. casualties with 0.7 recovery rate would consist of 70% wounded and 30% deaths
+	ATTRITION_RECOVERY_RATE_RANDOM_RANGE = 0.1		# Randomness range for recovery rate for units not participating in battles affected by attrition
+	MIN_VARIABLE_DISTRIBUTION_PER_POP = 0
+	MAX_VARIABLE_DISTRIBUTION_PER_POP = 100
+	BATTLE_LETHALITY_MIN = 0.001
+	BATTLE_LETHALITY_MAX = 0.01
+	BATTLE_RAW_MANPOWER_INFLICTED_CASUALTY_RATIO = 0.5		# applied to the number of casualties caused by raw number of troops, ie without considering Offense/Defense - increasing this makes CE less important and battles more lethal
+	BATTLE_COMBAT_EFFICIENCY_INFLICTED_CASUALTY_RATIO = 1.5	# applied to the number of casualties caused by troops with Offense/Defense also factored in - increasing this makes CE more important and battles more lethal
+	BATTLE_MAX_CASUALTY_DISADVANTAGE_PENALTY = 1.0  # a limit for the battle_casualties_disadvantage static modifier. 1.0 means a maximum of 100% penalty is applied.
+	MAX_CE_ADVANTAGE = 1
+	MIN_MANPOWER_CASUALTY_PER_ROUND = 5					# Minimum manpower losses per round
+	CASUALTY_MULTIPLIER_FOR_HIGHEST_PAID = 0.25		# Pops that are not the lowest paid profession in the building (e.g. officers) will have its casualties moderated by this multiplier (between 0-1)
+	MIN_USABLE_MANPOWER = 100						# Lowest manpower engaged in a battle limit (otherwise determined by combat width)
+	COMBAT_UNITS_PER_LEVEL = 1						# Number of combat units each level of military building can support. Must be the same for all recruitable buildings (barracks/conscription centers/naval bases)
+	BASE_MORALE_RECOVERED_PER_DAY = 0.03			# Default morale recovered is 3% per day
+
+	
+	MAX_NUM_COMMANDERS_PER_FORMATION = 2	# The maximum number of commanders in a given Military Formation
+	
+	# Defines below control how much blockade strength is required to fully blockade a state
+	BLOCKADE_TARGET_STRENGTH_BASE = 10						# Base value for each coastal state
+	BLOCKADE_TARGET_STRENGTH_PER_TRADED_UNIT = 3			# Each unit of imports/exports in the market area increases required blockade strength by this (only for world market hubs)
+	BLOCKADE_TARGET_STRENGTH_PER_PRODUCED_UNIT = 1			# Each unit of goods produced in buildings affected by blockades (such as fisheries and shipyards) increases required blockade strength by this
+	BLOCKADE_TARGET_STRENGTH_PER_CONVOY = 2					# Each convoy passing through the state's port increases required blockade strength by this
+
+	BLOCKADE_WORLD_MARKET_ACCESS_IMPACT_SCALING = 0.75		# Reduction of world market access for blockaded world market hubs, scales against blockade level
+	BLOCKADE_SHIPPING_LANE_IMPACT_SCALING = 0.75			# Reduction of efficiency for blockaded shipping lanes, scales against blockade level of either start or end point, whichever is most blockaded
+	BLOCKADE_THROUGHPUT_IMPACT_SCALING = 0.75				# Reduction of throughput for buildings affected by blockades, scales against blockade level
+}
+
+
+NPops = {
+	NUM_WEALTH_LEVELS = 99
+
+	POP_WEIGHT_MODIFIER_MAX_SCALE = 100			# The maximum scale applied to weight modifiers on the pop portrait
+
+	DEFAULT_POP_TYPE = "laborers"				# Used by: create_pop effects; migration; injured military leaving their outposts; slaves default employment role; etc.
+	SLAVE_POP_TYPE = "slaves"					# This is the type of pop that debtors will become
+
+	POP_SIZE_PACKAGE = 10000					# "Normal" pop size used as a divisor on population when determining e.g. Needs to buy, wages to pay, etc
+
+	WEALTH_PROGRESS_WANTED_BUFFER = 1.02		# A pop wants at least as much income as this x the next level buy package costs to increase its wealth
+	WEALTH_PROGRESS_ACCEPTABLE_DEFICIT = 0.98	# A pop won't change wealth level if they can still afford this much of their current buy package costs
+	WEALTH_PROGRESS_INCREASE = 0.2				# How fast wealth increases when a pop has money for higher grade buy packages. This factor is modified by how large the difference between income and cost is
+	WEALTH_PROGRESS_DECREASE = 0.1				# How fast wealth decrease when a pop can no longer afford its buy package. This factor is modified by how large the difference between income and cost is
+	WEALTH_PROGRESS_DECREASE_DEFICIT_MULT = 5
+
+	LOYALTIES_GAIN_GRACE_PERIOD_SHORT = "1837.1.1"		# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Short game rule is applied
+	LOYALTIES_GAIN_GRACE_PERIOD_LONG = "1841.1.1"		# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Long game rule is applied
+	LOYALTIES_GAIN_GRACE_PERIOD_EXTRA_LONG = "1846.1.1"	# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Extra Long game rule is applied
+	RADICALS_MAX_FROM_LOW_SOL = 0.2				# If pop is already this % radical, don't add more radicals from low SOL (Scales by delta between SoL and expected min SoL)
+	RADICALS_MAX_FROM_DISCRIMINATION = 0.75		# If pop is already this % radical, don't add more radicals from discrimination (Scales by literacy)
+	RADICALS_MONTHLY_FROM_LOW_SOL = 0.002		# Scales by delta between SoL and expected min SoL
+	RADICALS_MONTHLY_FROM_DISCRIMINATION = 0.005 # Scales by literacy
+
+	# Radicals Monthly indicates what fraction of the pop turns radical every month while starving
+	# Radicals max indicates at what max fraction of radicals we stop adding new ones due to starvation
+	# Radical growth/max increases between these values as Food Security decreases
+	RADICALS_MONTHLY_FROM_STARVATION_BASE = 0.002 # Food Security = Mild Threshold
+	RADICALS_MONTHLY_FROM_STARVATION_MILD = 0.008 # Food Security = Severe Threshold
+	RADICALS_MONTHLY_FROM_STARVATION_SEVERE = 0.02 # Food Security = 0
+	RADICALS_MAX_FROM_STARVATION_BASE = 0.15 # Food Security = Mild Threshold
+	RADICALS_MAX_FROM_STARVATION_MILD = 0.75 # Food Security = Severe Threshold
+	RADICALS_MAX_FROM_STARVATION_SEVERE = 1.0 # Food Security = 0
+
+	ALLOW_ASSIMILATION_IN_HOMELANDS = yes		# Can pops assimilate when living in their homelands?
+	ALLOW_ASSIMILATION_ACROSS_HERITAGES = no 	# Can pops assimilate into pops of a different heritage?
+
+	ASSIMILATION_RATE = 0.001					# Percentage of pops who will Assimilate into a different Culture each month, if eligible
+	MIN_ASSIMILATION = 1						# If there is any assmiliation at least this many people will assimilate
+
+	CONVERSION_RATE = 0.001						# Percentage of pops who will Convert into a different Religion each month, if eligible
+	CONVERSION_UNINCORPORATED_MULT = 0.1 		# CONVERSION_RATE is multiplied by this in unincorporated states
+	MIN_CONVERSION = 1							# If there is any conversion at least this many people will convert
+
+	PRESTIGE_GOOD_SOL_BONUS_SCALING = 0.4 		# Added multiplier to SoL, scales with % of pop buy package that is prestige goods
+	PRESTIGE_GOOD_SOL_MAX_BONUS = 0.2 			# Added multiplier to SoL from prestige goods cannot be higher than this
+
+	
+##### MIGRATION #####
+
+## General ##
+	MIGRATION_MIN_STATE_POPS = 20000											# A state with less population than this will not get emigration
+	MIGRATION_STATE_POPULATION_THRESHOLD = 100000								# States with less pops than this have reduced market emigration numbers to avoid total depopulation
+	MIGRATION_MAX_PER_STATE_BASE = 500											# No more than this amount of people can move from or to a state in a single week (base)
+	MIGRATION_MAX_PER_STATE_INFRASTRUCTURE = 5									# No more than this amount of people can move from or to a state in a single week (scales with infrastructure)
+	MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION = 0.005						# Max emigration per week is clamped to this fraction of a state's population
+	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_ORIGIN_FRACTION = 0.1					# The amount of unemployed workers in a state * this value is added to how many people can move from it (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
+	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_TARGET_FRACTION = 0.25					# The amount of unemployed workers in a state * this value is removed from how many people can move to it (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
+
+	# Migration Desire #
+	MIGRATION_DESIRE_FROM_JOB_SATISFACTION_FACTOR = -1.0						# A pop's desire to migrate will be increased by its job satisfaction multiplied by this value.
+
+	# Acceptance #
+	MIN_ACCEPTANCE_VALUE = 0													# It is both the minimum acceptance value a pop can have as well as the explicit threshold scripted for the first acceptance status [any signed 32 bit value]
+	MAX_ACCEPTANCE_VALUE = 100													# It is both the maximum acceptance value a pop can have as well as the (implied) upper bound of the last acceptance status [> MIN_ACCEPTANCE_VALUE]
+	ACCEPTANCE_FROM_HOMELAND_COMMUNITY = 20										# The amount of acceptance a pop gets from living in their homeland, applied statically on their Cultural Community
+	MIN_REQUIRED_ACCEPTANCE_FOR_MIGRATION = 40		 							# If a pop would have less than this much acceptance in a target state, they won't mass migrate there
+	EXPECTED_ACCEPTANCE_INCREASE_TO_MIGRATE = 10                                # A pop will look to increase their acceptance by this much when mass migrating, but might accept less if mass migration attraction difference is high enough
+	MAX_ACCEPTANCE_RATIO_MULT_MIGRATION = 5										# A difference in acceptance between source and target in mass migrations will result in at most this much increased migration
+
+	# Cultural Communities #
+	CULTURAL_COMMUNITY_LINGER_TIME_WEEKS = 3									# When the last pop of a given culture leaves a state, the corresponding cultural community will be removed after this long
+	CULTURAL_COMMUNITY_MAX_PER_MONTH_CHANCE = 0.04
+	CULTURAL_COMMUNITY_ACCEPTANCE_DELTA_ON_SPAWN = -0.3							# The percentage of the maximum cultural acceptance that should be added as a delta to the cultural community when it first appears
+	CULTURAL_COMMUNITY_ACCEPTANCE_DELTA_DECAY_PER_MONTH = 0.25					# The amount of acceptance delta that will decay each month
+
+	# Slavery #
+	MIGRATION_MIN_POP_AMOUNT = 1												# No less than this amount of a pop can migrate each week (if any migration at all should happen)
+
+	# UX/UI Labeling #
+	MIGRATION_PULL_HIGH_THRESHOLD = 0.75										# State must have a migration pull of at least market average * this to get market immigration
+	MIGRATION_PULL_LOW_THRESHOLD = 0.75											# State must have a migration pull of less or equal than market average * this to get full amount of emigration
+
+	# Treaty Ports #
+	TREATY_PORT_INITIAL_MIGRATION = 1000										# This is the amount of people of the taker country's first primary culture to migrate to a treaty port upon establishment
+
+## Migration Attraction ##
+	MIGRATION_PULL_EMPTY_STATE = 100											# If a state has no pops at all, give it a huge migration pull
+	MIGRATION_PULL_FROM_LIVING_STANDARD = 1.6 # 2								# Migration pull from each point of average living standard in target state
+	MIGRATION_PULL_FROM_AVAILABLE_EMPLOYMENT = 2.0 # 3.0 # 1.5					# Migration pull is increased by for each 10k available non subsistence jobs
+	MIGRATION_PULL_FROM_AVAILABLE_EMPLOYMENT_MAX = 20 # 30						# Migration pull from available non-subsistence jobs cannot exceed this
+	MIGRATION_PULL_FROM_AVAILABLE_ARABLE_LAND_MAX_EMPLOYMENT_MULTIPLIER = 0.6 # 0.75	# Count available arable land as though the subsistence farm has only this fraction of its max employment, so that massive states in China with mostly full subsistence farms don't get a huge migration boost
+	MIGRATION_PULL_FROM_AVAILABLE_ARABLE_LAND_EMPLOYMENT = 1.0 # 0.5			# Migration pull is increased by for each 10k available subsistence jobs
+	MIGRATION_PULL_FROM_AVAILABLE_ARABLE_LAND_EMPLOYMENT_MAX = 20 # 30			# Migration pull from available subsistence jobs cannot exceed this
+	MIGRATION_PULL_REDUCTION_FROM_UNEMPLOYMENT = 2 								# Migration pull is reduced by this for each 10k unemployed pops
+	MIGRATION_PULL_REDUCTION_FROM_UNEMPLOYMENT_MAX = 100 # 50					# Migration pull reduction from unemployment cannot exceed this
+	
+
+## Market Migrations ##
+	# Market Migration Processing #
+	MARKET_MIGRATION_STATE_ATTRACTION_FRACTION = 0.25							# States with at least this fraction of the most attractive state's migration attraction will receive migration
+	MARKET_MIGRATION_PER_WEEK_FACTOR = 2										# This number of individuals will migrate for each point of difference in migration pull
+	MARKET_MIGRATION_PER_WEEK_PER_TOTAL_POPULATION = 100000						# Additionally, one more individual will migrate per this number of population for each point of difference in migration pull
+	MARKET_MIGRATION_MIN_DIFFERENCE_IN_MIGRATION_ATTRACTION_TO_MOVE = 3			# Pops will not migrate if their best option is to a state with a lower delta in migration pull than this number
+	MARKET_MIGRATION_MIN_POP_FRACTION_TO_MOVE = 0.005							# If the people wanting to migrate constitues less than this fraction of a pop, no new pop will be created and they won't migrate.
+	MIGRATION_PULL_MULT_FROM_NO_DISCRIMINATION = 0.5							# Migration pull multiplier increased by this if pop is moving from discrimination to no discrimination (not applied to mass migration targets)
+	MIGRATION_PULL_MULT_FROM_HOMELANDS = 0.1									# Migration pull multiplier increased by this if pop is moving to cultural homelands (not applied to mass migration targets)
+
+
+##### End Migration #####
+
+	
+	JOB_SATISFACTION_BASE = -150								# Base job satisfaction
+	JOB_SATISFACTION_FOR_NEWLY_HIRED = 1000						# Job satisfaction gained due to having been newly hired, this state lasts until the pop's next wealth calculation
+	JOB_SATISFACTION_PER_SOL_ABOVE_EXPECTED_SOL = 12				# Job satisfaction gained per level of SoL above your expected SoL
+	JOB_SATISFACTION_PER_SOL_ABOVE_STATE_STRATA_SOL = 4			# Job satisfaction gained per level of SoL above the state average for your strata
+	JOB_SATISFACTION_PER_SOL_ABOVE_COUNTRY_STRATA_SOL = 0.5		# Job satisfaction gained per level of SoL above the country average for your strata
+	JOB_SATISFACTION_PER_PERCENT_WAGE_RATE_ABOVE_NORMAL = 0.5		# Job satisfaction gained per pound of workplace wage rate (weekly wage of 10k laborers) above country normal
+	JOB_SATISFACTION_FROM_CAN_AFFORD_EXPENSES = 250			# Job satisfaction gained from being able to afford your bug package (and taxes)
+	JOB_SATISFACTION_FROM_CANNOT_AFFORD_EXPENSES = -1000			# Job satisfaction gained from not being able to afford your bug package (and taxes)
+	JOB_SATISFACTION_PER_PERCENT_HIGHER_SOL_QUALIFICATION = -1 	# Job satisfaction gained per percent of workforce qualified for a job with a higher base standard of living. Note that qualifications are assumed to overlap and the largest qualification is used in this calculation
+	JOB_SATISFACTION_FROM_EMPLOYMENT = 100						# Job satisfaction gained from having a job
+	JOB_SATISFACTION_DIVIDENDS_MAX_MULT = 25						# Max multiplier from the ratio between pop dividends and wages
+	JOB_SATISFACTION_DIVIDENDS_BASE = 10					# Base value to be multiplied by the ratio between dividends and wages
+	JOB_SATISFACTION_LOSSES_MIN_MULT = -25						# Min multiplier from the ratio between pop losses and wages (or if you will, max magnitude)
+	JOB_SATISFACTION_LOSSES_BASE = 10							# Base value to be multiplied by the ratio between losses and wages
+	JOB_SATISFACTION_GOVERNMENT = 100							# Government jobs need a bit more stability
+
+	
+}
+
+### Pop Growth Constants
+## Base Values per month
+@min_birthrate = 0.00060			# Minimum base birthrate per month (at POP_GROWTH_STABLE_SOL)
+@max_birthrate = 0.00450			# Maximum base birthrate per month (at SOL = 0)
+@min_mortality = 0.00045			# Minimum base mortality per month (at POP_GROWTH_STABLE_SOL)
+@max_mortality = 0.00550			# Maximum base mortality per month (at SOL = 0)
+
+## SoL Thresholds
+@pop_growth_equilibrium_sol = 5		# Equilibrium is pops stop starving and where growth first becomes positive
+@pop_growth_transition_sol = 15     # Transition determines how long birthrate "lags" behind mortality before starting to drop. Setting to same as equilibrium leads to no "lag" (only matters for birthrate)
+@pop_growth_max_sol = 20			# Growth Max is where net growth generally is at it's highest (only matters for mortality)
+@pop_growth_stable_sol = 30 		# Stable is where birthrate and mortality stop changing and hit their minimum values
+
+## Others
+@transition_birthrate_mult = 1 		# If you want the birthrate "lag" to go to a higher or lower value than max_birthrate. (you can also just change it directly below)
+@max_growth_mortality_mult = 0.3	# What proportion of birthrate_at_growth_max mortality should be at. Higher means lower growth
+
+### Pop Growth Derived values
+# Generally, for each one of these derived values below we're really just doing one of three operations (or combination of them):
+# - Calculate a Point: sol * slope + start_value   					(x_at_y)
+# - Calculate a Slope: (start_value - end_value) / number_of_steps	(x_slope)
+# - Calculate an Intercept: -slope*sol + end_value					(x_intercept)
+# Intercepts are only needed for line segments that don't start at 0 SoL
+
+@birthrate_at_transition = @[max_birthrate*transition_birthrate_mult]
+@rate_at_equilibrium = @[pop_growth_equilibrium_sol*((birthrate_at_transition-max_birthrate)/pop_growth_transition_sol)+max_birthrate] # determines both mortality and birthrate
+
+## Mortality from 0 to pop_growth_equilibrium_sol
+@mortality_starving_slope = @[(rate_at_equilibrium-max_mortality)/pop_growth_equilibrium_sol]
+
+## Birthrate from 0 to pop_growth_transition_sol
+@birthrate_pretransition_slope = @[(birthrate_at_transition-rate_at_equilibrium)/pop_growth_transition_sol]
+
+## Mortality from pop_growth_equilibrium_sol to pop_growth_max_sol
+@birthrate_at_growth_max = @[(pop_growth_max_sol-pop_growth_transition_sol)*((min_birthrate-birthrate_at_transition)/(pop_growth_stable_sol-pop_growth_transition_sol))+birthrate_at_transition]
+@mortality_at_growth_max = @[birthrate_at_growth_max*max_growth_mortality_mult]
+@mortality_equilibrium_to_growth_max_slope = @[(mortality_at_growth_max-rate_at_equilibrium)/(pop_growth_max_sol-pop_growth_equilibrium_sol)]
+@mortality_equilibrium_to_growth_max_intercept = @[-mortality_equilibrium_to_growth_max_slope*pop_growth_equilibrium_sol+rate_at_equilibrium]
+
+## Birthrate from pop_growth_transition_sol to pop_growth_stable_sol
+@birthrate_transition_slope = @[(min_birthrate-birthrate_at_transition)/(pop_growth_stable_sol-pop_growth_transition_sol)]
+@birthrate_transition_intercept = @[-birthrate_transition_slope*pop_growth_stable_sol+min_birthrate]
+
+## Mortality from pop_growth_max_sol to pop_growth_stable_sol
+@mortality_growth_max_to_stable_slope = @[(min_mortality-mortality_at_growth_max)/(pop_growth_stable_sol-pop_growth_max_sol)]
+@mortality_growth_max_to_stable_intercept = @[-mortality_growth_max_to_stable_slope*pop_growth_stable_sol+min_mortality]
+
+### Pseudo algorithm to determine base Mortality / Birthrate
+## Mortality
+# if (sol < POP_GROWTH_EQUILIBRIUM_SOL)
+# { mortality = sol * POP_GROWTH_MORTALITY_STARVING_SLOPE + POP_GROWTH_MAX_MORTALITY }
+# else if (sol < POP_GROWTH_MAX_SOL)
+# { mortality = sol * POP_GROWTH_MORTALITY_EQUILIBRIUM_TO_GROWTH_MAX_SLOPE + POP_GROWTH_MORTALITY_EQUILIBRIUM_TO_GROWTH_MAX_INTERCEPT }
+# else if (sol < POP_GROWTH_STABLE_SOL)
+# { mortality = sol * POP_GROWTH_MORTALITY_GROWTH_MAX_TO_STABLE_SLOPE + POP_GROWTH_MORTALITY_GROWTH_MAX_TO_STABLE_INTERCEPT }
+# else { mortality = POP_GROWTH_MIN_MORTALITY }
+
+## Birthrate
+# if (sol < POP_GROWTH_EQUILIBRIUM_SOL)
+# { birthrate = sol * POP_GROWTH_BIRTHRATE_PRETRANSITION_SLOPE + POP_GROWTH_MAX_BIRTHRATE }
+# else if (sol < POP_GROWTH_TRANSITION_SOL)
+# { birthrate = sol * POP_GROWTH_BIRTHRATE_PRETRANSITION_SLOPE + POP_GROWTH_MAX_BIRTHRATE }
+# else if (sol < POP_GROWTH_STABLE_SOL)
+# { birthrate = sol * POP_GROWTH_BIRTHRATE_TRANSITION_SLOPE + POP_GROWTH_BIRTHRATE_TRANSITION_INTERCEPT }
+# else { birthrate = POP_GROWTH_MIN_BIRTHRATE }
+
+NPops = {
+	## Birthrate
+	POP_GROWTH_BIRTHRATE_PRETRANSITION_SLOPE = @birthrate_pretransition_slope
+	POP_GROWTH_BIRTHRATE_TRANSITION_SLOPE = @birthrate_transition_slope
+	POP_GROWTH_BIRTHRATE_TRANSITION_INTERCEPT = @birthrate_transition_intercept
+
+	## Mortality
+	POP_GROWTH_MORTALITY_STARVING_SLOPE = @mortality_starving_slope
+	POP_GROWTH_MORTALITY_EQUILIBRIUM_TO_GROWTH_MAX_SLOPE = @mortality_equilibrium_to_growth_max_slope
+	POP_GROWTH_MORTALITY_EQUILIBRIUM_TO_GROWTH_MAX_INTERCEPT = @mortality_equilibrium_to_growth_max_intercept
+	POP_GROWTH_MORTALITY_GROWTH_MAX_TO_STABLE_SLOPE = @mortality_growth_max_to_stable_slope
+	POP_GROWTH_MORTALITY_GROWTH_MAX_TO_STABLE_INTERCEPT = @mortality_growth_max_to_stable_intercept
+
+	## Base Values
+	POP_GROWTH_MIN_BIRTHRATE = @min_birthrate					# Minimum base birthrate per month (at POP_GROWTH_STABLE_SOL)
+	POP_GROWTH_MAX_BIRTHRATE = @max_birthrate					# Maximum base birthrate per month (at SOL = 0)
+	POP_GROWTH_MIN_MORTALITY = @min_mortality					# Minimum base mortality per month (at POP_GROWTH_STABLE_SOL)
+	POP_GROWTH_MAX_MORTALITY = @max_mortality					# Maximum base mortality per month (at SOL = 0)
+
+	## SoL Thresholds
+	POP_GROWTH_EQUILIBRIUM_SOL = @pop_growth_equilibrium_sol	# Equilibrium is pops stop starving and where growth first becomes positive
+	POP_GROWTH_TRANSITION_SOL = @pop_growth_transition_sol		# Transition determines how long birthrate "lags" behind mortality before starting to drop. Setting to same as equilibrium leads to no "lag" (only matters for birthrate)
+	POP_GROWTH_MAX_SOL = @pop_growth_max_sol					# Growth Max is where net growth generally is at it's highest (only matters for mortality)
+	POP_GROWTH_STABLE_SOL = @pop_growth_stable_sol				# Stable is where birthrate and mortality stop changing and hit their minimum values
+}
+### End Pop Growth Constant defines
+
+
+NBattle = {
+	CASUALTY_MAJORITY_CULTURE_WEIGHT = 1.1			# Majority culture pops will be weighted to take 1.5x more casualties
+	CASUALTY_ROLL_MIN = 50							# min ...
+	CASUALTY_ROLL_MAX = 200							# max amount of casualties a unit can take each roll when applying casualties to units
+	SURVIVAL_RATE = 0.66
+	DEPENDENTS_ROLL_MIN_PERCENT = 0.1				# min ...
+	DEPENDENTS_ROLL_MAX_PERCENT = 0.3				# max percentage of Pops Size it can take as Dependents each roll
+	MIN_DEPENDENTS_PER_ROLL = 25					# Minimum amount of dependents to added to a random pop
+
+	ESCAPE_PROGRESS_REQUIRED_MIN = 10.0					# How much progress is needed for a formation to escape from battle
+	ESCAPE_PROGRESS_REQUIRED_PER_MANPOWER = 0.001		# 1 battalion or flotilla increases the needed progress to escape by this
+	ESCAPE_PROGRESS_GAIN_BASE = 1.0						# How much progress is increased per each battle round as base value
+	ESCAPE_PROGRESS_GAIN_RANDOM_FACTOR = 2.5			# The higher this is, the more random progress changer will be per round
+
+	CHANCE_OF_POPULARITY_NARROW_VICTORY = 0.5		# The chance (0-1) to be affected by popularity for a narrow victory (start with numeric advantage, end with numeric disadvantage)
+	CHANCE_OF_POPULARITY_NORMAL_VICTORY	= 0.1		# The chance (0-1) to be affected by popularity for a normal victory (any victory that's not narrow or heroic)
+	CHANCE_OF_POPULARITY_HEROIC_VICTORY	= 1.0		# The chance (0-1) to be affected by popularity for a heroic victory (start with numeric disadvantage against a more prestigious nation)
+	POPULARITY_GAIN_NARROW_VICTORY = 5				# Multiple of commander_battle_end_victory modifier the winner should get for a narrow victory if the random chance roll is true
+	POPULARITY_GAIN_NORMAL_VICTORY = 3				# Multiple of commander_battle_end_victory modifier the winner should get for a normal victory if the random chance roll is true
+	POPULARITY_GAIN_HEROIC_VICTORY = 10				# Multiple of commander_battle_end_victory modifier the winner should get for a heroic victory if the random chance roll is true
+	POPULARITY_GAIN_NARROW_LOSS	= -6				# Multiple of commander_battle_end_loss modifier the loser should get for a narrow victory for the other side if the random chance roll is true
+	POPULARITY_GAIN_NORMAL_LOSS	= -5				# Multiple of commander_battle_end_loss modifier the loser should get for a normal victory for the other side if the random chance roll is true
+	POPULARITY_GAIN_HEROIC_LOSS = -10				# Multiple of commander_battle_end_loss modifier the loser should get for a heroic victory for the other side if the random chance roll is true
+	POPULARITY_DECAY_MONTHS = 60					# The number of months battle popularity modifiers decay over
+}
+
+NWar = {
+	DEVASTATION_MAX = 100.0
+	DEVASTATION_INCREASE_RATE = 0.025 # Per day, scales with level of occupation
+	DEVASTATION_DECAY_RATE = -0.025 # Per day, when there are no occupations
+	DEVASTATION_FROM_BATTLES = 0.1 # For each battle
+
+	NUM_PROVINCES_FOR_ADVANCEMENT_SELECTION = 5		# After having computed weights for possible advancement provinces using front_battle_province_weight, filter out all but the X top weighted provinces. This is done to prevent randomly selecting an element that had a low weight.
+}
+

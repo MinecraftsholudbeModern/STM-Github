@@ -1,0 +1,80 @@
+﻿#This has been blatantly copied.
+BuggedBarracks_decision = {
+    is_shown = {
+        any_scope_building = {
+            save_temporary_scope_as = mil_building
+            OR = {
+                is_building_type = building_barracks
+                is_building_type = building_conscription_center
+                is_building_type = building_naval_base
+            }
+            occupancy > 0.01
+            ROOT = {
+                NOT = {
+                    any_military_formation = {
+                        any_combat_unit = {
+                            building = scope:mil_building
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    possible = {
+        always = yes
+    }
+    
+    when_taken = {
+        every_scope_building = {
+            limit = {
+                OR = {
+                    is_building_type = building_barracks
+                    is_building_type = building_conscription_center
+                    is_building_type = building_naval_base
+                }
+                occupancy > 0.01
+            }
+            save_scope_as = mil_building
+            
+            ROOT = {
+                if = {
+                    limit = {
+                        NOT = {
+                            any_military_formation = {
+                                any_combat_unit = {
+                                    building = scope:mil_building
+                                }
+                            }
+                        }
+                    }
+                    scope:mil_building.state = {
+                        if = {
+                            limit = {
+                                scope:mil_building = {
+                                    is_building_type = building_barracks
+                                }
+                            }
+                            remove_building = building_barracks
+                        }
+                        else_if = {
+                            limit = {
+                                scope:mil_building = {
+                                    is_building_type = building_conscription_center
+                                }
+                            }
+                            remove_building = building_conscription_center
+                        }
+                        else = {
+                            remove_building = building_naval_base
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    ai_chance = {
+        base  = 1000000
+    }
+}
