@@ -3382,7 +3382,7 @@ ai_strategy_default = {
 	# How much construction output should the AI aim for
 	# Using this value in other strategies will function additively
 	wanted_construction_output = {
-		value = 1 # Accounts for the 10 free construction from base modifiers
+		value = 1 # Accounts for the 1 free construction from base modifiers
 
 		add = {
 			value = investment_pool_income
@@ -3395,7 +3395,7 @@ ai_strategy_default = {
 			divide = 5000 # 1 construction output per this much income
 
 			min = 0
-			max = 200 # Above a certain point more government income isn't going to lead to more AI government construction
+			max = 500 # Above a certain point more government income isn't going to lead to more AI government construction
 		}
 
 		add = {
@@ -3412,6 +3412,21 @@ ai_strategy_default = {
 			}
 			add = 10
 		}
+		
+		# Multiply if higher power
+		if = {
+			limit = { country_rank >= rank_value:great_power }
+			multiply = 2
+		}
+		else_if = {
+			limit = {
+				OR = {
+					country_rank >= rank_value:major_power
+					country_rank >= rank_value:unrecognized_major_power
+				}
+			}
+			multiply = 1.25
+		}
 
 		# Add a baseline for high rank
 		if = {
@@ -3427,6 +3442,7 @@ ai_strategy_default = {
 			}
 			add = 50
 		}
+		
 
 		# If trying to industrialize
 		if = {
@@ -3454,25 +3470,9 @@ ai_strategy_default = {
 			limit = { has_strategy = ai_strategy_maintain_mandate_of_heaven }
 			multiply = 0.1
 		}
-		
-		#Deficit spending behaviour
-		
-		if = {
-			limit = { country_rank >= rank_value:great_power }
-			multiply = 2
-		}
-		else_if = {
-			limit = {
-				OR = {
-					country_rank >= rank_value:major_power
-					country_rank >= rank_value:unrecognized_major_power
-				}
-			}
-			multiply = 1.1
-		}
 
 		min = 1
-		max = 10000
+		max = 100000
 	}
 
 	# How many levels of barracks should the AI have
@@ -3512,11 +3512,11 @@ ai_strategy_default = {
 		# Extra army size from rank
 		if = {
 			limit = { country_rank = rank_value:great_power }
-			add = 50
+			add = 25
 		}
 		if = {
 			limit = { country_rank = rank_value:major_power }
-			add = 20
+			add = 10
 		}
 
 		save_temporary_value_as = pre_overseas_empire_value

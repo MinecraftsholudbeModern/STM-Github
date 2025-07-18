@@ -1,7 +1,7 @@
 ﻿NAI = {
 	DEFAULT_STRATEGY_STRING = "ai_strategy_default"
 
-	STRATEGY_RANDOM_FACTOR = 2.0 # The higher this is, the more random AI strategy selection will be
+	STRATEGY_RANDOM_FACTOR = 1.0 # The higher this is, the more random AI strategy selection will be
 
 	
 	MOBILIZATION_BASE_DESIRED_RATIO_TO_ENEMY = 0.75   		# AI wants to have a total amount of mobilized army power that is equal to enemy mobilized army power * this
@@ -45,6 +45,14 @@
 	WAR_GOAL_UNDESIRABLE_INFAMY_FACTOR = 0.5 		# Wargoal value is multiplied by this if it would bring the country above undesirable infamy levels
 	WAR_GOAL_UNACCEPTABLE_INFAMY_FACTOR = 0			# Wargoal value is multiplied by this if it would bring the country above unacceptable infamy levels
 	WAR_GOAL_NOT_PRIMARY_DEMAND_FACTOR = 0.5		# Wargoal value for sway offers is multiplied by this if it would not be added as a primary demand
+	
+	MONEY_SPENDING_MILITARY_CRITICAL_THRESHOLD = 0.75 # If actual-to-wanted number of barracks/naval bases is below this, AI will not consider downsizing them further
+	MONEY_SPENDING_MILITARY_EXCESSIVE_THRESHOLD = 2.0 # If actual-to-wanted number of barracks/naval bases is above this, AI considers it a target for cutting spending when needed
+	MONEY_SPENDING_CONSTRUCTION_CRITICAL_THRESHOLD = 0.8 # If actual-to-wanted construction production is below this, AI considers it very important to get more
+	MONEY_SPENDING_CONSTRUCTION_EXCESSIVE_THRESHOLD = 1.05 # If actual-to-wanted construction production is at least this, AI considers it nice to have
+	MONEY_SPENDING_INNOVATION_CRITICAL_THRESHOLD = 0.9 # If innovation production compared to cap is worse than this, AI considers it very important to improve
+	MONEY_SPENDING_INNOVATION_DESIRED_THRESHOLD = 1.0 # If innovation production compared to cap is worse than this, AI considers it important to improve
+	MONEY_SPENDING_INNOVATION_EXCESSIVE_THRESHOLD = 1.25 # If innovation production compared to cap is at least this, AI considers it nice to have
 
 	
 	# Below data is used to calculate how much weight the AI places on different things it can spend its authority on
