@@ -211,10 +211,9 @@ company_mitsubishi = {
 			}
 			custom_tooltip = {
 				text = is_soon_meiji_japan
-				has_variable = meiji_var
+		        has_variable = shogunate_var
 			}
 		}
-		
 		any_scope_state = {
 			state_region = s:STATE_CHUGOKU
 			is_incorporated = yes

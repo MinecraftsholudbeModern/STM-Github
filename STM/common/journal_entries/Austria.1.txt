@@ -1,0 +1,112 @@
+Austria_collapse_je = {
+    title = "Austrian collapse progress"
+    desc = "Keep the progress low to avoid any internal problems"
+    group = je_group_historical_content
+
+    exists = c:AUS
+    THIS = c:AUS
+
+    is_shown_when_inactive = {
+        exists = c:AUS
+        THIS = c:AUS
+    }
+    possible = {
+        #NOT = {
+        #    is_ai = yes
+        #}
+    }
+
+    immediate = {
+    }
+
+    complete = {
+        has_law = law_type:law_monarchy
+        custom_tooltip = {
+            text = austria_bar.tt  
+		    scope:journal_entry ?= {
+			    "scripted_bar_progress(Austria_collapse_meter)" >= 99
+            }
+        }   
+    }
+    scripted_progress_bar = Austria_collapse_meter
+
+    on_complete = {
+        activate_law = law_type:law_austro-hungarian_crown
+        set_variable = hungary_released
+    }
+}
+Austria_collapse_je2 = {
+    title = "Austrio-Hungarian collapse progress"
+    desc = "Keep the progress low to avoid any internal problems"
+    group = je_group_historical_content
+
+    exists = c:AUS
+    THIS = c:AUS
+
+    is_shown_when_inactive = {
+        exists = c:AUS
+        THIS = c:AUS
+    }
+    possible = {
+       # NOT = {
+       #     is_ai = yes
+       # }
+        has_variable = hungary_released
+    }
+
+    immediate = {
+    }
+
+    complete = {
+        has_law = law_type:law_monarchy
+        custom_tooltip = {
+            text = austria_bar.tt  
+		    scope:journal_entry ?= {
+			    "scripted_bar_progress(Austro-Hungarian_collapse_meter)" >= 99
+           }
+        }   
+    }
+    scripted_progress_bar = Austro-Hungarian_collapse_meter
+
+    on_complete = {
+        activate_law = law_type:law_triple_monarchy
+        set_variable = croatia_released
+    }
+}
+Austria_collapse_je3 = {
+    title = "Austrian collapse progress"
+    desc = "Keep the progress low to avoid any internal problems"
+    group = je_group_historical_content
+
+    exists = c:AUS
+    THIS = c:AUS
+
+    is_shown_when_inactive = {
+        exists = c:AUS
+        THIS = c:AUS
+    }
+    possible = {
+        #NOT = {
+        #    is_ai = yes
+        #}
+        has_variable = croatia_released
+    }
+
+    immediate = {
+    }
+
+    complete = {
+        has_law = law_type:law_monarchy
+        custom_tooltip = {
+            text = austria_bar.tt  
+		    scope:journal_entry ?= {
+			    "scripted_bar_progress(Austro-Hungarian_collapse_meter)" >= 99
+           }
+        }   
+    }
+    scripted_progress_bar = Austro-Hungarian_collapse_meter
+
+    on_complete = {
+        activate_law = law_type:law_total_collapse
+    }
+}

@@ -1,0 +1,93 @@
+je_a_british_india_button_a = {
+	name = "a_british_india_1"
+	desc = "a_british_india_desc"
+
+	cooldown = { years = 1 }
+
+	effect = {
+		custom_tooltip = cooldown_1_year_tt
+        c:BIC = {
+            trigger_event = {
+                id = india_british.1
+            }
+        }
+        set_variable = bic_waiting
+        on_monthly_pulse = {
+            effect = {
+                change_variable = {
+                    name = bic_waiting
+                    add = 1
+                }
+            }
+        }
+        if = {
+            num_variable = {
+                variable = bic_waiting
+                value >= 12
+            }
+        }
+        remove_variable = bic_waiting
+	}
+}
+je_a_british_india_button_b = {
+	name = "a_british_india_2"
+	desc = "a_british_india_desc"
+
+	cooldown = { years = 2 }
+
+	effect = {
+		custom_tooltip = cooldown_1_year_tt
+        c:BIC = {
+            trigger_event = {
+                id = india_british.2
+            }
+        }
+        set_variable = bic_waiting
+        on_monthly_pulse = {
+            effect = {
+                change_variable = {
+                    name = bic_waiting
+                    add = 1
+                }
+            }
+        }
+        if = {
+            num_variable = {
+                variable = bic_waiting
+                value >= 12
+            }
+        }
+        remove_variable = bic_waiting
+	}
+}
+je_a_british_india_button_c = {
+	name = "a_british_india_3"
+	desc = "a_british_india_desc"
+
+	cooldown = { years = 3 }
+
+	effect = {
+		custom_tooltip = cooldown_1_year_tt
+        c:BIC = {
+            trigger_event = {
+                id = india_british.3
+            }
+        }
+        set_variable = bic_waiting
+        on_monthly_pulse = {
+            effect = {
+                change_variable = {
+                    name = bic_waiting
+                    add = 1
+                }
+            }
+        }
+        if = {
+            num_variable = {
+                variable = bic_waiting
+                value >= 12
+            }
+        }
+        remove_variable = bic_waiting
+	}
+}

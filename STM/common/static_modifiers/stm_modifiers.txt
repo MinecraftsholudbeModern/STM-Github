@@ -1,0 +1,104 @@
+﻿enforce_religion = {
+icon = gfx/interface/icons/timed_modifier_icons/modifier_cop_negative.dds
+
+		country_allow_conversion_violent_hostility_bool = yes
+		country_allow_conversion_cultural_erasure_bool = yes
+		country_allow_conversion_open_prejudice_bool = yes
+		country_allow_conversion_second_rate_citizen_bool = yes
+		country_allow_conversion_full_acceptance_bool = yes
+		
+		
+		country_acceptance_shared_religious_trait_add = -10
+		country_acceptance_religion_base_add = -10
+		
+		country_non_state_religion_wages_mult = -0.05
+}
+
+
+
+lax_religion = {
+icon = gfx/interface/icons/timed_modifier_icons/modifier_diplomacy_positive.dds
+
+		country_allow_conversion_violent_hostility_bool = yes
+		country_allow_conversion_cultural_erasure_bool = yes
+		country_allow_conversion_open_prejudice_bool = yes
+		country_allow_conversion_second_rate_citizen_bool = no
+		country_allow_conversion_full_acceptance_bool = no
+
+
+}
+
+kulturkampf_ongoing = {
+icon = gfx/interface/icons/timed_modifier_icons/modifier_protestant_negative.dds
+
+	state_radicalism_increases_violent_hostility_mult = 0.10
+	state_radicalism_increases_cultural_erasure_mult = 0.10
+	state_radicalism_increases_open_prejudice_mult = 0.10
+	
+	country_acceptance_shared_religious_trait_add = -5
+	country_acceptance_religion_base_add = -5
+
+
+}
+
+ex_zollverein = {
+icon = gfx/interface/icons/timed_modifier_icons/modifier_diplomacy_positive.dds
+
+	country_trade_route_competitiveness_mult = 0.25
+	state_bureaucracy_population_base_cost_factor_mult = -0.25
+	country_bureaucracy_investment_cost_factor_mult = -0.25
+
+}
+
+provinz_sett = {
+icon = gfx/interface/icons/timed_modifier_icons/modifier_mobilization_negative.dds
+  
+  state_migration_pull_add = 6
+  state_migration_pull_mult = 0.2
+  state_conversion_mult = 1
+  state_polish_standard_of_living_add = -3
+
+}
+
+settlement_commission = {
+icon = gfx/interface/icons/timed_modifier_icons/modifier_mobilization_negative.dds
+
+	state_migration_quota_mult = 0.1
+
+}
+
+napoleonic_wars = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_birth_rate_mult = -0.05
+	state_working_adult_ratio_add = -0.05
+}
+
+malthusianism = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	state_birth_rate_mult = -0.25
+}
+
+russ_trad = {
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
+	state_birth_rate_mult = 0.15
+	state_mortality_mult = 0.05
+}
+
+land_of_opportunities = {
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
+	state_birth_rate_mult = 0.15
+}
+
+ger_baby_boom = {
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
+	state_birth_rate_mult = 0.25
+	state_working_adult_ratio_add = -0.05
+}
+india_british_mortality_1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	state_mortality_mult = 0.05
+}
+india_british_mortality_2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	state_mortality_mult = 0.1
+}

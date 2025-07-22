@@ -1,0 +1,226 @@
+namespace = india_british
+
+india_british.1 = {
+	type = country_event
+    placement = ROOT
+
+    title = india_british.1.t
+    desc = india_british.1.d
+    flavor = india_british.1.f
+
+    event_image = {
+		video = "ep1_transfer_of_authority"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+    duration = 3
+
+	option = {
+		name = india_british.1.a
+        custom_tooltip = {
+            text = india_british_tt
+		    every_scope_pop = {
+                limit = {
+                    OR = {
+                        culture = cu:bengali
+                        culture = cu:bihari
+                        culture = cu:tamil
+                        culture = cu:kannada
+                        culture = cu:malayalam
+                        culture = cu:marathi
+                        culture = cu:bundeli
+                        culture = cu:rajput
+                        culture = cu:gujarati
+                        culture = cu:sindi
+                        culture = cu:pahari
+                        culture = cu:assamese
+                    }
+                }
+                change_pop_culture = {
+                    target = cu:british
+                    value = 0.01
+                }
+            }
+        }
+        every_country = {
+            limit = {
+                has_variable = princely_state
+            }
+            change_relations = {
+                country = c:BIC
+                value = -5
+            }
+        }
+	}
+}
+india_british.2 = {
+	type = country_event
+    placement = ROOT
+
+    title = india_british.2.t
+    desc = india_british.2.d
+    flavor = india_british.2.f
+
+    event_image = {
+		video = "ep1_transfer_of_authority"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+    duration = 3
+
+	option = {
+		name = india_british.2.a
+        custom_tooltip = {
+            text = india_british2_tt
+		    every_scope_pop = {
+                limit = {
+                    OR = {
+                        culture = cu:bengali
+                        culture = cu:bihari
+                        culture = cu:tamil
+                        culture = cu:kannada
+                        culture = cu:malayalam
+                        culture = cu:marathi
+                        culture = cu:bundeli
+                        culture = cu:rajput
+                        culture = cu:gujarati
+                        culture = cu:sindi
+                        culture = cu:pahari
+                        culture = cu:assamese
+                    }
+                }
+                change_pop_culture = {
+                    target = cu:british
+                    value = 0.03
+                }
+            }
+        }
+        every_country = {
+            limit = {
+                has_variable = princely_state
+            }
+            change_relations = {
+                country = c:BIC
+                value = -10
+            }
+        }
+        add_radicals = {
+			value = small_radicals
+			strata = lower
+        }
+        add_modifier = {
+            name = india_british_mortality_1
+        }
+	}
+}
+
+india_british.3 = {
+	type = country_event
+    placement = ROOT
+
+    title = india_british.3.t
+    desc = india_british.3.d
+    flavor = india_british.3.f
+
+    event_image = {
+		video = "ep1_transfer_of_authority"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+    duration = 3
+
+	option = {
+		name = india_british.3.a
+        custom_tooltip = {
+            text = india_british3_tt
+		    every_scope_pop = {
+                limit = {
+                    OR = {
+                        culture = cu:bengali
+                        culture = cu:bihari
+                        culture = cu:tamil
+                        culture = cu:kannada
+                        culture = cu:malayalam
+                        culture = cu:marathi
+                        culture = cu:bundeli
+                        culture = cu:rajput
+                        culture = cu:gujarati
+                        culture = cu:sindi
+                        culture = cu:pahari
+                        culture = cu:assamese
+                    }
+                }
+                change_pop_culture = {
+                    target = cu:british
+                    value = 0.05
+                }
+            }
+        }
+        every_country = {
+            limit = {
+                has_variable = princely_state
+            }
+            change_relations = {
+                country = c:BIC
+                value = -20
+            }
+        }
+        add_radicals = {
+			value = medium_radicals
+			strata = lower
+        }
+        add_modifier = {
+            name = india_british_mortality_2
+        }
+	}
+}
+india_british.4 = {
+	type = country_event
+	hidden = yes
+	immediate = {	
+		random_primary_culture = {
+			save_scope_as = primary_culture
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					state_region = {
+						NOT = { is_homeland = scope:primary_culture }
+					}
+					culture_percent_state = {
+						target = scope:primary_culture
+						value >= 0.15
+					}
+				}
+			}
+			every_scope_state = {
+				limit = {
+					state_region = {
+						NOT = { is_homeland = scope:primary_culture }
+					}
+					culture_percent_state = {
+						target = scope:primary_culture
+						value >= 0.15
+					}
+				}
+				save_scope_as = new_homeland_state
+			}
+			scope:new_homeland_state = {
+				state_region = {
+					add_homeland = scope:primary_culture
+				}
+			}
+			post_notification = new_homeland
+		}
+	}
+}
+   

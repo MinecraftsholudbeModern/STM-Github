@@ -1,0 +1,302 @@
+﻿COUNTRIES = {
+    # Presidential Republics
+    c:ARG ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+    }
+    c:BHU ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:BIC ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:BOL ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+    }
+    c:BRE ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:CHL ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+    }
+    c:CLM ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:CUB ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:DEI ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_frontier_colonization		
+    }
+    c:ECU ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:FRM ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:HAM ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:HBC ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:ION ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:KRA ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:LAN ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:LIB ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:LUB ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:MEX ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+    }
+    c:NBS ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:NSW ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:NVS ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:ONT ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:ORA ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:PEU ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:PHI ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:PNI ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:PRA ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:PRG ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+    }
+    c:QUE ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:SAF ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:SAS ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:SEQ ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+    }
+    c:SIL ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+    }
+    c:TAS ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:TEX ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:TRN ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:UCA ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:URU ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:VNZ ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+    }
+    c:WAS ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    
+    # Parliamentary Republics
+    c:CIR ?= {
+        activate_law = law_type:law_monarchy
+    }
+    c:KAU ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    c:SWI ?= {
+        activate_law = law_type:GovPlus_law_republic
+        activate_law = law_type:law_presidential_republic
+    }
+    
+    # Parliamentary Monarchies
+    c:BEL ?= {
+        activate_law = law_type:law_monarchy
+    }
+    c:FRA ?= {
+        activate_law = law_type:law_monarchy
+    }
+    c:GBR ?= {
+        activate_law = law_type:law_monarchy
+    }
+    c:NET ?= {
+        activate_law = law_type:law_presidential_republic
+        activate_law = law_type:law_no_colonial_affairs	
+    }
+    c:NOR ?= {
+        activate_law = law_type:law_presidential_republic
+    }
+    c:GBR ?= {
+        activate_law = law_type:law_monarchy
+    }
+    
+    # Presidential Monarchies?
+    c:BRZ ?= { # Based on brief reading about the 1824 Constitution; it's quite peculiar
+        activate_law = law_type:law_presidential_republic
+    }
+    
+    # Oligarchies (because they don't play nice, apparently)
+    # Probably because they're getting tripped up by the Presidental Republics section above (and I'm lazy)
+    c:BHU ?= {
+        activate_law = law_type:law_oligarchy
+    }
+    c:CHL ?= {
+        activate_law = law_type:law_oligarchy
+        activate_law = law_type:GovPlus_law_no_voting
+    }
+    c:CIR ?= {
+        activate_law = law_type:law_oligarchy
+    }
+    c:DEI ?= {
+        activate_law = law_type:law_oligarchy
+    }
+    c:DEN ?= {
+        activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_no_colonial_affairs		
+    }
+    c:FIN ?= {
+        activate_law = law_type:law_oligarchy
+    }
+    c:HAN ?= {
+        activate_law = law_type:law_oligarchy
+    }
+    c:MEX ?= {
+        activate_law = law_type:law_oligarchy
+        activate_law = law_type:GovPlus_law_no_voting
+    }
+    c:MKT ?= {
+        activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_traditionalism
+    }
+    c:PAP ?= {
+        activate_law = law_type:law_oligarchy
+    }
+    c:POR ?= {
+        activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_colonial_resettlement		
+    }
+    c:SPA ?= {
+        activate_law = law_type:GovPlus_law_no_voting
+        activate_law = law_type:law_oligarchy
+    }
+    c:SWE ?= {
+        activate_law = law_type:law_oligarchy
+    }
+    c:UNT ?= {
+        activate_law = law_type:law_oligarchy
+    }
+    c:VNZ ?= {
+        activate_law = law_type:law_oligarchy
+    }
+    c:HAI ?= {
+        activate_law = law_type:law_oligarchy
+        #activate_law = law_type:law_presidential_republic
+        activate_law = law_type:GovPlus_law_no_voting
+    }
+    c:ARG ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+        activate_law = law_type:law_oligarchy
+        activate_law = law_type:GovPlus_law_no_voting
+    }
+    c:BOL ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+        activate_law = law_type:law_oligarchy
+        activate_law = law_type:GovPlus_law_no_voting
+    }
+    c:PRG ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+        activate_law = law_type:law_oligarchy
+        activate_law = law_type:GovPlus_law_no_voting
+    }
+    c:SEQ ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+        activate_law = law_type:law_oligarchy
+        activate_law = law_type:GovPlus_law_no_voting
+    }
+    c:SIL ?= {
+        activate_law = law_type:GovPlus_law_republic
+        #activate_law = law_type:law_presidential_republic
+        activate_law = law_type:law_oligarchy
+        activate_law = law_type:GovPlus_law_no_voting
+    }
+	C:BHU = {
+		activate_law = law_type:GovPlus_law_no_voting
+	}
+    c:VNZ = {
+		activate_law = law_type:GovPlus_law_no_voting
+	}    
+}

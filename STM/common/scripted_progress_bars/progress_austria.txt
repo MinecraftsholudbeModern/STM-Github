@@ -1,0 +1,212 @@
+Austria_collapse_meter = {
+    title = "Austrian collapse progress"
+    desc = "Keep the progress low to avoid any internal problems"
+    default_bad = yes
+    
+    monthly_progress = {
+        if = {
+            add = {
+                desc = "austria_progress_bar.1"
+                if = {
+                    limit = {
+                        authority < 100
+                    }
+                        value = 1
+                    } 
+                }
+            add = {
+                desc = "austria_progress_bar.2"
+                if = {
+                    limit = {
+				        ruler = {
+					        popularity <= 0
+				        }
+				    }   
+                    value = 0.5
+                }
+            }
+            add =  {
+                desc = "austria_progress_bar.3"
+                if = {
+                    limit = {
+                        any_country = {
+                            has_variable = is_aus
+                            standard_of_living < 10.5
+                        }
+                    }
+                        value = 0.5
+                    }
+                }
+            add =  {
+                desc = "austria_progress_bar.4"
+                if = {
+                    limit = {
+                       	radical_fraction = {
+				            value >= 0.1
+				            culture = cu:hungarian
+			            } 
+                    }
+                        value = 1
+                    }
+                }
+            add =  {
+                desc = "austria_progress_bar.5"
+                if = {
+                    limit = {
+                       	radical_fraction = {
+				            value >= 0.2
+				            culture = cu:hungarian
+			            } 
+                    }
+                        value = 1.5
+                    }
+                }
+            add =  {
+                desc = "austria_progress_bar.6"
+                if = {
+                    limit = {
+                       	loyalist_fraction = {
+				            value >= 0.1
+				            culture = cu:hungarian
+			            } 
+                    }
+                        value = -2
+                    }
+                }          
+            add = {
+                desc = "austria_progress_bar.7"
+                if = {
+                    limit = {
+                        country_has_voting_franchise = yes
+					}
+                    value = 1
+                }
+            }
+            add = {
+                desc = "austria_progress_bar.8"
+                if = {
+                    limit = {
+                        literacy_rate >= 0.5
+				    }
+                    value = 1
+                } 
+            }
+            add = {
+                desc = "austria_progress_bar.10"
+                if = {
+                    limit = {
+                        has_law = law_type:law_cultural_exclusion
+				    }
+                    value = -1
+                } 
+            }
+        }
+    }
+    display = {
+        text = "Current Progress: {current_value} out of {goal_value}."
+    }
+    start_value = 1
+	min_value = 0
+	max_value = 100
+}
+Austro-Hungarian_collapse_meter = {
+    title = "Austro-Hungarian collapse progress"
+    desc = "Keep the progress low to avoid any internal problems"
+    default_bad = yes
+    
+    monthly_progress = {
+        if = {
+            add = {
+                desc = "austria_progress_bar.1"
+                if = {
+                    limit = {
+                        authority < 100
+                    }
+                        value = 1
+                    } 
+                }
+            add = {
+                desc = "austria_progress_bar.9"
+                if = {
+                    limit = {
+				        ruler = {
+					        popularity <= 0
+				        }
+				    }   
+                    value = 0.5
+                }
+            }
+            add =  {
+                desc = "austria_progress_bar.3"
+                if = {
+                    limit = {
+                        cu:hungarian = {
+                            standard_of_living < 10.5
+                        }   
+                    }
+                        value = 0.5
+                    }
+                }
+            add =  {
+                desc = "austria_progress_bar.4"
+                if = {
+                    limit = {
+                       	radical_fraction = {
+				            value >= 0.1
+				            culture = cu:hungarian
+			            } 
+                    }
+                        value = 1
+                    }
+                }
+            add =  {
+                desc = "austria_progress_bar.5"
+                if = {
+                    limit = {
+                       	radical_fraction = {
+				            value >= 0.2
+				            culture = cu:hungarian
+			            } 
+                    }
+                        value = 1.5
+                    }
+                }
+            add =  {
+                desc = "austria_progress_bar.6"
+                if = {
+                    limit = {
+                       	loyalist_fraction = {
+				            value >= 0.1
+				            culture = cu:hungarian
+			            } 
+                    }
+                        value = -2
+                    }
+                }          
+            add = {
+                desc = "austria_progress_bar.7"
+                if = {
+                    limit = {
+                        country_has_voting_franchise = yes
+					}
+                    value = 1
+                }
+            }
+            add = {
+                desc = "austria_progress_bar.8"
+                if = {
+                    limit = {
+                        literacy_rate >= 0.5
+				    }
+                    value = 1
+                } 
+            }
+        }
+    }
+    display = {
+        text = "Current Progress: {current_value} out of {goal_value}."
+    }
+    start_value = 1
+	min_value = 0
+	max_value = 100
+}

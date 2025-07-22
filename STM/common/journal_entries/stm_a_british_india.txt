@@ -1,0 +1,41 @@
+a_british_india = {
+    title = "A British India"
+    desc = "We have conquered, exploited, and expanded our influence further than ever before, why won't we make this vast land ours, only britishs everywhere"
+    group = je_group_historical_content
+
+    is_shown_when_inactive = {
+  	    exists = c:GBR
+		c:GBR = ROOT
+    }
+    #possible = {
+    #    NOT = {
+    #        THIS = {
+    #            is_ai = yes
+    #        }
+    #    }
+    #}
+
+    immediate = {
+    }
+
+    complete = {
+        OR = {
+            has_law = law_type:law_ethnostate
+            has_law = law_type:law_national_supremacy
+            has_law = law_type:law_racial_segregation
+        }
+        
+        custom_tooltip = {
+            text = british_progress.tt  
+		    scope:journal_entry ?= {
+			    "scripted_bar_progress(british_progress)" >= 99
+            }
+        }   
+    }
+    on_complete = {
+    }
+
+    scripted_button = je_a_british_india_a
+    scripted_button = je_a_british_india_b
+    scripted_button = je_a_british_india_c
+}

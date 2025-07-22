@@ -13,9 +13,9 @@ combat_unit_type_frigate = {
 
     upkeep_modifier = {
         goods_input_manowars_add = 1
-		goods_input_coal_add = 1
-		goods_input_groceries_add = 2
-		goods_input_liquor_add = 2
+		goods_input_coal_add = 0.5
+		goods_input_groceries_add = 1
+		goods_input_liquor_add = 0.25
     }
 
     battle_modifier = {
@@ -41,12 +41,12 @@ combat_unit_type_monitor = {
 	max_manpower = 1500
 
     upkeep_modifier = {
-        goods_input_ironclads_add = 1
-        goods_input_artillery_add = 2.5
-        goods_input_ammunition_add = 5
-		goods_input_coal_add = 5
-		goods_input_groceries_add = 5
-		goods_input_liquor_add = 5
+        goods_input_ironclads_add = 2
+        goods_input_artillery_add = 2
+        goods_input_ammunition_add = 3
+		goods_input_coal_add = 2
+		goods_input_groceries_add = 2
+		goods_input_liquor_add = 2
     }
 
     battle_modifier = {
