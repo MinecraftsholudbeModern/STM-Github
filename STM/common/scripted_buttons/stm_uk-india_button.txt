@@ -1,4 +1,4 @@
-je_a_british_india_button_a = {
+je_a_british_india_a = {
 	name = "a_british_india_1"
 	desc = "a_british_india_desc"
 
@@ -29,7 +29,7 @@ je_a_british_india_button_a = {
         remove_variable = bic_waiting
 	}
 }
-je_a_british_india_button_b = {
+je_a_british_india_b = {
 	name = "a_british_india_2"
 	desc = "a_british_india_desc"
 
@@ -60,7 +60,7 @@ je_a_british_india_button_b = {
         remove_variable = bic_waiting
 	}
 }
-je_a_british_india_button_c = {
+je_a_british_india_c = {
 	name = "a_british_india_3"
 	desc = "a_british_india_desc"
 
