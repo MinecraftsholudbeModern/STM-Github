@@ -66,8 +66,8 @@
 	}
 
 	c:BIC = {
-		activate_law = law_type:law_freedom_of_belief
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_racial_segregation
 	}
 
 	c:FRA = {
