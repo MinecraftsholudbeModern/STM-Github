@@ -4,6 +4,8 @@ je_a_british_india_a = {
 
 	cooldown = { years = 1 }
 
+    #possible = { not = { has_variable = bic_waiting } }
+
 	effect = {
 		custom_tooltip = cooldown_1_year_tt
         c:BIC = {

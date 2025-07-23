@@ -116,6 +116,7 @@ india_british.2 = {
         }
         add_modifier = {
             name = india_british_mortality_1
+            days = short_modifier_time
         }
 	}
 }
@@ -180,6 +181,7 @@ india_british.3 = {
         }
         add_modifier = {
             name = india_british_mortality_2
+            days = short_modifier_time
         }
 	}
 }
@@ -198,7 +200,7 @@ india_british.4 = {
 					}
 					culture_percent_state = {
 						target = scope:primary_culture
-						value >= 0.15
+						value >= 0.2
 					}
 				}
 			}
@@ -209,7 +211,7 @@ india_british.4 = {
 					}
 					culture_percent_state = {
 						target = scope:primary_culture
-						value >= 0.15
+						value >= 0.2
 					}
 				}
 				save_scope_as = new_homeland_state
