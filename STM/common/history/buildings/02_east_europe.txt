@@ -107,7 +107,7 @@
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=4
+						levels=1
 						region="STATE_SILESIA"
 					}
 				}
@@ -126,7 +126,7 @@
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=14
+						levels=6
 						region="STATE_SILESIA"
 					}
 				}
@@ -149,7 +149,7 @@
 				add_ownership={
 					country={
 						country="c:PRU"
-						levels=6
+						levels=2
 					}
 					building={
 						type="building_arms_industry"
@@ -222,7 +222,7 @@
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=2
+						levels=3
 						region="STATE_SILESIA"
 					}
 				}
@@ -478,7 +478,7 @@
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=5
+						levels=3
 						region="STATE_POSEN"
 					}
 				}
@@ -491,7 +491,7 @@
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=10
+						levels=1
 						region="STATE_POSEN"
 					}
 				}

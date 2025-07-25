@@ -1,0 +1,44 @@
+﻿l_english: #Austrian content
+
+ austria_progress_bar.1: "Less than 100 authority"
+ austria_progress_bar.2: "Ruler isnt popular amongst Hungarians"
+ austria_progress_bar.3: "Standard Of Living below 10.5"
+ austria_progress_bar.4: "More than 10% Hungarian radicals"
+ austria_progress_bar.5: "More than 20% Hungarian radicals"
+ austria_progress_bar.6: "More than 10% Hungarian loyalists"
+ austria_progress_bar.7: "Has Voting Rights"
+ austria_progress_bar.8: "Literacy rate is above 50%"
+ austria_progress_bar.9: "Ruler isnt popular amongst Minorities"
+ austria_progress_bar.10: "Has Racial Segregation or Cultural Exclusion Law"
+
+ Austria_collapse_je: "Austrian Collapse"
+ Austria_collapse_je2: "Further Down"
+ Austria_collapse_je3: "Imminent Revolt incoming"
+ Austria_collapse_meter_reason: "If the bar reaches 100 Progress, Hungary will be granted more autonomy"
+ Austro-Hungarian_collapse_meter_reason: "If the bar reaches 100 Progress, minorities will be granted more autonomy"
+ austria_bar.tt: "The Bar Has Been Completed"
+
+ law_austrian_crown:0 "Austrian Crown"
+ law_austro-hungarian_crown:0 "Austro-Hungarian Crown"
+ law_triple_monarchy:0 "Triple Monarchy"
+ law_total_collapse:0 "Total Collapse"
+ lawgroup_crowns:0 "Crowns"
+
+ austria_law.1.t:0 "Concessions"
+ austria_law.1.d:0 "We have been forced to accept a greater degree of autonomy for Hungarians, you were not able to handle this problem, so you will now suffer the consequences"
+ austria_law.1.f:0 "Sir, Sir ! The Hungarians are revolting and have declared to be independent, what is your order ? We will make concessions, but they won't stand a chance fighting us... Allow them greater autonomy, but only that OK ?"
+ austria_hungary.1.a:0 "I'll get you, it doesn't matter how long it takes"
+ austria_hungary.1.b:0 "I will kill you all until i stop hearing this language once and for all"
+ 
+ austria_law.2.t:0 "Greater Concessions"
+ austria_law.2.d:0 "Following the Hungarian victory, the Croatians have now declared to be the official Third crown !"
+ austria_law.2.f:0 "Sir, Si- Stop, it may be too late to repair our fractured Empire, but we can still try to do something about it, and when i say "we" i mean "you", the player."
+ austria_hungary.2.a:0 "Who's next, the Bohemians ? Oh wait..."
+
+ austria_law.3.t:0 "The Failure"
+ austria_law.3.d:0 "This system has proven it's weaknesses, it might be too late"
+ austria_law.3.f:0 "The Bohemians revolted against us, so i may for once ask: Sir, is this the end ?"
+ austria_hungary.3.a:0 "It might be..."
+
+ hungarian_liberals:0 "Hungarian Liberals"
+ 

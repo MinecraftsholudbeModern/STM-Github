@@ -3,28 +3,24 @@
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
-		law_theocracy = neutral
-		law_republic = neutral
+		law_theocracy = approve
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = neutral
 		law_council_republic = strongly_disapprove
-		law_anarchy = strongly_disapprove
 	}
 
 	lawgroup_distribution_of_power = {
-		law_autocracy = approve
-        law_oligarchy = strongly_approve
-        law_single_party_state = neutral
-        law_presidential_republic = neutral
-        law_parliamentary_republic = neutral
-        law_council_system = strongly_disapprove
+		law_single_party_state = neutral
+		law_landed_voting = strongly_approve
+		law_autocracy = strongly_approve
+		law_oligarchy = approve
+		law_wealth_voting = neutral
+		law_census_voting = disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_anarchy = strongly_disapprove
+		law_technocracy = strongly_disapprove
 	}
-	
-	lawgroup_voting_franchise = {
-        law_no_voting = strongly_approve
-        law_landed_voting = approve
-        law_wealth_voting = neutral
-        law_census_voting = disapprove
-        law_universal_suffrage = strongly_disapprove
-    }
 
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = approve
@@ -41,13 +37,13 @@
 
 	lawgroup_economic_system = {
 		law_traditionalism = strongly_approve
-		law_agrarianism = approve
+		law_agrarianism = neutral
 		law_interventionism = neutral
 		law_industry_banned = disapprove
 		law_laissez_faire = disapprove
 		law_cooperative_ownership = strongly_disapprove
 		law_command_economy = strongly_disapprove
-		law_extraction_economy = disapprove
+		law_extraction_economy = approve
 	}
 
 	lawgroup_trade_policy = {
@@ -98,6 +94,12 @@ ideology_laissez_faire = {
 		law_homesteading = neutral
 		law_commercialized_agriculture = approve
 	}
+	lawgroup_minimum_wage = {
+		law_no_minimum_wage = approve
+		law_low_minimum_wage = neutral
+		law_moderate_minimum_wage = disapprove
+		law_high_minimum_wage = strongly_disapprove
+	}
 }
 
 ideology_individualist = {
@@ -108,19 +110,6 @@ ideology_individualist = {
 		law_no_social_security = neutral
 		law_wage_subsidies = disapprove
 		law_old_age_pension = strongly_disapprove
-	}
-	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = approve
-		law_12_hour_limit = neutral
-		law_8_hour_limit = disapprove
-	}
-	
-	lawgroup_minimum_wage = {
-		law_no_minimum_wage = approve
-		law_low_minimum_wage = neutral
-		law_moderate_minimum_wage = disapprove
-		law_high_minimum_wage = strongly_disapprove
 	}
 
 	lawgroup_health_system = {
@@ -141,6 +130,12 @@ ideology_individualist = {
 		law_no_migration_controls = approve
 		law_migration_controls = disapprove
 		law_closed_borders = strongly_disapprove
+	}
+
+	lawgroup_work_hours = {
+		law_no_work_hour_limits = approve
+		law_12_hour_limit = neutral
+		law_8_hour_limit = disapprove
 	}
 }
 
@@ -176,19 +171,6 @@ ideology_stratocratic = {
 		law_wage_subsidies = disapprove
 		law_old_age_pension = disapprove
 	}
-	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = approve
-		law_12_hour_limit = neutral
-		law_8_hour_limit = disapprove
-	}
-	
-	lawgroup_minimum_wage = {
-		law_no_minimum_wage = approve
-		law_low_minimum_wage = neutral
-		law_moderate_minimum_wage = disapprove
-		law_high_minimum_wage = strongly_disapprove
-	}
 
 	lawgroup_caste_hegemony = {
 		law_hindu_caste_enforced = strongly_approve
@@ -223,19 +205,6 @@ ideology_oligarchic = {
 		law_wage_subsidies = disapprove
 		law_old_age_pension = disapprove
 	}
-	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = approve
-		law_12_hour_limit = neutral
-		law_8_hour_limit = disapprove
-	}
-	
-	lawgroup_minimum_wage = {
-		law_no_minimum_wage = approve
-		law_low_minimum_wage = neutral
-		law_moderate_minimum_wage = disapprove
-		law_high_minimum_wage = strongly_disapprove
-	}
 
 	lawgroup_education_system = {
 		law_religious_schools = disapprove
@@ -258,8 +227,8 @@ ideology_pious = {
 	lawgroup_health_system = {
 		law_charitable_health_system = approve
 		law_public_health_insurance = neutral
-		law_no_health_system = neutral
-		law_private_health_insurance = neutral
+		law_no_health_system = disapprove
+		law_private_health_insurance = disapprove
 	}
 
 	lawgroup_education_system = {
@@ -370,10 +339,11 @@ ideology_moralist = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
-		law_theocracy = neutral
-		law_republic = neutral
+		law_theocracy = approve
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = neutral
 		law_council_republic = strongly_disapprove
-		law_anarchy = strongly_disapprove
 	}
 
 	lawgroup_church_and_state = {
@@ -406,6 +376,11 @@ ideology_meritocratic = {
 		law_hindu_caste_codified = disapprove
 		law_hindu_caste_not_enforced = neutral
 		law_affirmative_action = neutral
+	}
+	lawgroup_work_hours = {
+		law_no_work_hour_limits = neutral
+		law_12_hour_limit = approve
+		law_8_hour_limit = neutral
 	}
 }
 
@@ -509,6 +484,12 @@ ideology_liberal = {
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = neutral
 	}
+	lawgroup_minimum_wage = {
+		law_no_minimum_wage = disapprove
+		law_low_minimum_wage = neutral
+		law_moderate_minimum_wage = approve
+		law_high_minimum_wage = neutral
+	}
 }
 
 ideology_anti_clerical = {
@@ -546,29 +527,25 @@ ideology_republican = {
 	icon = "gfx/interface/icons/ideology_icons/republican.dds"
 
 	lawgroup_governance_principles = {
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = approve
+		law_corporate_state = neutral
 		law_monarchy = neutral
 		law_theocracy = neutral
-		law_republic = strongly_approve
-		law_council_republic = strongly_disapprove
-		law_anarchy = strongly_disapprove
+		law_council_republic = disapprove
 	}
 
 	lawgroup_distribution_of_power = {
-		law_autocracy = strongly_disapprove
-        law_oligarchy = disapprove
-        law_single_party_state = neutral
-        law_presidential_republic = strongly_approve
-        law_parliamentary_republic = strongly_approve
-        law_council_system = strongly_disapprove
+		law_universal_suffrage = strongly_approve
+		law_census_voting = strongly_approve
+		law_wealth_voting = approve
+		law_landed_voting = neutral
+		law_single_party_state = neutral
+		law_technocracy = neutral
+		law_oligarchy = disapprove
+		law_autocracy = disapprove
+		law_anarchy = strongly_disapprove
 	}
-	
-	lawgroup_voting_franchise = {
-        law_no_voting = strongly_disapprove
-        law_landed_voting = disapprove
-        law_wealth_voting = neutral
-        law_census_voting = approve
-        law_universal_suffrage = approve
-    }
 }
 
 ideology_proletarian = {
@@ -580,6 +557,12 @@ ideology_proletarian = {
 		law_proportional_taxation = neutral
 		law_consumption_based_taxation = neutral
 		law_graduated_taxation = approve
+	}
+	lawgroup_minimum_wage = {
+		law_no_minimum_wage = disapprove
+		law_low_minimum_wage = neutral
+		law_moderate_minimum_wage = approve
+		law_high_minimum_wage = strongly_approve
 	}
 
 	lawgroup_economic_system = {
@@ -599,25 +582,17 @@ ideology_proletarian = {
 		law_poor_laws = neutral
 		law_no_social_security = disapprove
 	}
-	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = disapprove
-		law_12_hour_limit = neutral
-		law_8_hour_limit = approve
-	}
-	
-	lawgroup_minimum_wage = {
-		law_no_minimum_wage = disapprove
-		law_low_minimum_wage = neutral
-		law_moderate_minimum_wage = approve
-		law_high_minimum_wage = strongly_approve
-	}
 
 	lawgroup_health_system = {
 		law_private_health_insurance = disapprove
 		law_no_health_system = disapprove
 		law_charitable_health_system = neutral
 		law_public_health_insurance = approve
+	}
+	lawgroup_work_hours = {
+		law_no_work_hour_limits = disapprove
+		law_12_hour_limit = approve
+		law_8_hour_limit = strongly_approve
 	}
 }
 
@@ -647,14 +622,17 @@ ideology_egalitarian = {
 ideology_populist = {
 	icon = "gfx/interface/icons/ideology_icons/populist.dds"
 
-	lawgroup_voting_franchise = {
-        law_no_voting = strongly_disapprove
-        law_landed_voting = disapprove
-        law_wealth_voting = neutral
-        law_census_voting = approve
-        law_universal_suffrage = strongly_approve
-    }
-	
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = strongly_approve
+		law_anarchy = approve
+		law_census_voting = neutral
+		law_single_party_state = neutral
+		law_wealth_voting = disapprove
+		law_landed_voting = disapprove
+		law_technocracy = disapprove
+		law_oligarchy = strongly_disapprove
+		law_autocracy = strongly_disapprove
+	}
 
 	lawgroup_migration = {
 		law_migration_controls = approve
@@ -681,11 +659,12 @@ ideology_socialist = {
 	icon = "gfx/interface/icons/ideology_icons/socialist.dds"
 
 	lawgroup_governance_principles = {
-		law_monarchy = strongly_disapprove
+		law_council_republic = approve
+		law_parliamentary_republic = neutral
+		law_corporate_state = strongly_disapprove
+		law_presidential_republic = neutral
 		law_theocracy = strongly_disapprove
-		law_republic = neutral
-		law_council_republic = strongly_approve
-		law_anarchy = approve
+		law_monarchy = strongly_disapprove
 	}
 
 	lawgroup_economic_system = {
@@ -726,19 +705,6 @@ ideology_socialist = {
 		law_poor_laws = neutral
 		law_no_social_security = disapprove
 	}
-	
-	lawgroup_work_hours = {
-		law_no_work_hour_limits = disapprove
-		law_12_hour_limit = neutral
-		law_8_hour_limit = approve
-	}
-	
-	lawgroup_minimum_wage = {
-		law_no_minimum_wage = disapprove
-		law_low_minimum_wage = neutral
-		law_moderate_minimum_wage = approve
-		law_high_minimum_wage = strongly_approve
-	}
 }
 
 ideology_reactionary = {
@@ -747,9 +713,10 @@ ideology_reactionary = {
 	lawgroup_governance_principles = {
 		law_monarchy = approve
 		law_theocracy = approve
-		law_republic = neutral
-		law_council_republic = strongly_disapprove
-		law_anarchy = strongly_disapprove
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = neutral
+		law_council_republic = disapprove
 	}
 
 	lawgroup_citizenship = {
@@ -771,28 +738,24 @@ ideology_plutocratic = {
 	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds"
 
 	lawgroup_distribution_of_power = {
+		law_oligarchy = approve
+		law_wealth_voting = approve
+		law_technocracy = neutral
+		law_landed_voting = neutral
+		law_census_voting = neutral
+		law_single_party_state = neutral
 		law_autocracy = disapprove
-        law_oligarchy = strongly_approve
-        law_single_party_state = neutral
-        law_presidential_republic = approve
-        law_parliamentary_republic = approve
-        law_council_system = strongly_disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_anarchy = strongly_disapprove
 	}
-	
-	lawgroup_voting_franchise = {
-        law_no_voting = strongly_disapprove
-        law_landed_voting = approve
-        law_wealth_voting = strongly_approve
-        law_census_voting = approve
-        law_universal_suffrage = strongly_disapprove
-    }
 
 	lawgroup_governance_principles = {
 		law_monarchy = neutral
-		law_theocracy = neutral
-		law_republic = neutral
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporate_state = disapprove
+		law_theocracy = disapprove
 		law_council_republic = strongly_disapprove
-		law_anarchy = strongly_disapprove 
 	}
 
 	lawgroup_taxation = {
@@ -888,17 +851,9 @@ ideology_corporatist = {
 		law_wage_subsidies = approve
 		law_old_age_pension = neutral
 	}
-	
 	lawgroup_work_hours = {
-		law_no_work_hour_limits = approve
-		law_12_hour_limit = neutral
-		law_8_hour_limit = disapprove
-	}
-	
-	lawgroup_minimum_wage = {
-		law_no_minimum_wage = disapprove
-		law_low_minimum_wage = neutral
-		law_moderate_minimum_wage = disapprove
-		law_high_minimum_wage = disapprove
+		law_no_work_hour_limits = disapprove
+		law_12_hour_limit = approve
+		law_8_hour_limit = neutral
 	}
 }

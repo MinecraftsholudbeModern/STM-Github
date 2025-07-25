@@ -111,10 +111,10 @@
 		}
 	}
 	#american cotton
-	s:STATE_LANCASHIRE={
-		region_state:CHI={
+	s:STATE_HOME_COUNTIES={
+		region_state:GBR={
 			sg:fabric = {
-				add_imports = 250
+				add_imports = 500
 			}
 		}
 	}

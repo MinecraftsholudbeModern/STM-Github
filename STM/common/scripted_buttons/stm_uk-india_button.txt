@@ -2,7 +2,7 @@ je_a_british_india_a = {
 	name = "a_british_india_1"
 	desc = "a_british_india_desc"
 
-	cooldown = { years = 1 }
+	cooldown = { years = 3 }
 
     #possible = { not = { has_variable = bic_waiting } }
 
@@ -35,7 +35,7 @@ je_a_british_india_b = {
 	name = "a_british_india_2"
 	desc = "a_british_india_desc"
 
-	cooldown = { years = 2 }
+	cooldown = { years = 4 }
 
 	effect = {
 		custom_tooltip = cooldown_1_year_tt
@@ -66,7 +66,7 @@ je_a_british_india_c = {
 	name = "a_british_india_3"
 	desc = "a_british_india_desc"
 
-	cooldown = { years = 3 }
+	cooldown = { years = 5 }
 
 	effect = {
 		custom_tooltip = cooldown_1_year_tt

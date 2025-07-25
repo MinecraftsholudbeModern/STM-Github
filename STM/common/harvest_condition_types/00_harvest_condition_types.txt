@@ -594,8 +594,8 @@ torrential_rains = {
 		building_group_bg_extraction_throughput_add = -0.03
 
 		#Infra
-		state_infrastructure_from_population_mult = -1.0 
-		state_infrastructure_add = -50
+		state_infrastructure_from_population_mult = -0.1
+		state_infrastructure_add = -5
 	}
 
 	intensity = {

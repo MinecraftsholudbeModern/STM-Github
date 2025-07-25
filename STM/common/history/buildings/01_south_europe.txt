@@ -1490,7 +1490,7 @@ BUILDINGS={
 					building={
 						type="building_glassworks"
 						country="c:AUS"
-						levels=3
+						levels=2
 						region="STATE_VENETIA"
 					}
 					building={
@@ -1509,7 +1509,7 @@ BUILDINGS={
 					building={
 						type="building_textile_mills"
 						country="c:AUS"
-						levels=4
+						levels=1
 						region="STATE_VENETIA"
 					}
 					building={
@@ -2030,7 +2030,7 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:SPA"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -2041,24 +2041,11 @@ BUILDINGS={
 				add_ownership={
 					country={
 						country="c:SPA"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
-			}						
-			create_building={
-				building="building_tooling_workshops"
-				add_ownership={
-					building={
-						type="building_tooling_workshops"
-						country="c:SPA"
-						levels=2
-						region="STATE_NAVARRA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_iron_mine"

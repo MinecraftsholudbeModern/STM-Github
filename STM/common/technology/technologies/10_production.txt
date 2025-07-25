@@ -1,5 +1,23 @@
 ﻿### ERA 1
 
+culture_nationalism = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	category = production
+	can_research = no
+	
+	modifier = {
+	}
+
+	unlocking_technologies = {	
+		sericulture
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
 sericulture = {
 	# Unlocks Mulberry Groves PM on Rice Farms
 	era = era_1

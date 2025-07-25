@@ -733,7 +733,7 @@
 					building={
 						type="building_financial_district"
 						country="c:RUS"
-						levels=10
+						levels=3
 						region="STATE_MOSCOW"
 					}
 				}
@@ -780,7 +780,7 @@
 					building={
 						type="building_financial_district"
 						country="c:RUS"
-						levels=8
+						levels=4
 						region="STATE_INGRIA"
 					}
 				}
@@ -797,7 +797,7 @@
 					building={
 						type="building_financial_district"
 						country="c:RUS"
-						levels=6
+						levels=2
 						region="STATE_INGRIA"
 					}
 				}
@@ -969,7 +969,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:RUS"
-						levels=8
+						levels=1
 						region="STATE_ORYOL"
 					}
 					building={
@@ -1041,7 +1041,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:RUS"
-						levels=6
+						levels=2
 						region="STATE_MOGILEV"
 					}
 					building={
@@ -1118,7 +1118,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:RUS"
-						levels=4
+						levels=2
 						region="STATE_NOVGOROD"
 					}
 					building={
@@ -1248,7 +1248,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:RUS"
-						levels=7
+						levels=4
 						region="STATE_TVER"
 					}
 					building={
@@ -1588,7 +1588,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:RUS"
-						levels=4
+						levels=2
 						region="STATE_KAZAN"
 					}
 					building={

@@ -1473,7 +1473,7 @@
 					building={
 						type="building_financial_district"
 						country="c:USA"
-						levels=4
+						levels=2
 						region="STATE_PENNSYLVANIA"
 					}
 				}
@@ -1485,7 +1485,7 @@
 				add_ownership={
 					country={
 						country="c:USA"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
@@ -1497,7 +1497,7 @@
 					building={
 						type="building_textile_mills"
 						country="c:USA"
-						levels=8
+						levels=3
 						region="STATE_PENNSYLVANIA"
 					}
 				}
@@ -1510,29 +1510,18 @@
 					building={
 						type="building_furniture_manufacturies"
 						country="c:USA"
-						levels=6
+						levels=1
 						region="STATE_PENNSYLVANIA"
 					}
 					building={
 						type="building_financial_district"
 						country="c:USA"
-						levels=2
+						levels=1
 						region="STATE_PENNSYLVANIA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_lathe"  "pm_automation_disabled" "pm_luxury_furniture" }
-			}
-			create_building={
-				building="building_munition_plants"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_percussion_caps" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_glassworks"
@@ -1553,7 +1542,7 @@
 					building={
 						type="building_financial_district"
 						country="c:USA"
-						levels=4
+						levels=3
 						region="STATE_PENNSYLVANIA"
 					}
 				}
@@ -1585,7 +1574,7 @@
 					building={
 						type="building_tooling_workshops"
 						country="c:USA"
-						levels=4
+						levels=2
 						region="STATE_PENNSYLVANIA"
 					}
 				}
@@ -1598,7 +1587,7 @@
 					building={
 						type="building_financial_district"
 						country="c:USA"
-						levels=2
+						levels=3
 						region="STATE_PENNSYLVANIA"
 					}
 				}
@@ -1643,7 +1632,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:USA"
-						levels=2
+						levels=5
 						region="STATE_PENNSYLVANIA"
 					}
 					building={
@@ -1655,31 +1644,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
-			}
-			create_building={
-				building="building_explosives_factory"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=1
-						region="STATE_PENNSYLVANIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_leblanc_process"  }
-			}
-			create_building={
-				building="building_motor_industry"
-				add_ownership={
-					company={
-						type=company_william_cramp
-						country="c:USA"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_steam_engines" "pm_automobiles_disabled" "pm_automation_disabled" }
 			}
 		}
 	}

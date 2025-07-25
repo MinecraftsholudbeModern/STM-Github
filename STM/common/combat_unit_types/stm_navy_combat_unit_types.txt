@@ -14,7 +14,7 @@ combat_unit_type_frigate = {
     upkeep_modifier = {
         goods_input_manowars_add = 1
 		goods_input_coal_add = 0.5
-		goods_input_groceries_add = 1
+		goods_input_groceries_add = 0.5
 		goods_input_liquor_add = 0.25
     }
 
@@ -42,11 +42,11 @@ combat_unit_type_monitor = {
 
     upkeep_modifier = {
         goods_input_ironclads_add = 2
-        goods_input_artillery_add = 2
-        goods_input_ammunition_add = 3
-		goods_input_coal_add = 2
-		goods_input_groceries_add = 2
-		goods_input_liquor_add = 2
+        goods_input_artillery_add = 1
+        goods_input_ammunition_add = 2
+		goods_input_coal_add = 1
+		goods_input_groceries_add = 0.75
+		goods_input_liquor_add = 0.25
     }
 
     battle_modifier = {
@@ -183,10 +183,10 @@ combat_unit_type_man_o_war = {
 	max_manpower = 3000
 
     upkeep_modifier = {
-        goods_input_manowars_add = 3
-		goods_input_coal_add = 2
-		goods_input_groceries_add = 5
-		goods_input_liquor_add = 5
+        goods_input_manowars_add = 2
+		goods_input_coal_add = 0.5
+		goods_input_groceries_add = 1
+		goods_input_liquor_add = 0.5
     }
 
     battle_modifier = {
@@ -214,11 +214,11 @@ combat_unit_type_ironclad = {
 
     upkeep_modifier = {
         goods_input_ironclads_add = 3
-        goods_input_artillery_add = 6
-        goods_input_ammunition_add = 12
-		goods_input_coal_add = 15
-		goods_input_groceries_add = 5
-		goods_input_liquor_add = 5
+        goods_input_artillery_add = 4
+        goods_input_ammunition_add = 2
+		goods_input_coal_add = 2
+		goods_input_groceries_add = 1
+		goods_input_liquor_add = 0.5
     }
 
     battle_modifier = {

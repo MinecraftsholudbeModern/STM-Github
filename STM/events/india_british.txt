@@ -49,10 +49,6 @@ india_british.1 = {
             limit = {
                 has_variable = princely_state
             }
-            change_relations = {
-                country = c:BIC
-                value = -5
-            }
         }
 	}
 }
@@ -107,7 +103,7 @@ india_british.2 = {
             }
             change_relations = {
                 country = c:BIC
-                value = -10
+                value = -5
             }
         }
         add_radicals = {
@@ -172,7 +168,7 @@ india_british.3 = {
             }
             change_relations = {
                 country = c:BIC
-                value = -20
+                value = -10
             }
         }
         add_radicals = {

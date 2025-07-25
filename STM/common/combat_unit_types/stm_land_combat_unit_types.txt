@@ -73,13 +73,13 @@ combat_unit_type_irregular_infantry = {
 
 combat_unit_type_line_infantry = {
     group = combat_unit_group_infantry
-	max_manpower = 1200
+	max_manpower = 1050
 
     conscript_peasant_levies = yes
 
     upkeep_modifier = {
         goods_input_small_arms_add = 1
-        goods_input_sulfur_add = 0.5
+        goods_input_sulfur_add = 0.25
     }
 
     battle_modifier = {
@@ -133,13 +133,12 @@ combat_unit_type_line_infantry = {
 
 combat_unit_type_skirmish_infantry = {
     group = combat_unit_group_infantry
-	max_manpower = 1400
-
+	max_manpower = 1100
     conscript_peasant_levies = yes
 
     upkeep_modifier = {
         goods_input_small_arms_add = 2
-        goods_input_ammunition_add = 2
+        goods_input_ammunition_add = 1
     }
 
     battle_modifier = {
@@ -192,7 +191,7 @@ combat_unit_type_skirmish_infantry = {
 
 combat_unit_type_trench_infantry = {
     group = combat_unit_group_infantry
-	max_manpower = 1600
+	max_manpower = 1150
 
     conscript_peasant_levies = yes
 
@@ -250,7 +249,7 @@ combat_unit_type_trench_infantry = {
 
 combat_unit_type_squad_infantry = {
     group = combat_unit_group_infantry
-	max_manpower = 2000
+	max_manpower = 1200
 
     conscript_peasant_levies = yes
 
@@ -308,7 +307,7 @@ combat_unit_type_squad_infantry = {
 
 combat_unit_type_mechanized_infantry = {
     group = combat_unit_group_infantry
-	max_manpower = 2000
+	max_manpower = 1250
 
     upkeep_modifier = {
         goods_input_small_arms_add = 5
@@ -365,7 +364,7 @@ combat_unit_type_mechanized_infantry = {
 
 combat_unit_type_cannon_artillery = {
     group = combat_unit_group_artillery
-	max_manpower = 1200
+	max_manpower = 1050
 
     upkeep_modifier = {
         goods_input_artillery_add = 1
@@ -429,11 +428,10 @@ combat_unit_type_cannon_artillery = {
 
 combat_unit_type_mobile_artillery = {
     group = combat_unit_group_artillery
-	max_manpower = 1400
+	max_manpower = 1100
 
     upkeep_modifier = {
         goods_input_artillery_add = 3
-        goods_input_ammunition_add = 3
     }
 
     battle_modifier = {
@@ -492,11 +490,10 @@ combat_unit_type_mobile_artillery = {
 
 combat_unit_type_shrapnel_artillery = {
     group = combat_unit_group_artillery
-	max_manpower = 1600
-
+	max_manpower = 1150
     upkeep_modifier = {
         goods_input_artillery_add = 5
-        goods_input_ammunition_add = 5
+        goods_input_ammunition_add = 3
     }
 
     battle_modifier = {
@@ -554,7 +551,7 @@ combat_unit_type_shrapnel_artillery = {
 
 combat_unit_type_siege_artillery = {
     group = combat_unit_group_artillery
-	max_manpower = 2000
+	max_manpower = 1200
 
     upkeep_modifier = {
         goods_input_artillery_add = 6
@@ -791,7 +788,7 @@ combat_unit_type_cuirassiers = {
 
 combat_unit_type_lancers = {
     group = combat_unit_group_cavalry
-	max_manpower = 1200
+	max_manpower = 900
 
     upkeep_modifier = {
         goods_input_grain_add = 3
@@ -851,7 +848,7 @@ combat_unit_type_lancers = {
 
 combat_unit_type_light_tanks = {
     group = combat_unit_group_cavalry
-	max_manpower = 1400
+	max_manpower = 1100
 
     upkeep_modifier = {
         goods_input_tanks_add = 2
@@ -882,14 +879,14 @@ combat_unit_type_light_tanks = {
 
 combat_unit_type_heavy_tank = {
     group = combat_unit_group_cavalry
-	max_manpower = 2000
+	max_manpower = 1250
 
     upkeep_modifier = {
         goods_input_tanks_add = 5
         goods_input_artillery_add = 10
-		goods_input_ammunition_add = 10
-        goods_input_radios_add = 5
-        goods_input_oil_add = 15
+		goods_input_ammunition_add = 5
+        goods_input_radios_add = 3
+        goods_input_oil_add = 5
     }
 
     battle_modifier = {

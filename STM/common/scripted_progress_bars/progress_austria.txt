@@ -11,7 +11,7 @@ Austria_collapse_meter = {
                     limit = {
                         authority < 100
                     }
-                        value = 1
+                        value = 0.5
                     } 
                 }
             add = {
@@ -46,7 +46,7 @@ Austria_collapse_meter = {
 				            culture = cu:hungarian
 			            } 
                     }
-                        value = 1
+                        value = 0.5
                     }
                 }
             add =  {
@@ -58,7 +58,7 @@ Austria_collapse_meter = {
 				            culture = cu:hungarian
 			            } 
                     }
-                        value = 1.5
+                        value = 1
                     }
                 }
             add =  {
@@ -70,7 +70,7 @@ Austria_collapse_meter = {
 				            culture = cu:hungarian
 			            } 
                     }
-                        value = -2
+                        value = -1.5
                     }
                 }          
             add = {
@@ -79,7 +79,7 @@ Austria_collapse_meter = {
                     limit = {
                         country_has_voting_franchise = yes
 					}
-                    value = 1
+                    value = 0.5
                 }
             }
             add = {
@@ -88,14 +88,17 @@ Austria_collapse_meter = {
                     limit = {
                         literacy_rate >= 0.5
 				    }
-                    value = 1
+                    value = 0.5
                 } 
             }
             add = {
                 desc = "austria_progress_bar.10"
                 if = {
                     limit = {
-                        has_law = law_type:law_cultural_exclusion
+                        OR = {
+                            has_law = law_type:law_cultural_exclusion
+                            has_law = law_type:law_racial_segregation
+                        }
 				    }
                     value = -1
                 } 
@@ -122,7 +125,7 @@ Austro-Hungarian_collapse_meter = {
                     limit = {
                         authority < 100
                     }
-                        value = 1
+                        value = 0.5
                     } 
                 }
             add = {
@@ -153,10 +156,10 @@ Austro-Hungarian_collapse_meter = {
                     limit = {
                        	radical_fraction = {
 				            value >= 0.1
-				            culture = cu:hungarian
+				            culture = cu:croatian
 			            } 
                     }
-                        value = 1
+                        value = 0.5
                     }
                 }
             add =  {
@@ -165,10 +168,10 @@ Austro-Hungarian_collapse_meter = {
                     limit = {
                        	radical_fraction = {
 				            value >= 0.2
-				            culture = cu:hungarian
+				            culture = cu:croatian
 			            } 
                     }
-                        value = 1.5
+                        value = 1
                     }
                 }
             add =  {
@@ -177,10 +180,10 @@ Austro-Hungarian_collapse_meter = {
                     limit = {
                        	loyalist_fraction = {
 				            value >= 0.1
-				            culture = cu:hungarian
+				            culture = cu:croatian
 			            } 
                     }
-                        value = -2
+                        value = -1.5
                     }
                 }          
             add = {
@@ -189,7 +192,7 @@ Austro-Hungarian_collapse_meter = {
                     limit = {
                         country_has_voting_franchise = yes
 					}
-                    value = 1
+                    value = 0.5
                 }
             }
             add = {
@@ -198,7 +201,7 @@ Austro-Hungarian_collapse_meter = {
                     limit = {
                         literacy_rate >= 0.5
 				    }
-                    value = 1
+                    value = 0.5
                 } 
             }
         }
