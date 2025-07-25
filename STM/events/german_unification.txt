@@ -1,0 +1,74 @@
+namespace = german_unification
+
+# German Unification
+german_unification.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = german_unification.4.t
+	desc = german_unification.4.d
+	flavor = german_unification.4.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+immediate = {
+	if = {
+		limit = {
+			has_global_variable = bismarck_variable
+		}
+		s:STATE_NORTH_DAKOTA = {
+			random_scope_state = {
+		        set_hub_name = {
+		            type = city
+		            name = HUB_NAME_STATE_NORTH_DAKOTA_city_bismarck
+		        }
+	        }
+		}
+	}
+}
+
+	trigger = {
+	}
+
+	option = {
+		name = german_unification.4.a
+		default_option = yes
+		give_claims_on_germany = yes
+		ruler = {
+			add_modifier = {
+				name = german_unifier_ruler
+			}
+		}
+		add_modifier = {
+			name = modifier_modernizing_family
+			months = 240
+			is_decaying = yes
+		}
+	}
+	option = {
+		name = german_unification.4.b
+		give_claims_on_germany = yes
+		add_loyalists = {
+			value = 0.1
+			culture = cu:north_german
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:south_german
+		}
+		add_modifier = {
+			name = ger_baby_boom
+			months = 300
+			is_decaying = yes
+		}
+	}
+}
+
