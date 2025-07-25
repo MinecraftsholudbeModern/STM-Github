@@ -72,7 +72,8 @@ napoleonic_wars = {
 
 malthusianism = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
-	state_birth_rate_mult = -0.25
+	state_birth_rate_mult = -0.2
+	state_working_adult_ratio_add = 0.05
 }
 
 russ_trad = {
