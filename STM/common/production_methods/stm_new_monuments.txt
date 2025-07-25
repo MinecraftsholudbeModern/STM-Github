@@ -3,8 +3,6 @@
 	
 	country_modifiers = {
 		workforce_scaled = {
-			
-			country_influence_mult = 0.05
 			country_authority_mult = 0.05
 			country_prestige_add = 25
 		}
