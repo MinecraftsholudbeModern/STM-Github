@@ -38,7 +38,7 @@ je_slavic_traditional_family = {
 	on_complete = {
 		add_modifier = {
 			name = modifier_modernizing_family
-			months = 240
+			months = 360
 			is_decaying = yes
 		}
 	}
