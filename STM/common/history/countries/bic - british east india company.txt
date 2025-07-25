@@ -51,7 +51,7 @@
 		add_journal_entry = {
 			type = je_consolidate_colonial_rule
 		}
-
+		add_journal_entry = { type = indian_plantation_economy }
 		add_journal_entry = {
 			type = je_uneasy_raj
 		}
