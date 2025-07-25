@@ -142,7 +142,7 @@ admiralty = {
 	category = military
 
 	modifier = {
-		state_building_naval_base_max_level_add = 20
+		state_building_naval_base_max_level_add = 50
     }
 
 	unlocking_technologies = {
@@ -385,7 +385,7 @@ power_of_the_purse = {
 	category = military
 
 	modifier = {
-		state_building_naval_base_max_level_add = 10
+		state_building_naval_base_max_level_add = 20
 	}
 
 	unlocking_technologies = {
@@ -637,7 +637,7 @@ jeune_ecole = {
 	category = military
 
 	modifier = {
-		state_building_naval_base_max_level_add = 10
+		state_building_naval_base_max_level_add = 20
 	}
 
 	unlocking_technologies = {
@@ -877,7 +877,7 @@ sea_lane_strategies = {
 	category = military
 
 	modifier = {
-		state_building_naval_base_max_level_add = 10
+		state_building_naval_base_max_level_add = 20
 	}
 
 	unlocking_technologies = {
@@ -1119,7 +1119,7 @@ battlefleet_tactics = {
 	category = military
 
 	modifier = {
-		state_building_naval_base_max_level_add = 10
+		state_building_naval_base_max_level_add = 20
 	}
 
 	unlocking_technologies = {
