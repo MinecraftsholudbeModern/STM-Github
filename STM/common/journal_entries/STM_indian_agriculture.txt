@@ -1,0 +1,33 @@
+indian_plantation_economy = {
+
+    group = je_group_historical_content
+
+    is_shown_when_inactive = {
+      exists = c:BIC
+c:GBR = ROOT
+    }
+    #possible = {
+    #    NOT = {
+    #        THIS = {
+    #            is_ai = yes
+    #        }
+    #    }
+    #}
+
+    immediate = {
+        add_modifier = modifier_indian_agricultural_society
+    }
+
+    complete = {
+        NOR = {
+            has_law = law_type:law_agrarianism
+            has_law = law_type:law_extraction_economy
+            has_law = law_type:law_industry_banned
+            has_law = law_type:law_traditionalism
+        }
+    }
+
+    on_complete = {
+        remove_modifier = modifier_indian_agricultural_society
+    }
+}
