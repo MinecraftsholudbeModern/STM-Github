@@ -1,69 +1,36 @@
-﻿building_reichstag = {
-	building_group = bg_monuments
-	icon = "gfx/interface/icons/building_icons/reichstag.dds"
-	expandable = no
-	downsizeable = no
-	unique = yes
-	locator = "reichstag_locator"
+﻿pm_default_building_reichstag = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 	
-	entity_not_constructed = { }
-	entity_under_construction = { "building_construction_3x3_entity" }
-	entity_constructed = { "wonder_forbidden_city_01_entity" }
-	
-	city_gfx_interactions = {
-		clear_size_area = yes
-		size = 4
-	}
-	
-	production_method_groups = {
-		pmg_base_building_reichstag
+	country_modifiers = {
+		workforce_scaled = {
+			country_authority_mult = 0.05
+
+			country_prestige_add = 25
+		}
 	}
 
-	unlocking_technologies = { 
-		steel_frame_buildings 
+
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_clerks_add = 300
+			building_employment_bureaucrats_add = 200
+		}
 	}
-	
-	required_construction = construction_cost_monument
-	
-	potential = {
-		state_region = s:STATE_BRANDENBURG
-	}
-	
-	ai_value = 10000
-	
 }
 
-building_neuschwanstein = {
-	building_group = bg_monuments
-	icon = "gfx/interface/icons/building_icons/neuschwanstein.dds"
-	expandable = no
-	downsizeable = no
-	unique = yes
-	locator = "neuschwanstein_locator"
+pm_default_culture_monument = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 	
-	entity_not_constructed = { }
-	entity_under_construction = { "building_construction_3x3_entity" }
-	entity_constructed = { "wonder_forbidden_city_01_entity" }
-	
-	city_gfx_interactions = {
-		clear_size_area = yes
-		size = 4
-	}
-	
-	production_method_groups = {
-		pmg_base_culture_monument
+	country_modifiers = {
+		level_scaled = {
+			country_authority_add = 50
+		}
 	}
 
-	unlocking_technologies = { 
-		steel_frame_buildings 
+	state_modifiers = {
 	}
 	
-	required_construction = construction_cost_monument
-	
-	potential = {
-		state_region = s:STATE_BAVARIA
+	building_modifiers = {
 	}
-	
-	ai_value = 10000
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }

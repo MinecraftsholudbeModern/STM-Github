@@ -1,4 +1,4 @@
-# Mitsui
+﻿# Mitsui
 company_mitsui = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/japanese_mitsui.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
@@ -44,8 +44,9 @@ company_mitsui = {
 				text = is_meiji_japan
 				has_variable = meiji_restoration_complete
 			}
-			ig:ig_industrialists = {
-				is_powerful = yes
+			custom_tooltip = {
+				text = is_soon_meiji_japan
+				has_variable = meiji_var
 			}
 		}		any_scope_state = {
 			state_region = s:STATE_KANSAI
@@ -208,11 +209,11 @@ company_mitsubishi = {
 				text = is_meiji_japan
 				has_variable = meiji_restoration_complete
 			}
-			ig:ig_industrialists = {
-				is_powerful = yes
+			custom_tooltip = {
+				text = is_soon_meiji_japan
+		        has_variable = shogunate_var
 			}
 		}
-		
 		any_scope_state = {
 			state_region = s:STATE_CHUGOKU
 			is_incorporated = yes

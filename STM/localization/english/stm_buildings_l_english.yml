@@ -1,0 +1,29 @@
+﻿l_english:
+
+# building_groups 
+
+ bg_heavy_military_industry:0 "Heavy Military Industry" 
+
+# buildings 
+
+ building_porcelain_industry:0 "Porcelain Factory"
+ building_porcelain_industry_lens_option:0 "Expand $building_porcelain_industry$"
+ building_automobiles_industry:0 "Automobile Factory"
+ building_automobiles_industry_lens_option:0 "Expand $building_automobiles_industry$"
+ building_luxury_clothes_industry:0 "Luxury Textile Mills"
+ building_luxury_clothes_industry_lens_option:0 "Expand $building_luxury_clothes_industry$"
+ building_luxury_furniture_industry:0 "Luxury Furniture Manufacturies"
+ building_luxury_furniture_industry_lens_option:0 "Expand $building_luxury_furniture_industry$"
+ building_radios_industry:0 "Radio Manufactory"
+ building_radios_industry_lens_option:0 "Expand $building_radios_industry$"
+ building_distillery_industry:0 "Distillery Industry"
+ building_distillery_industry_lens_option:0 "Expand$building_distillery_industry$"
+ building_tanks_industry:0 "Tanks Industry"
+ building_tanks_industry_lens_option:0 "Expand $building_tanks_industry$"
+ 
+ building_reichstag:0 "Reichstag"
+ pmg_base_building_reichstag:0 "Hard power"
+ pm_default_building_reichstag:0 "Hard power"
+ pmg_base_culture_monument:0 "Culture monument"
+ pm_default_culture_monument:0 "Culture monument"
+ building_neuschwanstein:0 "Neuschwanstein"

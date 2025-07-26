@@ -1,0 +1,45 @@
+﻿l_english:
+
+# production_method_groups 
+ 
+ pmg_base_porcelain_industry:1 "$pm_base$"
+ pmg_base_automobiles_industry:1 "$pm_base$"
+ pmg_base_luxury_clothes_industry:1 "$pm_base$"
+ pmg_base_luxury_furniture_industry:1 "$pm_base$"
+ pmg_base_radios_industry:1 "$pm_base$"
+ pmg_base_distillery_industry:1 "$pm_base$"
+ pmg_base_tanks_industry:1 "$pm_base$"
+# Automation
+ pmg_automation_expansion_industry:1 "Automation"
+
+ # production_methods
+ ## generic_production_methods
+
+ pm_ceramics_porcelain:0 "Ceramics"
+ pm_bone_china_porcelain:0 "Bone China"
+ pm_modern_ceramics_porcelain:0 "Modern bone china"
+ pm_steam_engines_automobiles:0 "Steam Engines"
+ pm_electric_engines_automobiles:0 "Electric Engines"
+ pm_diesel_engines_automobiles:0 "Diesel Engines"
+ pm_luxury_handsewn_clothes:0 "Handsewn Clothes"
+ pm_luxury_dye_workshops:0 "Dye Workshops"
+ pm_luxury_sewing_machines:0 "Sewing Machines"
+ pm_luxury_electric_sewing_machines:0 "Electric Sewing Machines"
+ pm_luxury_handcrafted_furniture:0 "Handcrafted Furniture"
+ pm_luxury_lathe:0 "Lathes"
+ pm_luxury_mechanized_workshops:0 "Mechanized Workshops"
+ pm_modulation:0 "Modulation"
+ pm_vacuum_tubes:0 "Vacuum Tubes"
+ pm_transistor:0 "Transistor"
+ pm_base_tanks_industry:0 "Tank production"
+ pm_electric_tanks_industry:0 "Electric Engines"
+ pm_oil_tanks_industry:0 "Diesel Engines"
+
+ pm_handsewn_drink_distillery_industry:0 "Direct Fermentation"
+ pm_drink_workshops_distillery_industry:0 "Alcohol Distillation"
+ pm_drink_machine_distillery_industry:0 "Craft Beer"
+ pm_electric_drink_machine_distillery_industry:0 "Modern Alcohol Fermentation"
+
+ pm_watertube_boiler_expansion_industry:0 "Water-tube Boiler"
+ pm_rotary_valve_engine_expansion_industry:0 "Rotary Valve Engine"
+ pm_assembly_lines_expansion_industry:0 "Assembly Lines"

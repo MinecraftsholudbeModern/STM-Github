@@ -202,7 +202,7 @@ combat_unit_type_trench_infantry = {
 
     battle_modifier = {
         unit_offense_add = 40
-        unit_defense_add = 80
+        unit_defense_add = 65
         unit_morale_loss_add = 8
     }
 
