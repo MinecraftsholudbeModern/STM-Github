@@ -3903,3 +3903,8 @@ state_migration_quota_mult_desc: "A bonus or penalty to the amount of people tha
 
  modifier_untrustworthy_country: "Untrustworthy Country"
  modifier_indian_agricultural_society:0 "Indian Plantation Economy"
+ napoleonic_wars:0 "Napoleonic Wars Aftermath"
+ malthusianism:0 "Malthusianism"
+ russ_trad:0 "Russian Trade"
+ land_of_opportunities:0 "Land Of Opportunities"
+ ger_baby_boom:0 "German Baby Boom"

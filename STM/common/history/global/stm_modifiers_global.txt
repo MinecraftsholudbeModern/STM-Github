@@ -21,6 +21,8 @@ GLOBAL = {
 			}
 			add_modifier = {
 				name = malthusianism
+				time = very_long_modifier_time
+				is_decaying = yes
 			}
 		}
 	}
@@ -33,6 +35,8 @@ GLOBAL = {
 			}
 			add_modifier = {
 				name = malthusianism
+				time = very_long_modifier_time
+				is_decaying = yes
 			}
 		}
 	}
@@ -54,6 +58,8 @@ GLOBAL = {
 			}
 			add_modifier = {
 				name = malthusianism
+				time = very_long_modifier_time
+				is_decaying = yes
 			}
 		}
 	}
@@ -66,6 +72,8 @@ GLOBAL = {
 			}
 			add_modifier = {
 				name = malthusianism
+				time = very_long_modifier_time
+				is_decaying = yes
 			}
 		}
 	}
@@ -78,6 +86,8 @@ GLOBAL = {
 			}
 			add_modifier = {
 				name = malthusianism
+				time = very_long_modifier_time
+				is_decaying = yes
 			}
 		}
 	}
@@ -90,6 +100,8 @@ GLOBAL = {
 			}
 			add_modifier = {
 				name = malthusianism
+				time = very_long_modifier_time
+				is_decaying = yes
 			}
 		}
 	}
@@ -102,6 +114,8 @@ GLOBAL = {
 			}
 			add_modifier = {
 				name = malthusianism
+				time = very_long_modifier_time
+				is_decaying = yes
 			}
 		}
 	}
@@ -114,6 +128,8 @@ GLOBAL = {
 			}
 			add_modifier = {
 				name = malthusianism
+				time = very_long_modifier_time
+				is_decaying = yes
 			}
 		}
 	}
@@ -216,6 +232,8 @@ GLOBAL = {
 			}
 			add_modifier = {
 				name = malthusianism
+				time = very_long_modifier_time
+				is_decaying = yes
 			}
 		}
 	}
@@ -234,7 +252,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -243,7 +261,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -252,7 +270,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -261,7 +279,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -270,7 +288,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -279,7 +297,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -288,7 +306,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -297,7 +315,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -306,7 +324,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -315,7 +333,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -324,7 +342,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -333,7 +351,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -342,7 +360,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -351,7 +369,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -360,7 +378,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -369,7 +387,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -378,7 +396,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -387,7 +405,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -396,7 +414,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -405,7 +423,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -414,7 +432,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -423,7 +441,7 @@ GLOBAL = {
 		region_state:RUS = {
 			add_modifier = {
 				name = russ_trad
-				years = 65
+				years = 30
 				is_decaying = yes
 			}
 		}
@@ -824,7 +842,7 @@ GLOBAL = {
 			}
 			add_modifier = {
 				name = ger_baby_boom
-				years = 60 #should be relevant until the 1900's 
+				years = 45
 				is_decaying = yes
 			}
 		}
