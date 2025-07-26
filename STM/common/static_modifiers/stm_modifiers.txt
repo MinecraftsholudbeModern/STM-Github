@@ -69,12 +69,13 @@ icon = gfx/interface/icons/timed_modifier_icons/modifier_mobilization_negative.d
 
 napoleonic_wars = { 
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
-	state_working_adult_ratio_add = -0.1
+	state_working_adult_ratio_add = -0.05
 }
 
 malthusianism = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 	state_birth_rate_mult = -0.2
+	state_working_adult_ratio_add = 0.15
 }
 
 russ_trad = {
@@ -100,4 +101,26 @@ india_british_mortality_1 = {
 india_british_mortality_2 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_mortality_mult = 0.1
+}
+
+
+modifier_slavic_family = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	state_birth_rate_mult = 0.15
+	state_working_adult_ratio_add = -0.05
+	state_tax_waste_add = 0.1
+	state_peasants_education_access_add = -0.05
+}
+modifier_modernizing_family = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_birth_rate_mult = 0.15
+	state_working_adult_ratio_add = -0.05
+	
+}
+
+
+indian_agricultural_society = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	building_group_bg_manufacturing_throughput_add = -0.2
+	building_group_bg_plantations_throughput_add = 0.05
 }
