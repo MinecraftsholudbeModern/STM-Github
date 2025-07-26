@@ -1,14 +1,14 @@
 ﻿pm_default_building_reichstag = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 	
-	country_modifiers = {
+		country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = 200
-			country_influence_add = 200
-			country_authority_add = 200
-			country_prestige_add = 50
+			country_authority_mult = 0.05
+
+			country_prestige_add = 25
 		}
 	}
+
 
 	state_modifiers = {
 		workforce_scaled = {
