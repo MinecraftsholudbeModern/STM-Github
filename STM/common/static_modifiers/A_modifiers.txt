@@ -1,0 +1,26 @@
+﻿
+modifier_slavic_family = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	state_birth_rate_mult = 0.15
+	state_working_adult_ratio_add = -0.05
+	state_tax_waste_add = 0.1
+	state_peasants_education_access_add = -0.05
+}
+modifier_modernizing_family = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_birth_rate_mult = 0.15
+	state_working_adult_ratio_add = -0.05
+	
+}
+
+ger_baby_boom = {
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
+	state_birth_rate_mult = 0.12
+	state_working_adult_ratio_add = -0.03
+}
+
+indian_agricultural_society = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	building_group_bg_manufacturing_throughput_add = -0.2
+	building_group_bg_plantations_throughput_add = 0.05
+}

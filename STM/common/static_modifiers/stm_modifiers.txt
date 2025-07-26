@@ -1,24 +1,31 @@
 ﻿enforce_religion = {
 icon = gfx/interface/icons/timed_modifier_icons/modifier_cop_negative.dds
 
-	country_allow_conversion_violent_hostility_bool = yes
-	country_allow_conversion_cultural_erasure_bool = yes
-	country_allow_conversion_open_prejudice_bool = yes
-	country_allow_conversion_second_rate_citizen_bool = yes
-	country_allow_conversion_full_acceptance_bool = yes	
-	country_acceptance_shared_religious_trait_add = -10
-	country_acceptance_religion_base_add = -10
-	country_non_state_religion_wages_mult = -0.05
+		country_allow_conversion_violent_hostility_bool = yes
+		country_allow_conversion_cultural_erasure_bool = yes
+		country_allow_conversion_open_prejudice_bool = yes
+		country_allow_conversion_second_rate_citizen_bool = yes
+		country_allow_conversion_full_acceptance_bool = yes
+		
+		
+		country_acceptance_shared_religious_trait_add = -10
+		country_acceptance_religion_base_add = -10
+		
+		country_non_state_religion_wages_mult = -0.05
 }
+
+
 
 lax_religion = {
 icon = gfx/interface/icons/timed_modifier_icons/modifier_diplomacy_positive.dds
 
-	country_allow_conversion_violent_hostility_bool = yes
-	country_allow_conversion_cultural_erasure_bool = yes
-	country_allow_conversion_open_prejudice_bool = yes
-	country_allow_conversion_second_rate_citizen_bool = no
-	country_allow_conversion_full_acceptance_bool = no
+		country_allow_conversion_violent_hostility_bool = yes
+		country_allow_conversion_cultural_erasure_bool = yes
+		country_allow_conversion_open_prejudice_bool = yes
+		country_allow_conversion_second_rate_citizen_bool = no
+		country_allow_conversion_full_acceptance_bool = no
+
+
 }
 
 kulturkampf_ongoing = {
@@ -30,6 +37,8 @@ icon = gfx/interface/icons/timed_modifier_icons/modifier_protestant_negative.dds
 	
 	country_acceptance_shared_religious_trait_add = -5
 	country_acceptance_religion_base_add = -5
+
+
 }
 
 ex_zollverein = {
@@ -82,8 +91,8 @@ land_of_opportunities = {
 
 ger_baby_boom = {
 	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_positive.dds
-	state_birth_rate_mult = 0.12
-	state_working_adult_ratio_add = -0.03
+	state_birth_rate_mult = 0.25
+	state_working_adult_ratio_add = -0.05
 }
 india_british_mortality_1 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
@@ -92,16 +101,6 @@ india_british_mortality_1 = {
 india_british_mortality_2 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_mortality_mult = 0.1
-}
-modifier_slavic_family = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	state_birth_rate_mult = 0.15
-	state_working_adult_ratio_add = -0.05
-	state_tax_waste_add = 0.1
-	state_peasants_education_access_add = -0.05
-}
-modifier_modernizing_family = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	state_birth_rate_mult = 0.15
-	state_working_adult_ratio_add = -0.05
+
+	
 }

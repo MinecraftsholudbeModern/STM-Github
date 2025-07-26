@@ -832,4 +832,7 @@ GLOBAL = {
 	c:AUS = {
 		set_variable = is_aus
 	}
+	c:BIC = {
+		add_modifier = indian_agricultural_society
+	}
 }
