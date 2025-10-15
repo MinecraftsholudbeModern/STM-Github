@@ -689,21 +689,21 @@
 	s:STATE_ALSACE_LORRAINE = {
 		region_state:FRA = {
 			create_pop = {
-				culture = alemannic
+				culture = south_german
+				religion = protestant
 				size = 719210
 			}
 			create_pop = {
-				culture = alemannic
-				religion = protestant
+				culture = south_german
 				size = 220778
 			}
 			create_pop = {
-				culture = south_german
+				culture = alemannic
 				size = 236987
 			}
 			create_pop = {
-				culture = south_german
-				religion = protestant
+				culture = alemannic
+				religion = catholic
 				size = 4571
 			}
 			create_pop = {
