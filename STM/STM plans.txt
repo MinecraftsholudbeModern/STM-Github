@@ -1,0 +1,115 @@
+1. Map Resources [map_data]{keep on adding}
+- Western Europe
+	Rhineland get 30 sulfur mines and 20 iron mines
+	Baden get 10 sulfur mines[equivalent to 40 taken away from West Prussia]
+	North Rhine gets 40 iron mines, 40 lead mines and 40 coal mines in total
+	Hannover gets 25 iron mines and 40 coal mines in total
+	Brunswick is reduced to 5 mines of iron lead and coal but arable land increased by 5
+	Schleswig gets 12 fishing wharves
+	Mecklenburg gets 12 fishing wharves
+	Tirol get 4 gold mines
+	Bohemia gets 2 gold mines
+	
+	
+- Eastern Europe
+	West prussia loses all sulfur mines but gets 10 iron and coal mines
+	Posen loses all iron mines
+	East Prussia gets 2 gold mines[Amber representation]
+	[for next parts w8 for 1.10; Lower shouldn't have any sulfur but majority of iron whilst upper should have huge coal deposits and low iron]
+	Lower Silesia gets 40 iron mines, 54 lead mines and 30 coal mines
+	Upper Silesia gets 20 iron mines, 40 sulfur mines and 90 coal mines
+	
+2. Defines Folder
+	I. 00_defines File
+		a. NCountry ={} :
+
+		DEFAULT_MAX_NUM_COUNTRY_FORMATION_CANDIDATES = 2 # was 3
+		
+		b. NPolitics = {}:
+		
+	BASE_IG_APPROVAL = 3				# Baseline IG approval
+	MIN_IG_APPROVAL = -30				# Minimum IG approval
+	MAX_IG_APPROVAL = 30				# Maximum IG approval
+	MIN_IG_APPROVAL_FROM_LAWS = -10		# IG cannot have approval lower than this as a total from laws 'on the book'
+	MAX_IG_APPROVAL_FROM_LAWS = 5		# IG cannot have approval higher than this as a total from laws 'on the book'
+	IG_APPROVAL_FROM_LOYALISTS = 15		# If 100% of the political strength of the IG is loyalist, change approval by this amount
+	IG_APPROVAL_FROM_RADICALS = -30		# If 100% of the political strength of the IG is radical, change approval by this amount
+	IG_APPROVAL_FROM_LAW = 1		# IG approval/disapproval for laws that are for/against their ideologies
+	IG_APPROVAL_FROM_LAW_STRONG_STANCE = 3 		# IG approval/disapproval for laws that are strongly for/against their ideologies
+	IG_APPROVAL_FROM_LAW_CHANGE = 5		# IG approval/disapproval for changing to another law
+	IG_APPROVAL_FROM_RADICAL_LAW_CHANGE = 10 		# IG approval/disapproval for changing to another law, if the change is a major one
+	IG_APPROVAL_FROM_EXTREME_LAW_CHANGE = 20 		# IG approval/disapproval for changing to another law, if the change is extreme
+	IG_IN_GOVERNMENT_APPROVAL = 2		# Added if IG is in government
+	IG_IN_OPPOSITION_APPROVAL = -2		# Added if IG is in opposition (and not powerful)
+	IG_POWERFUL_IN_OPPOSITION_APPROVAL = -5 # Added if powerful IG in opposition
+	APPROVAL_THRESHOLD_ANGRY = -15		# At this or below approval, IG is considered angry
+	APPROVAL_THRESHOLD_UNHAPPY = -5		# At this or below approval, IG is considered unhappy
+	APPROVAL_THRESHOLD_HAPPY = 10		# At this or above approval, IG is considered happy
+	APPROVAL_THRESHOLD_LOYAL = 20		# At this or above approval, IG is considered loyal
+	CHANGED_LAW_APPROVAL_MONTHS = 60 # How many months does the approval/disapproval for a law change linger after said law chain
+	
+	POWERFUL_IG_THRESHOLD = 0.18		# Interest groups with more Clout than this are considered to be influential
+	POWERFUL_IG_CUTOFF = 0.16			# Powerful interest groups with less Clout than this will stop being influential
+	POWERFUL_IG_TRAIT_BONUS = 1			# The effects of all trait modifiers from influential IGs are increased by this, 1 = +100%
+	IG_TRAIT_STICKINESS = 3				# If an IG trait is already active, this is the amount of Approval difference required to deactivate it
+	
+	DEFAULT_GOODS_TAX_COST = 75			#100		# The amount of AUT it costs to tax a good by default
+	
+	c. NEconomy = {} :
+	
+	USE_NATIONALIZED_ECONOMY_OF_SCALE_PENALTY = no		# Whether ECONOMY_OF_SCALE_NATIONALIZED_FRACTION_MULT should be applied to economy of scale modifier for buildings with nationalized levels
+	
+	GOLD_RESERVE_RATIO_AT_START = 0			# Unless a country history's 'treasury' parameter is set to a non-zero value, countries start with this ratio of their gold reserve in gold
+	
+	MINIMUM_WAGE_RATE = 25.0					# The wage rate can never drop below this, no matter what (weekly £ per POP_SIZE_PACKAGE employees)
+	MAXIMUM_WAGE_RATE = 1500.0				    # The absolute maximum that a building's wage rate can be increased to.
+	
+	d. NPops = {} :
+	
+	RADICALS_MAX_FROM_LOW_SOL = 0.3				# If pop is already this % radical, don't add more radicals from low SOL (Scales by delta between SoL and expected min SoL)
+	RADICALS_MAX_FROM_DISCRIMINATION = 0.5		# If pop is already this % radical, don't add more radicals from discrimination (Scales by literacy)
+	RADICALS_MONTHLY_FROM_LOW_SOL = 0.005		# Scales by delta between SoL and expected min SoL
+	
+	ALLOW_ASSIMILATION_ACROSS_HERITAGES = yes #no [can't do coz heritage and group got changed] 	# Can pops assimilate into pops of a different heritage?
+	
+	LOW_POP_THRESHOLD = 500000					# If a state has less than this amount of pops per arable land, apply the low pop modifier
+	HIGH_POP_THRESHOLD = 10000000					# If a state has more than this amount of pops per arable land, apply the high pop modifier
+	
+	#VERY IMPORTANT WAIT FOR GREY'S MOD
+	JOB_SATISFACTION_BASE = -150								# Base job satisfaction
+	JOB_SATISFACTION_FOR_NEWLY_HIRED = 1000						# Job satisfaction gained due to having been newly hired, this state lasts until the pop's next wealth calculation
+	JOB_SATISFACTION_PER_SOL_ABOVE_EXPECTED_SOL = 3				# Job satisfaction gained per level of SoL above your expected SoL
+	JOB_SATISFACTION_PER_SOL_ABOVE_STATE_STRATA_SOL = 2			# Job satisfaction gained per level of SoL above the state average for your strata
+	JOB_SATISFACTION_PER_SOL_ABOVE_COUNTRY_STRATA_SOL = 1		# Job satisfaction gained per level of SoL above the country average for your strata
+	JOB_SATISFACTION_PER_PERCENT_WAGE_RATE_ABOVE_NORMAL = 1		# Job satisfaction gained per pound of workplace wage rate (weekly wage of 10k laborers) above country normal
+	JOB_SATISFACTION_FROM_CAN_AFFORD_EXPENSES = 200			# Job satisfaction gained from being able to afford your bug package (and taxes)
+	JOB_SATISFACTION_FROM_CANNOT_AFFORD_EXPENSES = -100			# Job satisfaction gained from not being able to afford your bug package (and taxes)
+	JOB_SATISFACTION_PER_PERCENT_HIGHER_SOL_QUALIFICATION = -1 	# Job satisfaction gained per percent of workforce qualified for a job with a higher base standard of living. Note that qualifications are assumed to overlap and the largest qualification is used in this calculation
+	JOB_SATISFACTION_FROM_EMPLOYMENT = 100						# Job satisfaction gained from having a job
+	JOB_SATISFACTION_DIVIDENDS_MAX_MULT = 50						# Max multiplier from the ratio between pop dividends and wages
+	JOB_SATISFACTION_DIVIDENDS_BASE = 5						# Base value to be multiplied by the ratio between dividends and wages
+	JOB_SATISFACTION_LOSSES_MIN_MULT = -50						# Min multiplier from the ratio between pop losses and wages (or if you will, max magnitude)
+	JOB_SATISFACTION_LOSSES_BASE = 5							# Base value to be multiplied by the ratio between losses and wages
+	JOB_SATISFACTION_GOVERNMENT = 50							# Government jobs need a bit more stability
+	
+	e.### Pop Growth Constants
+## Base Values per month
+@min_birthrate = 0.00100			# Minimum base birthrate per month (at POP_GROWTH_STABLE_SOL)
+@max_birthrate = 0.00450			# Maximum base birthrate per month (at SOL = 0)
+@min_mortality = 0.00050			# Minimum base mortality per month (at POP_GROWTH_STABLE_SOL)
+@max_mortality = 0.00550			# Maximum base mortality per month (at SOL = 0)
+
+## SoL Thresholds
+@pop_growth_equilibrium_sol = 5		# Equilibrium is pops stop starving and where growth first becomes positive
+@pop_growth_transition_sol = 10     # Transition determines how long birthrate "lags" behind mortality before starting to drop. Setting to same as equilibrium leads to no "lag" (only matters for birthrate)
+@pop_growth_max_sol = 15			# Growth Max is where net growth generally is at it's highest (only matters for mortality)
+@pop_growth_stable_sol = 30 		# Stable is where birthrate and mortality stop changing and hit their minimum values
+
+## Others
+@transition_birthrate_mult = 1 		# If you want the birthrate "lag" to go to a higher or lower value than max_birthrate. (you can also just change it directly below)
+@max_growth_mortality_mult = 0.35	# What proportion of birthrate_at_growth_max mortality should be at. Higher means lower growth
+
+	II.00_ai
+	
+	
+	

@@ -17,11 +17,22 @@
 				add_ownership={
 					country={
 						country="c:SWE"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_iron_frame_buildings" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:SWE"
+						levels=3
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_university"
@@ -40,7 +51,7 @@
 					building={
 						type="building_textile_mills"
 						country="c:SWE"
-						levels=6
+						levels=3
 						region="STATE_SVEALAND"
 					}
 				}
@@ -132,12 +143,23 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:SWE"
+						levels=1
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_paper_mills"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:SWE"
-						levels=4
+						levels=2
 						region="STATE_SVEALAND"
 					}
 					country={
@@ -147,7 +169,7 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
-			}			
+			}
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
@@ -246,12 +268,23 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:SWE"
+						levels=1
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_shipyards"
 				add_ownership={
 					building={
 						type="building_shipyards"
 						country="c:SWE"
-						levels=2
+						levels=1
 						region="STATE_SCANIA"
 					}
 				}
@@ -275,7 +308,7 @@
 					building={
 						type="building_tooling_workshops"
 						country="c:SWE"
-						levels=2
+						levels=1
 						region="STATE_SCANIA"
 					}
 				}
@@ -298,7 +331,7 @@
 				add_ownership={
 					country={
 						country="c:SWE"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -458,6 +491,17 @@
 	s:STATE_ZEALAND={
 		region_state:DEN={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:DEN"
+						levels=3
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
@@ -473,7 +517,7 @@
 				add_ownership={
 					country={
 						country="c:DEN"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -485,7 +529,7 @@
 					building={
 						type="building_financial_district"
 						country="c:DEN"
-						levels=2
+						levels=1
 						region="STATE_ZEALAND"
 					}
 				}
@@ -509,7 +553,7 @@
 					building={
 						type="building_financial_district"
 						country="c:DEN"
-						levels=2
+						levels=1
 						region="STATE_ZEALAND"
 					}
 				}
@@ -596,7 +640,7 @@
 					building={
 						type="building_tooling_workshops"
 						country="c:DEN"
-						levels=2
+						levels=1
 						region="STATE_ZEALAND"
 					}
 				}
@@ -675,6 +719,17 @@
 	s:STATE_NORTHERN_NORWAY={
 		region_state:NOR={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:NOR"
+						levels=2
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
@@ -712,6 +767,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:NOR"
+						levels=1
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_shipyards"
@@ -789,7 +855,7 @@
 				add_ownership={
 					country={
 						country="c:NOR"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -840,7 +906,7 @@
 	}
 	s:STATE_GREENLAND={
 		region_state:DEN={
-		create_building={
+			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -867,17 +933,17 @@
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 			create_building={
-				building="building_logging_camp"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
-						type="building_logging_camp"
-						country="c:FRA"
-						levels=7
-						region="STATE_NORMANDY"
+						type="building_financial_district"
+						country="c:GBR"
+						levels=22
+						region="STATE_HOME_COUNTIES"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" }
 			}
 			create_building={
 				building="building_arts_academy"
@@ -885,7 +951,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=4
+						levels=2
 						region="STATE_HOME_COUNTIES"
 					}
 					building={
@@ -903,7 +969,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=5
+						levels=3
 					}
 				}
 				reserves=1
@@ -926,12 +992,12 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=6
+						levels=3
 						region="STATE_HOME_COUNTIES"
 					}
 					country={
 						country="c:GBR"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -943,27 +1009,17 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=8
+						levels=10
 						region="STATE_HOME_COUNTIES"
 					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_dye_workshops"  "pm_traditional_looms" }
-			}
-			create_building={
-				building="building_luxury_clothes_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
+					country={
 						country="c:GBR"
-						levels=7
-						region="STATE_HOME_COUNTIES"
+						levels=3
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_luxury_dye_workshops" }
+				activate_production_methods={ "pm_dye_workshops"  "pm_traditional_looms" "pm_craftsman_sewing" }
 			}
-			
 			create_building={
 				building="building_shipyards"
 				add_ownership={
@@ -982,7 +1038,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -994,7 +1050,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=13
+						levels=15
 						region="STATE_HOME_COUNTIES"
 					}
 				}
@@ -1020,7 +1076,7 @@
 					building={
 						type="building_manor_house"
 						country="c:GBR"
-						levels=20
+						levels=5
 						region="STATE_HOME_COUNTIES"
 					}
 				}
@@ -1049,8 +1105,9 @@
 			create_building={
 				building="building_railway"
 				add_ownership={
+					country={
 						country="c:GBR"
-						levels=5
+						levels=2
 					}
 				}
 				reserves=1
@@ -1061,22 +1118,11 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=3
+						levels=5
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
-			}
-			create_building={
-				building="building_trade_center"
-				add_ownership={
-					country={
-						country="c:GBR"
-						levels=40
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
 			}
 		}
 	}
@@ -1094,17 +1140,23 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
-				building="building_luxury_clothes_industry"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=10
+						levels=3
+						region="STATE_LANCASHIRE"
+					}
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=2
 						region="STATE_HOME_COUNTIES"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_luxury_dye_workshops" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -1112,42 +1164,31 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=4
+						levels=2
 						region="STATE_LANCASHIRE"
 					}
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=13
+						levels=8
 						region="STATE_HOME_COUNTIES"
 					}
 					building={
 						type="building_textile_mills"
 						country="c:GBR"
-						levels=4
+						levels=3
 						region="STATE_LANCASHIRE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_dye_workshops" "pm_craftsman_sewing" "pm_traditional_looms"  }
-			}
-			create_building={
-				building="building_railway"
-				add_ownership={
-					country={
-						country="c:GBR"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
+				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=6
+						levels=3
 					}
 				}
 				reserves=1
@@ -1158,7 +1199,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=3
+						levels=4
 					}
 				}
 				reserves=1
@@ -1187,7 +1228,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=5
+						levels=10
 						region="STATE_HOME_COUNTIES"
 					}
 					building={
@@ -1274,7 +1315,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=8
+						levels=4
 					}
 				}
 				reserves=1
@@ -1285,12 +1326,25 @@
 	s:STATE_WALES={
 		region_state:GBR={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=1
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_paper_mills"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=8
+						levels=3
 						region="STATE_HOME_COUNTIES"
 					}
 					country={
@@ -1307,7 +1361,7 @@
 					building={
 						type="building_manor_house"
 						country="c:GBR"
-						levels=6
+						levels=2
 						region="STATE_WALES"
 					}
 				}
@@ -1326,7 +1380,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=3
+						levels=2
 						region="STATE_HOME_COUNTIES"
 					}
 				}
@@ -1339,34 +1393,12 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=10
+						levels=3
 						region="STATE_WALES"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					country={
-						country="c:GBR"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_port" }
-			}
-			create_building={
-				building="building_railway"
-				add_ownership={
-					country={
-						country="c:GBR"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
 			}
 		}
 	}
@@ -1384,18 +1416,37 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=2
+						region="STATE_YORKSHIRE"
+					}
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=1
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=9
+						levels=5
 						region="STATE_HOME_COUNTIES"
 					}
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=6
+						levels=10
 						region="STATE_YORKSHIRE"
 					}
 				}
@@ -1407,7 +1458,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=5
+						levels=2
 					}
 				}
 				reserves=1
@@ -1419,31 +1470,18 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=1
+						levels=4
 						region="STATE_HOME_COUNTIES"
 					}
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=6
+						levels=4
 						region="STATE_YORKSHIRE"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_dye_workshops"  "pm_traditional_looms" "pm_no_luxury_clothes" }
-			}
-			create_building={
-				building="building_luxury_clothes_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=3
-						region="STATE_HOME_COUNTIES"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_luxury_dye_workshops" }
 			}
 			create_building={
 				building="building_steel_mills"
@@ -1481,7 +1519,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_steam_engines" "pm_automobiles_disabled" "pm_automation_disabled"  }
+				activate_production_methods={ "pm_steam_engines" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_coal_mine"
@@ -1489,7 +1527,7 @@
 					building={
 						type="building_coal_mine"
 						country="c:GBR"
-						levels=15
+						levels=10
 						region="STATE_YORKSHIRE"
 					}
 					country={
@@ -1506,13 +1544,13 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=7
+						levels=2
 						region="STATE_YORKSHIRE"
 					}
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=6
+						levels=2
 						region="STATE_HOME_COUNTIES"
 					}
 				}
@@ -1538,7 +1576,7 @@
 					building={
 						type="building_manor_house"
 						country="c:GBR"
-						levels=5
+						levels=3
 						region="STATE_YORKSHIRE"
 					}
 				}
@@ -1551,7 +1589,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=10
+						levels=4
 						region="STATE_YORKSHIRE"
 					}
 				}
@@ -1563,22 +1601,11 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=10
+						levels=2
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
-			}	
-		create_building={
-				building="building_trade_center"
-				add_ownership={
-					country={
-						country="c:GBR"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
 			}
 		}
 	}
@@ -1645,6 +1672,25 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=2
+						region="STATE_MIDLANDS"
+					}
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=1
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_arms_industry"
 				add_ownership={
 					country={
@@ -1661,19 +1707,19 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=2
+						levels=10
 						region="STATE_MIDLANDS"
 					}
 					building={
 						type="building_textile_mills"
 						country="c:GBR"
-						levels=3
+						levels=6
 						region="STATE_MIDLANDS"
 					}
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=4
+						levels=6
 						region="STATE_HOME_COUNTIES"
 					}
 				}
@@ -1685,22 +1731,11 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels1
+						levels=2
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
-			}
-			create_building={
-				building="building_railway"
-				add_ownership={
-					country={
-						country="c:GBR"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
 			}
 			create_building={
 				building="building_furniture_manufacturies"
@@ -1708,31 +1743,18 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=2
+						levels=3
 						region="STATE_MIDLANDS"
 					}
 					building={
 						type="building_furniture_manufacturies"
 						country="c:GBR"
-						levels=6
+						levels=2
 						region="STATE_MIDLANDS"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_lathe" "pm_automation_disabled"  }
-			}
-			create_building={
-				building="building_luxury_furniture_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=4
-						region="STATE_MIDLANDS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_luxury_lathe" "pm_automation_disabled"  }
+				activate_production_methods={ "pm_lathe" "pm_luxury_furniture" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_chemical_plants"
@@ -1740,7 +1762,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=1
+						levels=2
 						region="STATE_MIDLANDS"
 					}
 				}
@@ -1753,7 +1775,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=2
+						levels=1
 						region="STATE_MIDLANDS"
 					}
 				}
@@ -1833,10 +1855,9 @@
 			create_building={
 				building="building_railway"
 				add_ownership={
-					company={
-						type=company_gwr
+					country={
 						country="c:GBR"
-						levels=5
+						levels=2
 					}
 				}
 				reserves=1
@@ -1847,7 +1868,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=5
+						levels=2
 					}
 				}
 				reserves=1
@@ -1885,31 +1906,18 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=2
+						levels=10
 						region="STATE_EAST_ANGLIA"
 					}
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=3
+						levels=5
 						region="STATE_HOME_COUNTIES"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_lathe" "pm_luxury_furniture" "pm_automation_disabled"  }
-			}
-			create_building={
-				building="building_luxury_furniture_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=6
-						region="STATE_MIDLANDS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_luxury_lathe" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_glassworks"
@@ -1925,33 +1933,7 @@
 				activate_production_methods={ "pm_ceramics" "pm_leaded_glass" "pm_manual_glassblowing"  }
 			}
 			create_building={
-				building="building_porcelain_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=2
-						region="STATE_EAST_ANGLIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_ceramics_porcelain" }
-			}
-			create_building={
 				building="building_food_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=6
-						region="STATE_EAST_ANGLIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_disabled_canning" "pm_sweeteners" "pm_manual_dough_processing"  }
-			}
-			create_building={
-				building="building_railway"
 				add_ownership={
 					country={
 						country="c:GBR"
@@ -1959,20 +1941,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
-			}
-			create_building={
-				building="building_distillery_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=3
-						region="STATE_EAST_ANGLIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_drink_workshops_distillery_industry" }
+				activate_production_methods={ "pm_pot_stills" "pm_disabled_canning" "pm_sweeteners" "pm_manual_dough_processing"  }
 			}
 			create_building={
 				building="building_iron_mine"
@@ -1993,7 +1962,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=3
+						levels=2
 						region="STATE_EAST_ANGLIA"
 					}
 				}
@@ -2077,10 +2046,9 @@
 			create_building={
 				building="building_railway"
 				add_ownership={
-					company={
-						type=company_gwr
+					country={
 						country="c:GBR"
-						levels=5
+						levels=1
 					}
 				}
 				reserves=1
@@ -2091,7 +2059,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=8
+						levels=4
 					}
 				}
 				reserves=1
@@ -2126,18 +2094,37 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
-				building="building_tooling_workshops"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=3
-						region="STATE_HOME_COUNTIES"
+						levels=2
+						region="STATE_WEST_COUNTRY"
 					}
 					building={
 						type="building_financial_district"
 						country="c:GBR"
 						levels=1
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+			}
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=2
+						region="STATE_HOME_COUNTIES"
+					}
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=4
 						region="STATE_WEST_COUNTRY"
 					}
 				}
@@ -2150,12 +2137,12 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=5
+						levels=1
 						region="STATE_WEST_COUNTRY"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_dye_workshops"  "pm_traditional_looms" "pm_craftsman_sewing" }
+				activate_production_methods={ "pm_dye_workshops" "pm_traditional_looms" "pm_no_luxury_clothes" }
 			}
 			create_building={
 				building="building_shipyards"
@@ -2163,13 +2150,13 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=2
+						levels=3
 						region="STATE_WEST_COUNTRY"
 					}
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=2
+						levels=4
 						region="STATE_HOME_COUNTIES"
 					}
 				}
@@ -2182,7 +2169,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=3
+						levels=2
 						region="STATE_HOME_COUNTIES"
 					}
 				}
@@ -2214,17 +2201,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_railway"
-				add_ownership={
-					country={
-						country="c:GBR"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -2270,7 +2246,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=8
+						levels=4
 					}
 				}
 				reserves=1
@@ -2291,23 +2267,36 @@
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
-			create_building={
-				building="building_arms_industry"
+			create_building={ # Amalgamation of the four Ancient Universities of Scotland
+				building="building_university"
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=1
+						region="STATE_LOWLANDS"
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -2319,7 +2308,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=4
+						levels=3
 						region="STATE_LOWLANDS"
 					}
 				}
@@ -2332,7 +2321,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=1
+						levels=3
 						region="STATE_LOWLANDS"
 					}
 					building={
@@ -2346,25 +2335,12 @@
 				activate_production_methods={ "pm_leaded_glass" "pm_ceramics" "pm_manual_glassblowing"  }
 			}
 			create_building={
-				building="building_distillery_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=5
-						region="STATE_EAST_ANGLIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_drink_workshops_distillery_industry" }
-			}
-			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=6
+						levels=2
 						region="STATE_LOWLANDS"
 					}
 				}
@@ -2441,7 +2417,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=5
+						levels=1
 						region="STATE_LOWLANDS"
 					}
 				}
@@ -2453,7 +2429,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=5
+						levels=2
 					}
 				}
 				reserves=1
@@ -2490,58 +2466,6 @@
 				activate_production_methods={ "pm_slaughterhouses" "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
-				building="building_porcelain_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=1
-						region="STATE_EAST_ANGLIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_ceramics_porcelain" }
-			}
-			create_building={
-				building="building_railway"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=2
-						region="STATE_LOWLANDS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_early_trains" "pm_wooden_passenger_carriages"  }
-			}
-			create_building={
-				building="building_food_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=10
-						region="STATE_ULSTER"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_disabled_canning" "pm_sweeteners" "pm_manual_dough_processing"  }
-			}
-			create_building={
-				building="building_furniture_manufacturies"
-				add_ownership={
-					building={
-						type="building_furniture_manufacturies"
-						country="c:GBR"
-						levels=5
-						region="STATE_ULSTER"
-					}					
-				}
-				reserves=1
-				activate_production_methods={ "pm_lathe"  "pm_automation_disabled" }
-			}
-			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
@@ -2560,7 +2484,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=6
+						levels=2
 						region="STATE_ULSTER"
 					}
 				}
@@ -2568,24 +2492,11 @@
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_distillery_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=2
-						region="STATE_EAST_ANGLIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_drink_workshops_distillery_industry" }
-			}
-			create_building={
 				building="building_port"
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=5
+						levels=1
 					}
 				}
 				reserves=1
@@ -2613,7 +2524,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -2635,6 +2546,19 @@
 				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=1
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_lead_mine"
 				add_ownership={
 					building={
@@ -2653,12 +2577,12 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=1
+						levels=4
 						region="STATE_LEINSTER"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_sweeteners" "pm_disabled_canning" "pm_pot_stills" "pm_manual_dough_processing"  }
+				activate_production_methods={ "pm_sweeteners" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing"  }
 			}
 			create_building={
 				building="building_rye_farm"
@@ -2678,7 +2602,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=4
+						levels=2
 					}
 				}
 				reserves=1
@@ -2701,17 +2625,6 @@
 				reserves=1
 				activate_production_methods={ "pm_soil_enriching_farming"  "pm_tools" "pm_potatoes" }
 			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					country={
-						country="c:GBR"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_port" }
-			}
 		}
 	}
 	s:STATE_ILE_DE_FRANCE={
@@ -2728,7 +2641,8 @@
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 			create_building={
-				building="building_luxury_furniture_industry"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
@@ -2738,27 +2652,13 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_luxury_lathe" "pm_automation_disabled"  }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_logging_camp"
-						country="c:FRA"
-						levels=4
-						region="STATE_ILE_DE_FRANCE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_hardwood" "pm_saw_mills" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=10
+						levels=5
 					}
 				}
 				reserves=1
@@ -2781,7 +2681,7 @@
 					building={
 						type="building_manor_house"
 						country="c:FRA"
-						levels=5
+						levels=2
 						region="STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -2794,7 +2694,7 @@
 					building={
 						type="building_furniture_manufacturies"
 						country="c:FRA"
-						levels=5
+						levels=4
 						region="STATE_ILE_DE_FRANCE"
 					}
 					building={
@@ -2802,10 +2702,10 @@
 						country="c:FRA"
 						levels=5
 						region="STATE_ILE_DE_FRANCE"
-					}					
+					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_lathe"  "pm_automation_disabled" "pm_luxury_furniture" }
+				activate_production_methods={ "pm_lathe"  "pm_automation_disabled" "pm_no_luxuries" }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -2839,12 +2739,12 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=2
+						levels=4
 						region="STATE_ILE_DE_FRANCE"
 					}
 					country={
 						country="c:FRA"
-						levels=2
+						levels=4
 					}
 				}
 				reserves=1
@@ -2856,7 +2756,7 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=3
+						levels=1
 						region="STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -2906,26 +2806,34 @@
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
 			}
+		}
+		region_state:FRA={
 			create_building={
 				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
-					country={
+					building={
+						type="building_financial_district"
 						country="c:FRA"
-						levels=1
+						levels=3
+						region="STATE_PROVENCE"
+					}
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=2
+						region="STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
 			}
-		}
-		region_state:FRA={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
 					building={
 						type="building_textile_mills"
 						country="c:FRA"
-						levels=5
+						levels=2
 						region="STATE_PROVENCE"
 					}
 					building={
@@ -2965,17 +2873,6 @@
 				activate_production_methods={ "default_building_silk_plantation" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_trade_center"
-				add_ownership={
-					country={
-						country="c:FRA"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
-			}
-			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
@@ -3002,22 +2899,11 @@
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_cotton_plantation"
-				add_ownership={
-					country={
-						country="c:FRA"
-						levels=20
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts" }
-			}
-			create_building={
 				building="building_port"
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -3039,22 +2925,31 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
-				building="building_logging_camp"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
-						type="building_logging_camp"
+						type="building_financial_district"
 						country="c:FRA"
-						levels=12
+						levels=2
 						region="STATE_NORMANDY"
 					}
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=1
+						region="STATE_ILE_DE_FRANCE"
+					}
 				}
+				reserves=1
+			}
 			create_building={
 				building="building_shipyards"
 				add_ownership={
 					building={
 						type="building_shipyards"
 						country="c:FRA"
-						levels=6
+						levels=3
 						region="STATE_NORMANDY"
 					}
 				}
@@ -3067,7 +2962,7 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=4
+						levels=2
 						region="STATE_NORMANDY"
 					}
 				}
@@ -3091,7 +2986,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_dye_workshops" "pm_traditional_looms"  }
+				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_fishing_wharf"
@@ -3120,23 +3015,12 @@
 				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
-				building="building_trade_center"
-				add_ownership={
-					country={
-						country="c:FRA"
-						levels=15
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
-			}
-			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
 						country="c:FRA"
-						levels=16
+						levels=2
 						region="STATE_NORMANDY"
 					}
 				}
@@ -3148,7 +3032,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -3158,6 +3042,25 @@
 	}
 	s:STATE_LANGUEDOC={
 		region_state:FRA={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=1
+						region="STATE_LANGUEDOC"
+					}
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=1
+						region="STATE_ILE_DE_FRANCE"
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_university"
 				add_ownership={
@@ -3188,6 +3091,12 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
+						levels=3
+						region="STATE_LANGUEDOC"
+					}
+					building={
+						type="building_financial_district"
+						country="c:FRA"
 						levels=1
 						region="STATE_ILE_DE_FRANCE"
 					}
@@ -3206,7 +3115,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -3239,11 +3148,30 @@
 	s:STATE_RHONE={
 		region_state:FRA={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=1
+						region="STATE_RHONE"
+					}
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=1
+						region="STATE_ILE_DE_FRANCE"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=4
+						levels=2
 					}
 				}
 				reserves=1
@@ -3259,17 +3187,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
-			}
-			create_building={
-				building="building_cotton_plantation"
-				add_ownership={
-					country={
-						country="c:FRA"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -3289,19 +3206,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_dye_workshops" "pm_craftsman_sewing" "pm_traditional_looms"  }
-			}
-			create_building={
-				building="building_luxury_clothes_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:FRA"
-						levels=5
-						region="STATE_RHONE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_luxury_dye_workshops" }
 			}
 			create_building={
 				building="building_paper_mills"
@@ -3326,13 +3230,13 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=8
+						levels=2
 						region="STATE_RHONE"
 					}
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=4
+						levels=2
 						region="STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -3409,7 +3313,7 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=5
+						levels=1
 						region="STATE_RHONE"
 					}
 				}
@@ -3421,6 +3325,19 @@
 	s:STATE_FRENCH_LOW_COUNTRIES={
 		region_state:FRA={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=1
+						region="STATE_ILE_DE_FRANCE"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_arms_industry"
 				add_ownership={
 					building={
@@ -3431,7 +3348,7 @@
 					}
 					country={
 						country="c:FRA"
-						levels=2
+						levels=4
 					}
 				}
 				reserves=1
@@ -3454,7 +3371,7 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=4
+						levels=2
 						region="STATE_FRENCH_LOW_COUNTRIES"
 					}
 				}
@@ -3467,7 +3384,7 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=2
+						levels=3
 						region="STATE_FRENCH_LOW_COUNTRIES"
 					}
 				}
@@ -3485,7 +3402,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+				activate_production_methods={ "pm_simple_farming" "pm_sugar_beets" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -3505,7 +3422,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -3523,7 +3440,7 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=1
+						levels=3
 						region="STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -3553,7 +3470,7 @@
 					building={
 						type="building_textile_mills"
 						country="c:FRA"
-						levels=2
+						levels=5
 						region="STATE_PICARDY"
 					}
 				}
@@ -3577,7 +3494,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_soil_enriching_farming" "pm_no_secondary" "pm_tools_disabled"  }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_sugar_beets" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -3597,12 +3514,25 @@
 	s:STATE_ALSACE_LORRAINE={
 		region_state:FRA={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=1
+						region="STATE_ALSACE_LORRAINE"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_steel_mills"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=3
+						levels=2
 						region="STATE_ALSACE_LORRAINE"
 					}
 				}
@@ -3614,7 +3544,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=3
+						levels=4
 					}
 				}
 				reserves=1
@@ -3626,7 +3556,7 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=3
+						levels=2
 						region="STATE_ALSACE_LORRAINE"
 					}
 					building={
@@ -3658,7 +3588,7 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=8
+						levels=5
 						region="STATE_ALSACE_LORRAINE"
 					}
 				}
@@ -3688,7 +3618,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_dye_workshops" "pm_craftsman_sewing" "pm_traditional_looms"  }
+				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 		}
 	}
@@ -3700,7 +3630,7 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=6
+						levels=2
 						region="STATE_POITOU"
 					}
 					country={
@@ -3771,12 +3701,12 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=8
+						levels=3
 						region="STATE_GUYENNE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_dye_workshops" "pm_craftsman_sewing" "pm_traditional_looms"  }
+				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -3860,7 +3790,7 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=1
+						levels=3
 						region="STATE_AUVERGNE_LIMOUSIN"
 					}
 				}
@@ -3873,18 +3803,18 @@
 					building={
 						type="building_furniture_manufacturies"
 						country="c:FRA"
-						levels=1
+						levels=2
 						region="STATE_AUVERGNE_LIMOUSIN"
 					}
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=2
+						levels=3
 						region="STATE_AUVERGNE_LIMOUSIN"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_lathe" "pm_luxury_furniture" "pm_automation_disabled"  }
+				activate_production_methods={ "pm_lathe" "pm_no_luxuries" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -3940,6 +3870,25 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=1
+						region="STATE_BRITTANY"
+					}
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=1
+						region="STATE_ILE_DE_FRANCE"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_shipyards"
 				add_ownership={
 					building={
@@ -3963,7 +3912,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -4045,7 +3994,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -4061,13 +4010,13 @@
 					building={
 						type="building_tooling_workshops"
 						country="c:FRA"
-						levels=1
+						levels=3
 						region="STATE_BURGUNDY"
 					}
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=3
+						levels=1
 						region="STATE_ILE_DE_FRANCE"
 					}
 				}
@@ -4117,7 +4066,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_soil_enriching_farming" "pm_no_secondary" "pm_tools_disabled"  }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_vineyard_plantation"
@@ -4153,20 +4102,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pot_stills" "pm_disabled_canning" "pm_sweeteners" "pm_manual_dough_processing"  }
-			}
-			create_building={
-				building="building_distillery_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:FRA"
-						levels=5
-						region="STATE_CHAMPAGNE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_drink_workshops_distillery_industry" }
+				activate_production_methods={ "pm_disabled_distillery" "pm_disabled_canning" "pm_sweeteners" "pm_manual_dough_processing"  }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -4193,25 +4129,12 @@
 					building={
 						type="building_manor_house"
 						country="c:FRA"
-						levels=15
+						levels=3
 						region="STATE_CHAMPAGNE"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_railway"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:FRA"
-						levels=2
-						region="STATE_RHONE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_early_trains" "pm_wooden_passenger_carriages"  }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -4231,24 +4154,37 @@
 	s:STATE_FRANCHE_COMTE={
 		region_state:FRA={
 			create_building={
-				building="building_furniture_manufacturies"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:FRA"
 						levels=1
+						region="STATE_ILE_DE_FRANCE"
+					}
+				}
+				reserves=1
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=2
 						region="STATE_FRANCHE_COMTE"
 					}
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=2
+						levels=1
 						region="STATE_ILE_DE_FRANCE"
 					}
 					building={
 						type="building_furniture_manufacturies"
 						country="c:FRA"
-						levels=1
+						levels=2
 						region="STATE_FRANCHE_COMTE"
 					}
 				}
@@ -4310,7 +4246,7 @@
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=6
+						levels=2
 						region="STATE_LORRAINE"
 					}
 				}
@@ -4338,6 +4274,12 @@
 						country="c:FRA"
 						levels=2
 						region="STATE_LORRAINE"
+					}
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=1
+						region="STATE_FRENCH_LOW_COUNTRIES"
 					}
 				}
 				reserves=1
@@ -4380,12 +4322,31 @@
 	s:STATE_AQUITAINE={
 		region_state:FRA={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=2
+						region="STATE_AQUITAINE"
+					}
+					building={
+						type="building_financial_district"
+						country="c:FRA"
+						levels=1
+						region="STATE_ILE_DE_FRANCE"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_food_industry"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=6
+						levels=3
 						region="STATE_AQUITAINE"
 					}
 				}
@@ -4455,7 +4416,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=3
+						levels=1
 					}
 				}
 				reserves=1
@@ -4466,17 +4427,17 @@
 	s:STATE_ORLEANS={
 		region_state:FRA={
 			create_building={
-				building="building_porcelain_industry"
+				building="building_glassworks"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:FRA"
-						levels=1
+						levels=2
 						region="STATE_ORLEANS"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_ceramics_porcelain" }
+				activate_production_methods={ "pm_leaded_glass" "pm_ceramics" "pm_manual_glassblowing"  }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -4522,6 +4483,19 @@
 	s:STATE_HOLLAND={
 		region_state:NET={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NET"
+						levels=6
+						region="STATE_HOLLAND"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
@@ -4560,7 +4534,7 @@
 					building={
 						type="building_financial_district"
 						country="c:NET"
-						levels=4
+						levels=2
 						region="STATE_HOLLAND"
 					}
 				}
@@ -4572,7 +4546,7 @@
 				add_ownership={
 					country={
 						country="c:NET"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -4588,7 +4562,7 @@
 					building={
 						type="building_financial_district"
 						country="c:NET"
-						levels=4
+						levels=1
 						region="STATE_HOLLAND"
 					}
 				}
@@ -4601,13 +4575,13 @@
 					building={
 						type="building_textile_mills"
 						country="c:NET"
-						levels=5
+						levels=2
 						region="STATE_HOLLAND"
 					}
 					building={
 						type="building_financial_district"
 						country="c:NET"
-						levels=5
+						levels=2
 						region="STATE_HOLLAND"
 					}
 				}
@@ -4620,7 +4594,7 @@
 					building={
 						type="building_financial_district"
 						country="c:NET"
-						levels=5
+						levels=2
 						region="STATE_HOLLAND"
 					}
 				}
@@ -4677,21 +4651,36 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
 			}
-			create_building={
-				building="building_trade_center"
-				add_ownership={
-					country={
-						country="c:NET"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
-			}
 		}
 	}
 	s:STATE_FRIESLAND={
 		region_state:NET={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NET"
+						levels=2
+						region="STATE_HOLLAND"
+					}
+				}
+				reserves=1
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NET"
+						levels=1
+						region="STATE_FRIESLAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
 			create_building={
 				building="building_government_administration"
 				add_ownership={
@@ -4709,7 +4698,7 @@
 					building={
 						type="building_financial_district"
 						country="c:NET"
-						levels=2
+						levels=3
 						region="STATE_FRIESLAND"
 					}
 					country={
@@ -4726,7 +4715,7 @@
 					building={
 						type="building_financial_district"
 						country="c:NET"
-						levels=2
+						levels=1
 						region="STATE_FRIESLAND"
 					}
 				}
@@ -4773,18 +4762,31 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NET"
+						levels=1
+						region="STATE_HOLLAND"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:NET"
-						levels=3
+						levels=1
 						region="STATE_GELRE"
 					}
 					building={
 						type="building_furniture_manufacturies"
 						country="c:NET"
-						levels=3
+						levels=1
 						region="STATE_GELRE"
 					}
 				}
@@ -4874,12 +4876,25 @@
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:BEL"
+						levels=2
+						region="STATE_WALLONIA"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_steel_mills"
 				add_ownership={
 					company={
 						type=company_john_cockerill
 						country="c:BEL"
-						levels=4
+						levels=2
 					}
 				}
 				reserves=1
@@ -4902,7 +4917,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BEL"
-						levels=4
+						levels=2
 						region="STATE_WALLONIA"
 					}
 				}
@@ -4915,7 +4930,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BEL"
-						levels=2
+						levels=1
 						region="STATE_WALLONIA"
 					}
 				}
@@ -4928,7 +4943,7 @@
 					company={
 						type=company_john_cockerill
 						country="c:BEL"
-						levels=7
+						levels=3
 					}
 				}
 				reserves=1
@@ -4966,7 +4981,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BEL"
-						levels=3
+						levels=2
 						region="STATE_WALLONIA"
 					}
 				}
@@ -5005,7 +5020,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BEL"
-						levels=3
+						levels=1
 						region="STATE_WALLONIA"
 					}
 				}
@@ -5016,6 +5031,19 @@
 	}
 	s:STATE_FLANDERS={
 		region_state:BEL={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:BEL"
+						levels=6
+						region="STATE_FLANDERS"
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_government_administration"
 				add_ownership={
@@ -5043,7 +5071,7 @@
 				add_ownership={
 					country={
 						country="c:BEL"
-						levels=3
+						levels=1
 					}
 				}
 				reserves=1
@@ -5055,7 +5083,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BEL"
-						levels=5
+						levels=2
 						region="STATE_FLANDERS"
 					}
 				}
@@ -5068,7 +5096,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BEL"
-						levels=2
+						levels=1
 						region="STATE_FLANDERS"
 					}
 				}
@@ -5098,7 +5126,7 @@
 					building={
 						type="building_textile_mills"
 						country="c:BEL"
-						levels=3
+						levels=1
 						region="STATE_FLANDERS"
 					}
 				}
@@ -5111,13 +5139,13 @@
 					building={
 						type="building_furniture_manufacturies"
 						country="c:BEL"
-						levels=3
+						levels=2
 						region="STATE_FLANDERS"
 					}
 					building={
 						type="building_financial_district"
 						country="c:BEL"
-						levels=3
+						levels=1
 						region="STATE_FLANDERS"
 					}
 				}
@@ -5194,7 +5222,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BEL"
-						levels=5
+						levels=1
 						region="STATE_FLANDERS"
 					}
 				}
@@ -5212,27 +5240,23 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
 			}
-			create_building={
-				building="building_trade_center"
-				add_ownership={
-					country={
-						country="c:GBR"
-						levels=2
-					}
-				}
-				add_ownership={
-					country={
-						country="c:BEL"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
-			}
 		}
 	}
 	s:STATE_AUSTRIA={
 		region_state:AUS={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:AUS"
+						levels=4
+						region="STATE_AUSTRIA"
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_government_administration"
 				add_ownership={
@@ -5309,7 +5333,7 @@
 					}
 					country={
 						country="c:AUS"
-						levels=1
+						levels=2
 					}
 					building={
 						type="building_financial_district"
@@ -5356,11 +5380,24 @@
 				add_ownership={
 					country={
 						country="c:AUS"
-						levels=10
+						levels=9
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:AUS"
+						levels=2
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
 			}
 			create_building={
 				building="building_arms_industry"
@@ -5410,7 +5447,7 @@
 						type="building_financial_district"
 						country="c:AUS"
 						levels=1
-						region="STATE_AUSTRIA"
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -5429,7 +5466,7 @@
 						type="building_financial_district"
 						country="c:AUS"
 						levels=1
-						region="STATE_AUSTRIA"
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -5441,7 +5478,7 @@
 					building={
 						type="building_iron_mine"
 						country="c:AUS"
-						levels=2
+						levels=1
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -5461,7 +5498,7 @@
 						type="building_financial_district"
 						country="c:AUS"
 						levels=1
-						region="STATE_AUSTRIA"
+						region="STATE_BOHEMIA"
 					}
 				}
 				reserves=1
@@ -5473,7 +5510,7 @@
 					building={
 						type="building_rye_farm"
 						country="c:AUS"
-						levels=7
+						levels=6
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -5493,7 +5530,43 @@
 				reserves=1
 				activate_production_methods={ "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
-			
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_tooling_workshops"
+						country="c:AUS"
+						levels=2
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_lead_mine"
+				add_ownership={
+					building={
+						type="building_lead_mine"
+						country="c:AUS"
+						levels=1
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_gold_mine"
+				add_ownership={
+					country={
+						country="c:AUS"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
 		}
 	}
 	s:STATE_MORAVIA={
@@ -5543,7 +5616,7 @@
 						type="building_financial_district"
 						country="c:AUS"
 						levels=1
-						region="STATE_AUSTRIA"
+						region="STATE_MORAVIA"
 					}
 				}
 				reserves=1
@@ -5562,7 +5635,7 @@
 						type="building_manor_house"
 						country="c:AUS"
 						levels=2
-						region="STATE_AUSTRIA"
+						region="STATE_MORAVIA"
 					}
 				}
 				reserves=1
@@ -5574,7 +5647,7 @@
 					building={
 						type="building_coal_mine"
 						country="c:AUS"
-						levels=2
+						levels=1
 						region="STATE_MORAVIA"
 					}
 				}
@@ -5700,6 +5773,25 @@
 	s:STATE_POMERANIA={
 		region_state:PRU={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=2
+						region="STATE_POMERANIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=2
+						region="STATE_BRANDENBURG"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
@@ -5711,32 +5803,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
-			}
-			create_building={
-				building="building_distillery_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:PRU"
-						levels=1
-						region="STATE_POMERANIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_drink_workshops_distillery_industry" }
-			}
-			create_building={
-				building="building_food_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:PRU"
-						levels=1
-						region="STATE_POMERANIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_sweeteners" "pm_disabled_canning" "pm_manual_dough_processing"  }
 			}
 			create_building={
 				building="building_rye_farm"
@@ -5794,21 +5860,23 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
 			}
-			create_building={
-				building="building_trade_center"
-				add_ownership={
-					country={
-						country="c:PRU"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
-			}
-		}	
+		}
 	}
 	s:STATE_ELBE={
 		region_state:BRE={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:BRE"
+						levels=2
+						region="STATE_ELBE"
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
@@ -5821,19 +5889,6 @@
 				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
 			}
 			create_building={
-				building="building_shipyards"
-				add_ownership={
-					building={
-						type="building_shipyards"
-						country="c:BRE"
-						levels=1
-						region="STATE_ELBE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_shipbuilding"  }
-			}
-			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -5842,35 +5897,35 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_basic_port" }
 			}
 		}
 		region_state:HAM={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:HAM"
+						levels=3
+						region="STATE_ELBE"
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:HAM"
-						levels=3
+						levels=1
 						region="STATE_ELBE"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled"  }
-			}
-			create_building={
-				building="building_distillery_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:HAM"
-						levels=3
-						region="STATE_ELBE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_drink_workshops_distillery_industry" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -5884,7 +5939,7 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" }
-			}			
+			}
 			create_building={
 				building="building_port"
 				add_ownership={
@@ -5894,23 +5949,10 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_basic_port" }
 			}
 		}
 		region_state:HAN={
-		    create_building={
-				building="building_shipyards"
-				add_ownership={
-					building={
-						type="building_shipyards"
-						country="c:HAN"
-						levels=1
-						region="STATE_ELBE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_shipbuilding"  }
-			}
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
@@ -5966,11 +6008,24 @@
 				activate_production_methods={ "pm_religious_bureaucrats" "pm_hereditary_bureaucrats" "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SWI"
+						levels=4
+						region="STATE_EAST_SWITZERLAND"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_university"
 				add_ownership={
 					country={
 						country="c:SWI"
-						levels=3
+						levels=1
 					}
 				}
 				reserves=1
@@ -5982,7 +6037,7 @@
 					building={
 						type="building_textile_mills"
 						country="c:SWI"
-						levels=4
+						levels=1
 						region="STATE_EAST_SWITZERLAND"
 					}
 				}
@@ -6055,6 +6110,19 @@
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SWI"
+						levels=2
+						region="STATE_WEST_SWITZERLAND"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_paper_mills"
 				add_ownership={
 					country={
@@ -6103,7 +6171,7 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
-			}			
+			}
 			create_building={
 				building="building_barracks"
 				add_ownership={
@@ -6115,21 +6183,7 @@
 				reserves=1
 				activate_production_methods={ "pm_no_organization" }
 			}
-		
-			create_building={
-				building="building_furniture_manufacturies"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:HAM"
-						levels=3
-						region="STATE_ELBE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled"  }
-			}
-		}	
+		}
 	}
 	s:STATE_WESTPHALIA={
 		region_state:PRU={
@@ -6157,43 +6211,6 @@
 				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
 			}
 			create_building={
-				building="building_motor_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:GBR"
-						levels=2
-						region="STATE_HOME_COUNTIES"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_steam_engines" "pm_automobiles_disabled" "pm_automation_disabled"  }
-			}
-			create_building={
-				building="building_railway"
-				add_ownership={
-					country={
-						country="c:PRU"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
-			}
-			create_building={
-				building="building_paper_mills"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:PRU"
-						levels=1
-						region="STATE_WESTPHALIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_sulfite_pulping"  "pm_automation_disabled" }
-			}
-			create_building={
 				building="building_arms_industry"
 				add_ownership={
 					company={
@@ -6206,18 +6223,30 @@
 				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
 			}
 			create_building={
+				building="building_artillery_foundries"
+				add_ownership={
+					company={
+						type=company_krupp
+						country="c:PRU"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
+			}
+			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
 						country="c:PRU"
-						levels=1
+						levels=3
 						region="STATE_WESTPHALIA"
 					}
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=3
+						levels=2
 						region="STATE_WESTPHALIA"
 					}
 				}
@@ -6228,9 +6257,16 @@
 				building="building_iron_mine"
 				add_ownership={
 					building={
-						type="building_iron_mine"
+						type="building_financial_district"
 						country="c:PRU"
-						levels=5
+						levels=1
+						region="STATE_WESTPHALIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=1
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -6248,7 +6284,7 @@
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=2
+						levels=1
 						region="STATE_BRANDENBURG"
 					}
 				}
@@ -6309,25 +6345,12 @@
 				activate_production_methods={ "pm_luxury_furniture" "pm_lathe" "pm_automation_disabled"  }
 			}
 			create_building={
-				building="building_luxury_furniture_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:PRU"
-						levels=2
-						region="STATE_ANHALT"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_luxury_lathe" "pm_automation_disabled"  }
-			}
-			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=15
+						levels=5
 						region="STATE_ANHALT"
 					}
 				}
@@ -6391,38 +6414,20 @@
 				activate_production_methods={ "pm_religious_bureaucrats" "pm_professional_bureaucrats" "pm_vertical_filing_cabinets" }
 			}
 			create_building={
-				building="building_munition_plants"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=1
-						region="STATE_BRANDENBURG"
-					}
-					country={
-						country="c:PRU"
-						levels=1
-					}
-				}
-				subsidized=yes
-				reserves=1
-				activate_production_methods={ "pm_percussion_caps" "pm_automation_disabled"  }
-			}
-			create_building={
-				building="building_chemical_plants"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:PRU"
-						levels=1
-						region="STATE_BRANDENBURG"
+						levels=3
+						region="STATE_RHINELAND"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_artificial_fertilizers"  }
 			}
 			create_building={
-				building="building_explosives_factory"
+				building="building_construction_sector"
 				add_ownership={
 					country={
 						country="c:PRU"
@@ -6430,29 +6435,26 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_leblanc_process"  }
+				activate_production_methods={ "pm_iron_frame_buildings" }
 			}
 			create_building={
-				building="building_paper_mills"
+				building="building_tooling_workshops"
 				add_ownership={
-					country={
+					building={
+						type="building_tooling_workshops"
 						country="c:PRU"
-						levels=1
+						levels=3
+						region="STATE_RHINELAND"
+					}
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=3
+						region="STATE_RHINELAND"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pulp_pressing"  "pm_automation_disabled" }
-			}
-			create_building={
-				building="building_railway"
-				add_ownership={
-					country={
-						country="c:PRU"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
+				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -6468,12 +6470,25 @@
 				activate_production_methods={  "pm_soil_enriching_farming" "pm_citrus_orchards" "pm_tools" }
 			}
 			create_building={
+				building="building_steel_mills"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=1
+						region="STATE_RHINELAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
+			}
+			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
 						country="c:PRU"
-						levels=5
+						levels=4
 						region="STATE_RHINELAND"
 					}
 				}
@@ -6523,45 +6538,26 @@
 			}
 		}
 	}
-	
 	s:STATE_NORTH_RHINE={
 		region_state:PRU={
-		    create_building={
-				building="building_construction_sector"
-				add_ownership={
-					country={
-						country="c:PRU"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" }
-			}
 			create_building={
-				building="building_tooling_workshops"
+				building="building_textile_mills"
 				add_ownership={
 					building={
-						type="building_tooling_workshops"
-						country="c:PRU"
-						levels=3
-						region="STATE_NORTH_RHINE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
-			}
-			create_building={
-				building="building_steel_mills"
-				add_ownership={
-					building={
-						type="building_financial_district"
+						type="building_textile_mills"
 						country="c:PRU"
 						levels=1
 						region="STATE_NORTH_RHINE"
 					}
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=2
+						region="STATE_NORTH_RHINE"
+					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
+				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_coal_mine"
@@ -6569,7 +6565,7 @@
 					building={
 						type="building_coal_mine"
 						country="c:PRU"
-						levels=5
+						levels=4
 						region="STATE_NORTH_RHINE"
 					}
 				}
@@ -6588,17 +6584,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_railway"
-				add_ownership={
-					country={
-						country="c:PRU"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -6625,7 +6610,7 @@
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=6
+						levels=2
 						region="STATE_NORTH_RHINE"
 					}
 				}
@@ -6635,46 +6620,26 @@
 		}
 	}
 	s:STATE_BRANDENBURG={
-	    
 		region_state:PRU={
 			create_building={
-				building="building_textile_mills"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
-					building={
-						type="building_textile_mills"
-						country="c:PRU"
-						levels=3
-						region="STATE_BRANDENBURG"
-					}
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=1
+						levels=2
 						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:PRU"
-						levels=15
-						region="STATE_POMERANIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_sheep_farms"  "pm_standard_fences" "pm_unrefrigerated" "pm_slaughterhouses" }
 			}
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
 						country="c:PRU"
-						levels=10
+						levels=13
 					}
 				}
 				reserves=1
@@ -6685,7 +6650,7 @@
 				add_ownership={
 					country={
 						country="c:PRU"
-						levels=4
+						levels=3
 					}
 				}
 				reserves=1
@@ -6705,8 +6670,12 @@
 			create_building={
 				building="building_arms_industry"
 				add_ownership={
+					country={
+						country="c:PRU"
+						levels=2
+					}
 					building={
-						type="building_financial_district"
+						type="building_arms_industry"
 						country="c:PRU"
 						levels=1
 						region="STATE_BRANDENBURG"
@@ -6721,13 +6690,13 @@
 					building={
 						type="building_furniture_manufacturies"
 						country="c:PRU"
-						levels=1
+						levels=2
 						region="STATE_BRANDENBURG"
 					}
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=1
+						levels=3
 						region="STATE_BRANDENBURG"
 					}
 				}
@@ -6737,6 +6706,12 @@
 			create_building={
 				building="building_glassworks"
 				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=2
+						region="STATE_BRANDENBURG"
+					}
 					building={
 						type="building_glassworks"
 						country="c:PRU"
@@ -6748,15 +6723,21 @@
 				activate_production_methods={ "pm_leaded_glass"  "pm_manual_glassblowing" "pm_ceramics" }
 			}
 			create_building={
-				building="building_railway"
+				building="building_paper_mills"
 				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=2
+						region="STATE_BRANDENBURG"
+					}
 					country={
 						country="c:PRU"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
+				activate_production_methods={ "pm_sulfite_pulping" "pm_automation_disabled"  }
 			}
 		}
 	}
@@ -6821,21 +6802,6 @@
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 		}
-		region_state:PRU={
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_logging_camp"
-						country="c:PRU"
-						levels=1
-						region="STATE_SCHLESWIG_HOLSTEIN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
-			}
-		}
 		region_state:LUB={
 			create_building={
 				building="building_port"
@@ -6849,30 +6815,17 @@
 				activate_production_methods={ "pm_basic_port" }
 			}
 			create_building={
-				building="building_logging_camp"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
-						type="building_logging_camp"
+						type="building_trade_center"
 						country="c:LUB"
 						levels=1
 						region="STATE_SCHLESWIG_HOLSTEIN"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					building={
-						type="building_fishing_wharf"
-						country="c:LUB"
-						levels=3
-						region="STATE_SCHLESWIG_HOLSTEIN"
-					}
-				}
-				reserves=1
-				activate_production_methods={  "pm_unrefrigerated" "pm_fishing_trawlers" }
 			}
 		}
 		region_state:SCH={
@@ -6940,17 +6893,23 @@
 				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
 			}
 			create_building={
-				building="building_furniture_manufacturies"
+				building="building_tooling_workshops"
 				add_ownership={
 					building={
-						type="building_furniture_manufacturies"
+						type="building_financial_district"
 						country="c:WUR"
-						levels=4
+						levels=1
+						region="STATE_WURTTEMBERG"
+					}
+					building={
+						type="building_tooling_workshops"
+						country="c:WUR"
+						levels=2
 						region="STATE_WURTTEMBERG"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_lathe" "pm_automation_disabled"  }
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -6972,6 +6931,19 @@
 				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_paper_mills"
+						country="c:WUR"
+						levels=2
+						region="STATE_WURTTEMBERG"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
@@ -6990,7 +6962,7 @@
 					building={
 						type="building_manor_house"
 						country="c:WUR"
-						levels=10
+						levels=3
 						region="STATE_WURTTEMBERG"
 					}
 				}
@@ -7054,6 +7026,19 @@
 	s:STATE_BADEN={
 		region_state:BAD={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:BAD"
+						levels=1
+						region="STATE_BADEN"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_university"
 				add_ownership={
 					country={
@@ -7063,39 +7048,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
-			}
-			create_building={
-				building="building_steel_mills"
-				add_ownership={
-					country={
-						country="c:BAD"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
-			}
-			create_building={
-				building="building_construction_sector"
-				add_ownership={
-					country={
-						country="c:BAD"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" }
-			}
-			create_building={
-				building="building_tooling_workshops"
-				add_ownership={
-					country={
-						country="c:BAD"
-						levels=4
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_government_administration"
@@ -7187,7 +7139,7 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
-			}			
+			}
 		}
 		region_state:HAN={
 			create_building={
@@ -7202,7 +7154,8 @@
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_food_industry"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
@@ -7212,7 +7165,6 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_sweeteners" "pm_disabled_canning" "pm_manual_dough_processing"  }
 			}
 			create_building={
 				building="building_university"
@@ -7285,6 +7237,19 @@
 	}
 	s:STATE_BRUNSWICK={
 		region_state:HAN={
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:HAN"
+						levels=1
+						region="STATE_BRUNSWICK"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
 		}
 		region_state:BRA={
 			create_building={
@@ -7331,28 +7296,28 @@
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_construction_sector"
-				add_ownership={
-					country={
-						country="c:BAV"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" }
-			}
-			create_building={
-				building="building_distillery_industry"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:BAV"
-						levels=2
+						levels=1
 						region="STATE_BAVARIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_drink_workshops_distillery_industry" }
+			}
+			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:BAV"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_wooden_buildings" }
 			}
 			create_building={
 				building="building_glassworks"
@@ -7482,7 +7447,7 @@
 					building={
 						type="building_manor_house"
 						country="c:BAV"
-						levels=2
+						levels=1
 						region="STATE_FRANCONIA"
 					}
 				}
@@ -7514,7 +7479,7 @@
 					building={
 						type="building_furniture_manufacturies"
 						country="c:BAV"
-						levels=2
+						levels=1
 						region="STATE_FRANCONIA"
 					}
 				}
@@ -7566,6 +7531,17 @@
 				reserves=1
 				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
+			create_building={ # Bavarian Ludwig Railway
+				building="building_railway"
+				add_ownership={
+					country={
+						country="c:BAV"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
+			}
 		}
 	}
 	s:STATE_SAXONY={
@@ -7582,32 +7558,8 @@
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_paper_mills"
-				add_ownership={
-					country={
-						country="c:SAX"
-						levels=4
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_pulp_pressing"  "pm_automation_disabled" }
-			}
-			
-			create_building={
-				building="building_porcelain_industry"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:SAX"
-						levels=2
-						region="STATE_SAXONY"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_ceramics_porcelain" }
-			}
-			create_building={
-				building="building_chemical_plants"
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
@@ -7617,7 +7569,6 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_artificial_fertilizers"  }
 			}
 			create_building={
 				building="building_university"
@@ -7702,6 +7653,8 @@
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 		}
+	}
+	s:STATE_THURINGIA = {
 		region_state:MEI={
 			create_building={
 				building="building_rye_farm"
@@ -7710,7 +7663,7 @@
 						type="building_manor_house"
 						country="c:MEI"
 						levels=1
-						region="STATE_SAXONY"
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -7723,7 +7676,7 @@
 						type="building_manor_house"
 						country="c:MEI"
 						levels=1
-						region="STATE_SAXONY"
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -7749,7 +7702,7 @@
 						type="building_manor_house"
 						country="c:WEI"
 						levels=2
-						region="STATE_SAXONY"
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -7762,7 +7715,7 @@
 						type="building_manor_house"
 						country="c:WEI"
 						levels=1
-						region="STATE_SAXONY"
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -7775,7 +7728,7 @@
 						type="building_financial_district"
 						country="c:WEI"
 						levels=1
-						region="STATE_SAXONY"
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -7801,7 +7754,7 @@
 						type="building_manor_house"
 						country="c:COB"
 						levels=1
-						region="STATE_SAXONY"
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -7814,7 +7767,7 @@
 						type="building_manor_house"
 						country="c:COB"
 						levels=1
-						region="STATE_SAXONY"
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -7840,7 +7793,7 @@
 						type="building_manor_house"
 						country="c:SCW"
 						levels=2
-						region="STATE_SAXONY"
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -7853,7 +7806,7 @@
 						type="building_financial_district"
 						country="c:SCW"
 						levels=1
-						region="STATE_SAXONY"
+						region="STATE_THURINGIA"
 					}
 				}
 				reserves=1
@@ -7886,6 +7839,19 @@
 	s:STATE_HESSE={
 		region_state:FRM={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:FRM"
+						levels=1
+						region="STATE_HESSE"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_textile_mills"
 				add_ownership={
 					building={
@@ -7897,28 +7863,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
-			}
-			create_building={
-				building="building_paper_mills"
-				add_ownership={
-					country={
-						country="c:FRM"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_pulp_pressing"  "pm_automation_disabled" }
-			}
-			create_building={
-				building="building_arts_academy"
-				add_ownership={
-					country={
-						country="c:FRM"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_traditional_art" }
 			}
 		}
 		region_state:HES={
@@ -8067,6 +8011,19 @@
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
+			create_building={ # The vineyards owned by Klemens von Metternich in Nassau, which composed an enclave subject to the Emperor of Austria. Spurred a diplomatic incident in 1848 when Nassau asserted sovereignty over it.
+				building="building_vineyard_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:AUS"
+						levels=1
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
+			}
 		}
 		region_state:WLD={
 			create_building={
@@ -8171,7 +8128,7 @@
 				add_ownership={
 					country={
 						country="c:PRU"
-						levels=5
+						levels=3
 					}
 				}
 				reserves=1
@@ -8180,16 +8137,56 @@
 			create_building={
 				building="building_artillery_foundries"
 				add_ownership={
-					company={
-						type=company_krupp
+					country={
 						country="c:PRU"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
 			}
-			
+			create_building={
+				building="building_munition_plants"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=1
+						region="STATE_BRANDENBURG"
+					}
+					country={
+						country="c:PRU"
+						levels=1
+					}
+				}
+				subsidized=yes
+				reserves=1
+				activate_production_methods={ "pm_percussion_caps" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_chemical_plants"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=2
+						region="STATE_BRANDENBURG"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers"  }
+			}
+			create_building={
+				building="building_explosives_factory"
+				add_ownership={
+					country={
+						country="c:PRU"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_leblanc_process"  }
+			}
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
