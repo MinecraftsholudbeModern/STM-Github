@@ -7803,22 +7803,6 @@ STATES = {
 			country = c:SAX
 			owned_provinces = { x169073 x795368 x917939 xAFDFBF x43CE26 x31E0C0 }
 		}
-		create_state = {
-			country = c:MEI
-			owned_provinces = { x5141A0 xD0C021 }
-		}
-		create_state = {
-			country = c:WEI
-			owned_provinces = { xC00A37 }
-		}
-		create_state = {
-			country = c:COB
-			owned_provinces = { x66FE0A }
-		}
-		create_state = {
-			country = c:SCW
-			owned_provinces = { x51C021 }
-		}
 
 		add_homeland = cu:north_german
 	}
