@@ -1,0 +1,35 @@
+﻿prestige_good_bmw_automobiles = {
+	base_good = automobiles
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/ford_automobiles_prestige.dds"
+}
+prestige_good_nissan_automobiles = {
+	base_good = automobiles
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/turin_automobiles_prestige.dds"
+}
+prestige_good_renault_automobiles = {
+	base_good = automobiles
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/ford_automobiles_prestige.dds"
+}
+prestige_good_mm_mauser = {
+	base_good = ammunition
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/prestige_goods/mm_mauser.png"
+}
+prestige_good_siemens_phones = {
+	base_good = telephones
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/ericsson_apparatus_prestige.dds"
+}
+prestige_good_siberian_larch_timber = {
+	base_good = wood
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/prestige_goods/siberian_larch_timber.png"
+}
+prestige_good_liquor = {
+	base_good = liquor
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/prestige_goods/guinness_stout.png"
+}

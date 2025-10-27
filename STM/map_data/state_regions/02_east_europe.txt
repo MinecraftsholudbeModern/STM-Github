@@ -27,9 +27,9 @@ STATE_LOWER_SILESIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 20
-        bg_iron_mining = 20
-        bg_lead_mining = 4
-        bg_sulfur_mining = 9
+        bg_iron_mining = 40
+        bg_lead_mining = 25
+        bg_sulfur_mining = 10
         bg_logging = 10
     }
 }
@@ -48,9 +48,9 @@ STATE_UPPER_SILESIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 110
-        bg_iron_mining = 40
-        bg_lead_mining = 50
-        bg_sulfur_mining = 31
+        bg_iron_mining = 20
+        bg_lead_mining = 30
+        bg_sulfur_mining = 30
         bg_logging = 4
     }
 }
@@ -94,7 +94,7 @@ STATE_LESSER_POLAND = {
 STATE_WEST_PRUSSIA = {
     id = 158
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x178C99" "x374AC3" "x41A021" "x55FD02" "x611F2F" "x7CB839" "x80A0A0" "x945000" "xBAF66D" }
+    provinces = { "x3E3572" "x178C99" "x374AC3" "x41A021" "x55FD02" "x611F2F" "x7CB839" "x80A0A0" "x945000" "xBAF66D" }
     traits = { "state_trait_natural_harbors" }
     city = "x7CB839"
     port = "x611F2F"
@@ -104,7 +104,8 @@ STATE_WEST_PRUSSIA = {
     arable_land = 40
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_sulfur_mining = 40
+        bg_coal_mining = 10
+        bg_iron_mining = 10
         bg_logging = 8
         bg_fishing = 10
     }
@@ -140,8 +141,7 @@ STATE_POSEN = {
     arable_land = 90
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 24
-        bg_logging = 9
+        bg_logging = 12
     }
 }
 

@@ -1,0 +1,1173 @@
+﻿# Bayerische Motoren Werke
+company_bmw = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_bmw.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_BAVARIA }
+
+	building_types = {
+		building_automotive_industry
+	}
+	
+	extension_building_types = {
+		building_motor_industry
+	}
+
+	possible_prestige_goods = {
+		prestige_good_bmw_automobiles
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_south_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { 
+			any_scope_state = {
+				state_region = s:STATE_BAVARIA
+			}
+		}
+	}
+	
+	possible = {
+		any_scope_state = {
+			has_technology_researched = combustion_engine
+			state_region = s:STATE_BAVARIA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_automotive_industry
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_automotive_industry_throughput_add = 0.10
+		unit_occupation_mult = 0.3
+		state_infrastructure_from_automobiles_consumption_add = 0.25
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			has_technology_researched = combustion_engine
+			state_region = s:STATE_BAVARIA
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_automotive_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_BAVARIA
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+# nissan
+company_nissan = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/nissan.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_KANTO }
+
+	building_types = {
+		building_automotive_industry
+	}
+
+	extension_building_types = {
+		building_shipyards
+	}
+
+	possible_prestige_goods = {
+		prestige_good_nissan_automobiles
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_japan
+	}
+	
+	attainable = {
+		hidden_trigger = { 
+			any_scope_state = {
+				state_region = s:STATE_KANTO
+			}
+		}
+	}
+	
+	possible = {
+		any_scope_state = {
+		has_technology_researched = combustion_engine
+			state_region = s:STATE_KANTO
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_automotive_industry
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_trade_capacity_mult = 0.05
+		building_group_bg_heavy_industry_throughput_add = 0.05
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_KANTO
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_automotive_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_KANTO
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+# renault
+company_renault = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/renault.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_ILE_DE_FRANCE }
+
+	building_types = {
+		building_automotive_industry
+	}
+
+	possible_prestige_goods = {
+		prestige_good_renault_automobiles
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_france
+	}
+	
+	attainable = {
+		hidden_trigger = { 
+			any_scope_state = {
+				state_region = s:STATE_ILE_DE_FRANCE
+			}
+		}
+	}
+	
+	possible = {
+	has_technology_researched = combustion_engine
+		any_scope_state = {
+			state_region = s:STATE_ILE_DE_FRANCE
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_automotive_industry
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_working_adult_ratio_add = 0.05
+	}
+
+	ai_will_do = {
+	has_technology_researched = combustion_engine
+		any_scope_state = {
+			state_region = s:STATE_ILE_DE_FRANCE
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_automotive_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_ILE_DE_FRANCE
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+# Friedrich Krupp AG
+company_krupp = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/german_krupp.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_RUHR }
+
+	building_types = {
+		building_coal_mine #vertical integration since the 60s
+		building_steel_mills
+		building_arms_industry
+		building_artillery_foundries
+	}
+
+	extension_building_types = {
+		building_iron_mine #later aquisitions during expansion within zollverein
+	}
+
+	possible_prestige_goods = {
+		prestige_good_krupp_guns
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_north_germany
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_RUHR
+			}
+		}
+	}
+
+	possible = {
+		has_technology_researched = steelworking
+		any_scope_state = {
+			state_region = s:STATE_RUHR
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_steel_mills
+					is_building_type = building_arms_industry
+					is_building_type = building_artillery_foundries
+				}
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_railway_throughput_add = 0.25
+		unit_kill_rate_add = 0.1
+	}
+
+	ai_will_do = {
+		has_technology_researched = steelworking
+		any_scope_state = {
+			state_region = s:STATE_RUHR
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_steel_mills = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_RUHR
+			}
+		}
+		building_arms_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_RUHR
+			}
+		}
+		building_artillery_foundries = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_RUHR
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# Rheinische Metallwaaren- und Maschinenfabrik Aktiengesellschaft 
+company_rheinmetall = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/german_rheinmetall.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_NORTH_RHINE }
+
+	building_types = {
+		building_munition_plants
+		building_explosives_factory
+		building_railway # Inter-war Industry shift
+	}
+
+	extension_building_types = {
+		building_automotive_industry # Tanks 
+		building_motor_industry # Inter-war Industry shift
+	}
+
+	possible_prestige_goods = {
+		prestige_good_mm_mauser
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_north_germany
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_RUHR
+					state_region = s:STATE_NORTH_RHINE
+				}
+			}
+		}
+	}
+
+	possible = {
+		has_technology_researched = automatic_machine_guns
+		any_scope_state = {
+				state_region = s:STATE_NORTH_RHINE
+			
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_explosives_factory
+					is_building_type = building_munition_plants
+				}
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		unit_combat_unit_type_siege_artillery_offense_mult = 0.25 # Rapid-recoil guns
+	}
+
+	ai_will_do = {
+		has_technology_researched = automatic_machine_guns
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_NORTH_RHINE
+			}
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_munition_plants = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_NORTH_RHINE
+				is_incorporated = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# F. Schichau, Maschinen- und Lokomotivfabrik, Schiffswerft und Eisengießerei GmbH
+company_schichau = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/german_schichau.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_WEST_PRUSSIA }
+
+	building_types = {
+		building_motor_industry
+		building_military_shipyards
+		building_shipyards
+	}
+
+	possible_prestige_goods = {
+		prestige_good_schichau_engines
+	}
+
+	extension_building_types = {
+		building_railway
+		building_steel_mills
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_poland
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_WEST_PRUSSIA
+			}
+		}
+	}
+
+	possible = {
+		has_technology_researched = railways
+		any_scope_state = {
+			state_region = s:STATE_WEST_PRUSSIA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_motor_industry
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		unit_navy_offense_mult = 0.05
+		unit_combat_unit_type_submarine_offense_mult = 0.1
+	}
+
+	ai_will_do = {
+		has_technology_researched = railways
+		any_scope_state = {
+			state_region = s:STATE_WEST_PRUSSIA
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_motor_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_WEST_PRUSSIA
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# Siemens & Halske AG
+company_siemens_and_halske = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/german_siemens_halske.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_BRANDENBURG }
+
+	building_types = {
+		building_electrics_industry
+		building_radios_industry
+	}
+
+	extension_building_types = {
+		building_railway
+	}
+	
+	possible_prestige_goods = {
+		prestige_good_siemens_phones
+	}
+
+
+	potential = {
+		has_interest_marker_in_region = region_north_germany
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BRANDENBURG
+			}
+		}
+	}
+
+	possible = {
+		has_technology_researched = electric_telegraph
+		any_scope_state = {
+			state_region = s:STATE_BRANDENBURG
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_electrics_industry
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_power_plant_throughput_add = 0.15
+	}
+
+	ai_will_do = {
+		has_technology_researched = electric_telegraph
+		any_scope_state = {
+			state_region = s:STATE_BRANDENBURG
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_electrics_industry = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_BRANDENBURG
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# BASF
+company_basf = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/german_basf.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_BADEN }
+
+	building_types = {
+		building_synthetics_plants
+		building_chemical_plants
+	}
+
+	extension_building_types = {
+		building_dye_plantation
+		building_sulfur_mine
+	}
+
+	possible_prestige_goods = {
+		prestige_good_german_aniline
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_south_germany
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BADEN
+			}
+		}
+	}
+
+	possible = {
+		has_technology_researched = aniline
+		any_scope_state = {
+			state_region = s:STATE_BADEN
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_synthetics_plants
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		country_weekly_innovation_mult = 0.1
+		building_group_bg_oil_extraction_throughput_add = 0.05
+	}
+
+	ai_will_do = {
+		has_technology_researched = aniline
+		any_scope_state = {
+			state_region = s:STATE_BADEN
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_synthetics_plants = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_BADEN
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# Russian-American Company Under the High Patronage of His Imperial Majesty
+company_russian_american_company = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_russian_american_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+
+	category = aristocrat_owned
+
+	flavored_company = yes
+
+	building_types = {
+		building_logging_camp
+		building_whaling_station
+		building_coal_mine
+		building_port
+	}
+
+	extension_building_types = {
+		building_fishing_wharf
+	}
+
+	possible_prestige_goods = {
+		prestige_good_siberian_larch_timber
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_pacific_coast
+		any_primary_culture = {
+			has_discrimination_trait = east_slavic
+		}
+	}
+
+	attainable = {
+	}
+
+	possible = {
+		OR = {
+			any_subject_or_below = {
+				any_scope_state = {
+					region = sr:region_pacific_coast
+					any_scope_building = {
+						OR = {
+							is_building_type = building_port
+							is_building_type = building_whaling_station
+							is_building_type = building_logging_camp
+						}
+						level >= 5
+					}
+				}
+			}
+
+			any_scope_state = {
+				region = sr:region_pacific_coast
+				any_scope_building = {
+					OR = {
+						is_building_type = building_port
+						is_building_type = building_whaling_station
+						is_building_type = building_logging_camp
+					}
+					level >= 5
+				}
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_group_bg_extraction_construction_efficiency_add = 0.1
+		state_colony_growth_speed_mult = 0.1
+		goods_output_wood_mult = 0.15
+	}
+
+	ai_will_do = {
+		OR = {
+			any_subject_or_below = {
+				any_scope_state = {
+					region = sr:region_pacific_coast
+				}
+			}
+
+			any_scope_state = {
+				region = sr:region_pacific_coast
+			}
+		}
+	}
+
+	ai_construction_targets = {
+		building_port = {
+			level = 5
+			state_trigger = {
+				region = sr:region_pacific_coast
+				is_incorporated = yes
+			}
+		}
+		building_logging_camp = {
+			level = 5
+			state_trigger = {
+				region = sr:region_pacific_coast
+				is_incorporated = yes
+			}
+		}
+		building_whaling_station = {
+			level = 5
+			state_trigger = {
+				region = sr:region_pacific_coast
+				is_incorporated = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+company_basic_electrics = {
+	icon = "gfx/interface/icons/company_icons/basic_electrics.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = no
+
+	uses_dynamic_naming = yes
+
+	dynamic_company_type_names = {
+		"dynamic_company_type_company"
+		"dynamic_company_type_consortium"
+		"dynamic_company_type_corporation"
+		"dynamic_company_type_conglomerate"
+		"dynamic_company_type_syndicate"
+		"dynamic_company_type_combine"
+	}
+
+	building_types = {
+		building_electrics_industry
+		building_radios_industry
+	}
+
+	extension_building_types = {
+		building_iron_mine
+		building_rubber_plantation
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_electrics_industry
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_power_plant_throughput_add = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_electrics_industry
+				level >= 5
+			}
+		}
+	}
+}
+
+# Königliche Porzellan-Manufaktur Meissen
+company_konigliche_porzellan_manufaktur_meissen = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_konigliche_porzellan_manufaktur_meissen.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	category = bureaucrat_owned
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_SAXONY }
+
+	building_types = {
+		building_porcelain_industry
+	}
+
+	extension_building_types = {
+		building_glassworks
+		building_lead_mine
+	}
+
+	possible_prestige_goods = {
+		prestige_good_meissen_porcelain
+	}
+
+	potential = {
+		has_dlc_feature = mp1_content
+		has_interest_marker_in_region = region_north_germany
+	}
+
+	attainable = {
+	}
+
+	possible = {
+		has_technology_researched = chemical_bleaching
+		any_scope_state = {
+			state_region = s:STATE_SAXONY
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_porcelain_industry
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		country_prestige_mult = 0.1
+		building_arts_academy_throughput_add = 0.05
+		building_synthetics_plants_throughput_add = 0.05
+	}
+
+	ai_will_do = {
+		has_technology_researched = chemical_bleaching
+		any_scope_state = {
+			state_region = s:STATE_SAXONY
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_glassworks = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_SAXONY
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# Gebrüder Thonet
+company_gebruder_thonet = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_gebruder_thonet.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_AUSTRIA }
+
+	building_types = {
+		building_furniture_manufacturies
+	}
+
+	extension_building_types = {
+		building_luxury_furniture_industry
+		building_logging_camp
+	}
+
+	possible_prestige_goods = {
+		prestige_good_bentwood_furniture
+	}
+
+	potential = {
+		has_dlc_feature = mp1_content
+		has_interest_marker_in_region = region_south_germany
+	}
+
+	attainable = {
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_AUSTRIA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_furniture_manufacturies
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 0.05
+		state_radicals_from_political_movements_mult = -0.05
+		building_furniture_manufacturies_throughput_add = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			state_region = s:STATE_AUSTRIA
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_furniture_manufacturies = {
+			level = 5
+			state_trigger = {
+				state_region = s:STATE_AUSTRIA
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+company_basic_home_goods = {
+	icon = "gfx/interface/icons/company_icons/basic_home_goods.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = no
+
+	uses_dynamic_naming = yes
+
+	dynamic_company_type_names = {
+		"dynamic_company_type_company"
+		"dynamic_company_type_consortium"
+		"dynamic_company_type_corporation"
+		"dynamic_company_type_conglomerate"
+		"dynamic_company_type_syndicate"
+		"dynamic_company_type_combine"
+	}
+
+	building_types = {
+		building_glassworks
+		building_furniture_manufacturies
+		building_luxury_furniture_industry 
+	}
+
+	extension_building_types = {
+		building_porcelain_industry
+		building_logging_camp
+		building_lead_mine
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_furniture
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_furniture_complete_tt
+			has_variable = prestige_good_generic_furniture_var
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_glassworks
+					is_building_type = building_furniture_manufacturies
+				}
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_loyalists_from_political_movements_mult = 0.075
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_glassworks
+					is_building_type = building_furniture_manufacturies
+				}
+				level >= 3
+			}
+		}
+	}
+}
+
+company_basic_textiles = {
+	icon = "gfx/interface/icons/company_icons/basic_textiles.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = no
+
+	uses_dynamic_naming = yes
+
+	dynamic_company_type_names = {
+		"dynamic_company_type_company"
+		"dynamic_company_type_consortium"
+		"dynamic_company_type_corporation"
+		"dynamic_company_type_conglomerate"
+		"dynamic_company_type_syndicate"
+		"dynamic_company_type_combine"
+	}
+
+	building_types = {
+		building_textile_mills
+		building_luxury_clothes_industry
+	}
+
+	extension_building_types = {
+		building_cotton_plantation
+		building_silk_plantation
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_clothes
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_clothes_complete_tt
+			has_variable = prestige_good_generic_clothes_var
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mills
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_radicals_from_political_movements_mult = -0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mills
+				level >= 5
+			}
+		}
+	}
+}
+
+company_basic_food = {
+	icon = "gfx/interface/icons/company_icons/basic_food.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	category = aristocrat_owned
+
+	flavored_company = no
+
+	uses_dynamic_naming = yes
+
+	dynamic_company_type_names = {
+		"dynamic_company_type_company"
+		"dynamic_company_type_consortium"
+		"dynamic_company_type_corporation"
+		"dynamic_company_type_conglomerate"
+		"dynamic_company_type_syndicate"
+		"dynamic_company_type_combine"
+	}
+
+	building_types = {
+		building_food_industry
+	}
+
+	extension_building_types = {
+		building_livestock_ranch
+		building_wheat_farm
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_groceries
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_groceries_complete_tt
+			has_variable = prestige_good_generic_groceries_var
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_food_security_add = 0.25
+		state_standard_of_living_add = 1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_food_industry
+				level >= 3
+			}
+		}
+	}
+}
+
+company_basic_liquor = {
+	icon = "gfx/interface/icons/company_icons/basic_food.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	# category = aristocrat_owned
+
+	flavored_company = no
+
+	uses_dynamic_naming = yes
+
+	dynamic_company_type_names = {
+		"dynamic_company_type_company"
+		"dynamic_company_type_consortium"
+		"dynamic_company_type_corporation"
+		"dynamic_company_type_conglomerate"
+		"dynamic_company_type_syndicate"
+		"dynamic_company_type_combine"
+	}
+
+	building_types = {
+		building_distillery_industry
+	}
+
+	extension_building_types = {
+		building_rye_farm
+		building_wheat_farm
+	}
+
+	possible_prestige_goods = {
+		prestige_good_liquor
+	}
+
+	prestige_goods_trigger = {
+		custom_tooltip = {
+			text = je_prestige_goods_liquor_complete_tt
+			has_variable = prestige_good_liquor_var
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_distillery_industry
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_radicals_from_political_movements_mult = -0.25
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_distillery_industry
+				level >= 3
+			}
+		}
+	}
+}

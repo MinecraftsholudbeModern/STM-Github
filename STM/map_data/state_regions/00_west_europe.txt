@@ -1043,7 +1043,7 @@ STATE_SOUTH_TYROL = {
 STATE_POMERANIA = {
     id = 57
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x0180A0" "x3E3572" "x19AE19" "x3C26DD" "x567452" "x6A53CF" "x8001A0" "x86E6F2" "x89A2A9" "x8C6982" "x8D1E12" "xA04121" "xA0C020" "xA9BD82" "xCDEAE4" "xD4C37D" "xE1A03A" "xEF5730" }
+    provinces = { "x0180A0" "x19AE19" "x3C26DD" "x567452" "x6A53CF" "x8001A0" "x86E6F2" "x89A2A9" "x8C6982" "x8D1E12" "xA04121" "xA0C020" "xA9BD82" "xCDEAE4" "xD4C37D" "xE1A03A" "xEF5730" }
     traits = { "state_trait_oder_river" }
     city = "x6A53CF"
     port = "x567452"
@@ -1171,6 +1171,8 @@ STATE_RHINELAND = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_coal_mining = 60
+		bg_sulfur_mining = 30
+		bg_iron_mining = 20
         bg_lead_mining = 30
         bg_logging = 11
     }
@@ -1188,8 +1190,9 @@ STATE_NORTH_RHINE = {
     arable_land = 77
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_coal_mining = 25
-        bg_iron_mining = 20
+        bg_coal_mining = 40
+        bg_iron_mining = 40
+		bg_lead_mining = 40
         bg_logging = 7
     }
 }
@@ -1203,7 +1206,7 @@ STATE_BRANDENBURG = {
     farm = "x83B1A8"
     mine = "xDF4020"
     wood = "x514C51"
-    arable_land = 50
+    arable_land = 55
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 44
@@ -1224,7 +1227,7 @@ STATE_SCHLESWIG_HOLSTEIN = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 6
-        bg_fishing = 6
+        bg_fishing = 12
     }
     naval_exit_id = 3019
 }
@@ -1258,6 +1261,7 @@ STATE_BADEN = {
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
+		bg_sulfur_mining = 10
         bg_coal_mining = 20
         bg_iron_mining = 15
         bg_logging = 11
@@ -1276,7 +1280,8 @@ STATE_HANNOVER = {
     arable_land = 60
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 24
+        bg_iron_mining = 25
+		bg_coal_mining = 40
         bg_logging = 9
         bg_fishing = 4
     }
@@ -1296,12 +1301,11 @@ STATE_BRUNSWICK = {
     farm = "x4C16EA"
     mine = "xA61E6E"
     wood = "xA61E6E"
-    arable_land = 30
+    arable_land = 35
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 40
-        bg_iron_mining = 45
-        bg_lead_mining = 45
+        bg_coal_mining = 5
+        bg_iron_mining = 5
         bg_logging = 6
     }
 }
@@ -1350,12 +1354,11 @@ STATE_SAXONY = {
     farm = "xAFDFBF"
     mine = "x917939"
     wood = "x31E0C0"
-    arable_land = 100
+    arable_land = 65
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_coal_mining = 80
+        bg_coal_mining = 60
         bg_iron_mining = 30
-        bg_sulfur_mining = 80
         bg_logging = 6
     }
 }
@@ -1368,11 +1371,11 @@ STATE_THURINGIA = {
     farm = "xD0C021"
     mine = "xC00A37"
     wood = "x51C021"
-    arable_land = 100
+    arable_land = 40
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_coal_mining = 80
-        bg_iron_mining = 30
+        bg_coal_mining = 20
+        bg_iron_mining = 10
         bg_sulfur_mining = 80
         bg_logging = 6
     }
@@ -1411,7 +1414,7 @@ STATE_MECKLENBURG = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 8
-        bg_fishing = 10
+        bg_fishing = 12
     }
     naval_exit_id = 3019
 }

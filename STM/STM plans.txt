@@ -4,21 +4,63 @@
 	Baden get 10 sulfur mines[equivalent to 40 taken away from West Prussia]
 	North Rhine gets 40 iron mines, 40 lead mines and 40 coal mines in total
 	Hannover gets 25 iron mines and 40 coal mines in total
-	Brunswick is reduced to 5 mines of iron lead and coal but arable land increased by 5
+	Brunswick is reduced to 5 mines of iron and coal but arable land increased by 5
 	Schleswig gets 12 fishing wharves
 	Mecklenburg gets 12 fishing wharves
-	Tirol get 4 gold mines
-	Bohemia gets 2 gold mines
+	
+	STATE_SAXONY = {
+    id = 73
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x169073" "x31E0C0" "x43CE26" "x795368" "x917939" "xAFDFBF" }
+    traits = { "state_trait_elbe_river" }
+    city = "x169073"
+    farm = "xAFDFBF"
+    mine = "x917939"
+    wood = "x31E0C0"
+    arable_land = 60
+    arable_resources = { "bg_rye_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
+    capped_resources = {
+        bg_coal_mining = 60
+        bg_iron_mining = 30
+        bg_logging = 6
+    }
+}
+
+STATE_THURINGIA = {
+    id = 1936
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x5141A0" "xD0C021" "xC00A37" "x66FE0A" "x51C021" }
+    city = "x5141A0"
+    farm = "xD0C021"
+    mine = "xC00A37"
+    wood = "x51C021"
+    arable_land = 40
+    arable_resources = { "bg_rye_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
+    capped_resources = {
+        bg_coal_mining = 20
+        bg_iron_mining = 10
+        bg_sulfur_mining = 80
+        bg_logging = 6
+    }
+}
 	
 	
 - Eastern Europe
 	West prussia loses all sulfur mines but gets 10 iron and coal mines
 	Posen loses all iron mines
-	East Prussia gets 2 gold mines[Amber representation]
 	[for next parts w8 for 1.10; Lower shouldn't have any sulfur but majority of iron whilst upper should have huge coal deposits and low iron]
-	Lower Silesia gets 40 iron mines, 54 lead mines and 30 coal mines
-	Upper Silesia gets 20 iron mines, 40 sulfur mines and 90 coal mines
-	
+	Lower Silesia gets 
+		bg_coal_mining = 20
+        bg_iron_mining = 40
+        bg_lead_mining = 25
+        bg_sulfur_mining = 10
+	Upper Silesia gets 
+		bg_coal_mining = 110
+        bg_iron_mining = 20
+        bg_lead_mining = 30
+        bg_sulfur_mining = 30
+        bg_logging = 4
+			
 2. Defines Folder
 	I. 00_defines File
 		a. NCountry ={} :

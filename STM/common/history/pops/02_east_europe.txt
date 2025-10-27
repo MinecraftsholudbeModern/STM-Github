@@ -229,7 +229,7 @@
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 157662
+				size = 257662
 			}
 			create_pop = {
 				culture = north_german
@@ -263,10 +263,10 @@
 		    create_pop = {
 		        culture = north_german
 		        religion = catholic
-		        size = 131778
+		        size = 31778
 		    }
 		    create_pop = {
-		        culture = north_german
+		        culture = south_german
 		        size = 55800
 		    }
 		    create_pop = {

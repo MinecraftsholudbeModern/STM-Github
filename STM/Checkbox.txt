@@ -1,0 +1,43 @@
+buildings[liquor,porcelain,luxury cloth/furniture, electric and their base counterparts] DONE
+buy_package redo for services [ 1.5x service demand ] DONE!
+combat_unit_types [see from 1.9] Check Balance!
+company_types[add/modify companies to include new buildings and modify prussia, russia, UK companies] DONE!
+country_definitions[ replace saxony to thuringia as thuringian minors definition AND change germany color to { 46 48 49 }] DONE!
+country_creation [stop german and italian minors being released after unification] DONE except Italy
+country_ranks [give GPs more diplo and 1 more company slot; reduce unrecognized tech spread by 25%] DONE
+cultures [obsessions and add German and Italian] DONE ; Add JEs and tweak country definitions too!
+decisions [bugged barracks and suez canal decisions] DONE!
+defines
+harvest_condition_types [remove MAPI reductions and infra % reductions to flat values] Removed MAPI only!
+history:
+-buildings
+-countries [laws here]
+-global[debt and laws here]
+-trade
+-pops
+-states
+-military_formations
+-LAW CHANGE:
+Woman laws boost workforce from women in workforce [upper class have gotten +5% workforce added as base in pop_types] Done!
+Propertied women give 3% birth rate and +10% aristocrat and capitalist reinvestment DONE!
+Birth/Death rate replaced by growth rate[birth rate plus death rate] in child labor laws DONE!
+Disallow tier 5 assimilation in everything DONE!
+Disallow encourage national values under MC and Subjecthood DONE!
+LAW ADDITION:
+-ideologies
+-law_groups
+-laws
+interest_group_traits
+interest_groups
+journal_entries:
+-stm_victoria
+-cultural unification
+-economy management JE
+-establish_colonial_administration
+-fix other JEs affected by law change 
+pop_types DONE! But revisit peasants
+Production_method_groups
+production_method
+static_modifiers
+technology
+
