@@ -33,14 +33,14 @@ base_values = {
 	state_upper_strata_expected_sol_add = 15
 	state_expected_sol_from_literacy = 5
 
-	state_machinists_investment_pool_contribution_add = 0.10
-	state_farmers_investment_pool_contribution_add = 0.10
-	state_engineers_investment_pool_contribution_add = 0.15
-	state_bureaucrats_investment_pool_contribution_add = 0.15
-	state_shopkeepers_investment_pool_contribution_add = 0.20
-	state_clergymen_investment_pool_contribution_add = 0.20
+	state_machinists_investment_pool_contribution_add = 0.05
+	state_farmers_investment_pool_contribution_add = 0.05
+	state_engineers_investment_pool_contribution_add = 0.10
+	state_bureaucrats_investment_pool_contribution_add = 0.10
+	state_shopkeepers_investment_pool_contribution_add = 0.15
+	state_clergymen_investment_pool_contribution_add = 0.15
 	state_aristocrats_investment_pool_contribution_add = 0.20
-	state_capitalists_investment_pool_contribution_add = 0.30
+	state_capitalists_investment_pool_contribution_add = 0.25
 
 	# To balance for unincorporated states not paying taxes
 	state_unincorporated_starting_wages_mult = -0.20
@@ -50,7 +50,7 @@ base_values = {
 
 	building_economy_of_scale_level_cap_add = 20
 
-	state_market_access_price_impact = 0.75
+	state_market_access_price_impact = 0.7
 
 	country_company_throughput_bonus_add = 0.2
 	country_company_construction_efficiency_bonus_add = 0.5
@@ -98,6 +98,7 @@ coastal_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	state_infrastructure_from_population_max_add = 10
 	state_infrastructure_from_population_mult = 0.05
+	state_market_access_price_impact = 0.05
 }
 
 working_conditions = {
@@ -138,6 +139,7 @@ working_conditions = {
 literacy_penalty = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	state_birth_rate_mult = -0.1 	# scaled by pop literacy
+	state_mortality_mult = -0.1     # rather than flat birth its growth
 }
 
 # starvation_penalty scales by the Starvation value and will never reach 100% effect as it will be substituted by the severe_starvation_penalty instead
@@ -199,7 +201,7 @@ unincorporated_state = {
 	state_conscription_rate_mult = -0.5
 	state_expected_sol_mult = -0.33
 	state_pop_pol_str_mult = -0.50
-	building_group_bg_manufacturing_throughput_add = -0.1
+	building_group_bg_manufacturing_throughput_add = -1
 	building_group_bg_government_throughput_add = -0.1
 	building_group_bg_military_throughput_add = -0.1
 	state_market_access_price_impact = -0.1
@@ -213,6 +215,7 @@ unincorporated_state = {
 treaty_port_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	state_migration_pull_mult = 0.5
+	state_import_advantage_mult = 0.25
 }
 
 recently_conquered_state = {
@@ -605,13 +608,13 @@ battle_unit_experience = {
 # Scales with how much population is under low pop threshold
 low_pop_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	state_birth_rate_mult = 0.5
+	state_birth_rate_mult = 0.75
 }
 
 # Multiplies unemployment rate in state by this
 unemployment_birth_penalty_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	state_birth_rate_mult = -0.4
+#	state_birth_rate_mult = -0.1
 }
 
 # if this bonus changes need code support
@@ -642,7 +645,7 @@ infamy_pariah = {
 state_region_devastation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_infrastructure_mult = -1.0
-	state_mortality_mult = 1.0
+	state_mortality_mult = 0.25
 	state_migration_pull_mult = -2.0
 	state_construction_mult = -0.5
 	building_throughput_add = -0.25
@@ -716,7 +719,7 @@ government_owned_debt = {
 # Capped at COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER
 country_gdp = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	country_minting_add = 1
+	country_minting_add = 1.2
 }
 
 # Scales with total army power projection of a country
@@ -736,12 +739,13 @@ country_literacy_rate = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_weekly_innovation_max_add = 150
 	country_tech_spread_add = 75
+	country_weekly_innovation_add = 75
 }
 
 # Scales with number of excess innovation points
 excess_innovation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
-	country_tech_spread_add = 0.2
+	country_tech_spread_add = 0.1
 }
 
 # Scales with admiral convoy raiding strength

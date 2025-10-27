@@ -36,8 +36,8 @@ journal_entries:
 -establish_colonial_administration
 -fix other JEs affected by law change 
 pop_types DONE! But revisit peasants
-Production_method_groups
-production_method
-static_modifiers
-technology
+Production_method_groups DONE!
+production_method DONE!
+static_modifiers DONE!
+technology IDK what tweaks are needed!!
 

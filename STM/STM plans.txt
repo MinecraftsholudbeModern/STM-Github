@@ -62,6 +62,8 @@ STATE_THURINGIA = {
         bg_logging = 4
 			
 2. Defines Folder
+
+	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER make it very high
 	I. 00_defines File
 		a. NCountry ={} :
 
@@ -150,6 +152,8 @@ STATE_THURINGIA = {
 ## Others
 @transition_birthrate_mult = 1 		# If you want the birthrate "lag" to go to a higher or lower value than max_birthrate. (you can also just change it directly below)
 @max_growth_mortality_mult = 0.35	# What proportion of birthrate_at_growth_max mortality should be at. Higher means lower growth
+
+
 
 	II.00_ai
 	
