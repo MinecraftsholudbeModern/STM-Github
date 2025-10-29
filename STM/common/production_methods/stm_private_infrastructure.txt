@@ -375,6 +375,9 @@ pm_steel_passenger_carriages = {
 		level_scaled = {
 			building_employment_clerks_add = 200
 		}
+	}
+	
+	state_modifiers = {
 		unscaled = {
 			state_market_access_price_impact = 0.01
 		}
