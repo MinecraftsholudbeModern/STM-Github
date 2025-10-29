@@ -34,6 +34,14 @@ lawgroup_distribution_of_power = {
 	regressive_movement_chance = 0.25
 }
 
+lawgroup_voting_system = {
+	law_group_category = power_structure
+	affected_by_regime_change = yes
+	
+	progressive_movement_chance = 2
+	regressive_movement_chance = 0.25
+}
+
 lawgroup_citizenship = {
 	law_group_category = power_structure
 	ideological_opinion_impact = 1.0
