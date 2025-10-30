@@ -5,7 +5,7 @@
 
 # Global Static Modifiers
 base_values = {
-	country_weekly_innovation_add = 50
+	country_weekly_innovation_add = 25
 	country_weekly_innovation_max_add = 50
 	country_tech_spread_add = 25
 
@@ -74,6 +74,7 @@ base_values = {
 	state_max_trade_advantage_from_capacity_add = 0.2
 	
 	country_party_whip_impact_add = 0.5
+	
 }
 
 # Scales with a country's global prestige rank, so at 20/100 this is multiplied by 0.8x, 50/100 by 0.5x, etc
@@ -138,8 +139,8 @@ working_conditions = {
 
 literacy_penalty = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
-	state_birth_rate_mult = -0.1 	# scaled by pop literacy
-	state_mortality_mult = -0.1     # rather than flat birth its growth
+	state_birth_rate_mult = -0.04 # reduced coz mortality was not working  
+	# state_mortality_mult = -0.1     # rather than flat birth its growth[ DOES NOT WORK ]
 }
 
 # starvation_penalty scales by the Starvation value and will never reach 100% effect as it will be substituted by the severe_starvation_penalty instead
@@ -681,14 +682,14 @@ state_obstinance = {
 	state_assimilation_mult = -0.5
 	state_conversion_mult = -0.5
 	state_institution_impact_add = -1.0
-	state_tax_collection_mult = -0.5
+	state_tax_collection_mult = -1.0
 	state_conscription_rate_mult = -0.75
 }
 
 # Applied if state is above 'in turmoil' threshold
 state_turmoil = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_tax_waste_add = 0.25
+	state_tax_collection_mult = 0.25
 	state_migration_pull_mult = -0.15
 	state_construction_mult = -0.33
 }
@@ -696,7 +697,7 @@ state_turmoil = {
 # Applied if state is above 'high turmoil' threshold
 state_turmoil_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_tax_waste_add = 0.5
+	state_tax_collection_mult = 0.5
 	state_migration_pull_mult = -0.25
 	state_construction_mult = -0.5
 }
@@ -704,7 +705,7 @@ state_turmoil_high = {
 # Applied if state is above 'extreme turmoil' threshold
 state_turmoil_extreme = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_tax_waste_add = 0.75
+	state_tax_collection_mult = 0.75
 	state_migration_pull_mult = -0.5
 	state_construction_mult = -0.75
 }

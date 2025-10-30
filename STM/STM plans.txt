@@ -71,33 +71,14 @@ STATE_THURINGIA = {
 		
 		b. NPolitics = {}:
 		
-	BASE_IG_APPROVAL = 3				# Baseline IG approval
-	MIN_IG_APPROVAL = -30				# Minimum IG approval
-	MAX_IG_APPROVAL = 30				# Maximum IG approval
-	MIN_IG_APPROVAL_FROM_LAWS = -10		# IG cannot have approval lower than this as a total from laws 'on the book'
-	MAX_IG_APPROVAL_FROM_LAWS = 5		# IG cannot have approval higher than this as a total from laws 'on the book'
-	IG_APPROVAL_FROM_LOYALISTS = 15		# If 100% of the political strength of the IG is loyalist, change approval by this amount
-	IG_APPROVAL_FROM_RADICALS = -30		# If 100% of the political strength of the IG is radical, change approval by this amount
-	IG_APPROVAL_FROM_LAW = 1		# IG approval/disapproval for laws that are for/against their ideologies
-	IG_APPROVAL_FROM_LAW_STRONG_STANCE = 3 		# IG approval/disapproval for laws that are strongly for/against their ideologies
-	IG_APPROVAL_FROM_LAW_CHANGE = 5		# IG approval/disapproval for changing to another law
-	IG_APPROVAL_FROM_RADICAL_LAW_CHANGE = 10 		# IG approval/disapproval for changing to another law, if the change is a major one
-	IG_APPROVAL_FROM_EXTREME_LAW_CHANGE = 20 		# IG approval/disapproval for changing to another law, if the change is extreme
-	IG_IN_GOVERNMENT_APPROVAL = 2		# Added if IG is in government
-	IG_IN_OPPOSITION_APPROVAL = -2		# Added if IG is in opposition (and not powerful)
-	IG_POWERFUL_IN_OPPOSITION_APPROVAL = -5 # Added if powerful IG in opposition
-	APPROVAL_THRESHOLD_ANGRY = -15		# At this or below approval, IG is considered angry
-	APPROVAL_THRESHOLD_UNHAPPY = -5		# At this or below approval, IG is considered unhappy
-	APPROVAL_THRESHOLD_HAPPY = 10		# At this or above approval, IG is considered happy
-	APPROVAL_THRESHOLD_LOYAL = 20		# At this or above approval, IG is considered loyal
-	CHANGED_LAW_APPROVAL_MONTHS = 60 # How many months does the approval/disapproval for a law change linger after said law chain
+	
 	
 	POWERFUL_IG_THRESHOLD = 0.18		# Interest groups with more Clout than this are considered to be influential
 	POWERFUL_IG_CUTOFF = 0.16			# Powerful interest groups with less Clout than this will stop being influential
 	POWERFUL_IG_TRAIT_BONUS = 1			# The effects of all trait modifiers from influential IGs are increased by this, 1 = +100%
 	IG_TRAIT_STICKINESS = 3				# If an IG trait is already active, this is the amount of Approval difference required to deactivate it
 	
-	DEFAULT_GOODS_TAX_COST = 75			#100		# The amount of AUT it costs to tax a good by default
+	DEFAULT_GOODS_TAX_COST = 75			#100		# The amount of AUT it costs to tax a good by default VISIT goods file too!
 	
 	c. NEconomy = {} :
 	
@@ -106,7 +87,7 @@ STATE_THURINGIA = {
 	GOLD_RESERVE_RATIO_AT_START = 0			# Unless a country history's 'treasury' parameter is set to a non-zero value, countries start with this ratio of their gold reserve in gold
 	
 	MINIMUM_WAGE_RATE = 25.0					# The wage rate can never drop below this, no matter what (weekly £ per POP_SIZE_PACKAGE employees)
-	MAXIMUM_WAGE_RATE = 1500.0				    # The absolute maximum that a building's wage rate can be increased to.
+	MAXIMUM_WAGE_RATE = 2000.0				    # The absolute maximum that a building's wage rate can be increased to.
 	
 	d. NPops = {} :
 	

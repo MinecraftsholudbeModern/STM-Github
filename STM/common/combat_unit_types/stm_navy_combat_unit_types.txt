@@ -169,7 +169,7 @@ combat_unit_type_man_o_war = {
 	max_manpower = 2000
 
     upkeep_modifier = {
-        goods_input_manowars_add = 6
+        goods_input_manowars_add = 4
     }
 
     battle_modifier = {

@@ -142,7 +142,7 @@ groceries = {
 	traded_quantity = 9 # 270
 	convoy_cost_multiplier = 0.5
 
-	consumption_tax_cost = 300
+	consumption_tax_cost = 150
 }
 
 clothes = {
@@ -181,7 +181,6 @@ paper = {
 	traded_quantity = 7 # 210
 	convoy_cost_multiplier = 0.5
 
-	consumption_tax_cost = 200
 }
 
 services = {
@@ -190,7 +189,7 @@ services = {
 	category = staple
 	local = yes
 
-	consumption_tax_cost = 200
+	consumption_tax_cost = 150
 }
 
 transportation = {
@@ -199,7 +198,7 @@ transportation = {
 	category = staple
 	local = yes
 
-	consumption_tax_cost = 200
+	consumption_tax_cost = 150
 }
 
 electricity = {
@@ -208,7 +207,7 @@ electricity = {
 	category = staple
 	local = yes
 
-	consumption_tax_cost = 200
+	consumption_tax_cost = 150
 }
 
 merchant_marine = {
@@ -331,7 +330,7 @@ oil = {
 	prestige_factor = 6
 	traded_quantity = 6 # 240
 
-	consumption_tax_cost = 200
+	consumption_tax_cost = 100
 }
 
 engines = {

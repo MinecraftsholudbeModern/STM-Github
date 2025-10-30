@@ -69,6 +69,21 @@ law_professional_army = {
 	progressiveness = 0
 
 	unlocking_technologies = { military_drill }
+	
+	is_visible = {
+		NOR = {
+				c:PRU ?= this
+				c:SWI ?= this
+				AND = {
+					c:NGF ?= this
+					c:NGF ?= { was_formed_from = PRU }
+					}
+					AND = {
+					c:GER ?= this 
+					c:GER ?= { was_formed_from = PRU }
+					}
+		}
+	}
 
 	modifier = {
 		unit_morale_loss_mult = -0.1
@@ -331,9 +346,6 @@ law_army_canton_system = {
 	}
 
 	is_visible = {
-		any_primary_culture = {
-			has_discrimination_trait = language_germanophone
-		}
 		OR = {
 				c:PRU ?= this
 				c:SWI ?= this

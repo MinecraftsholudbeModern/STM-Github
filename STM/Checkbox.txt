@@ -7,7 +7,7 @@ country_creation [stop german and italian minors being released after unificatio
 country_ranks [give GPs more diplo and 1 more company slot; reduce unrecognized tech spread by 25%] DONE
 cultures [obsessions and add German and Italian] DONE ; Add JEs and tweak country definitions too!
 decisions [bugged barracks and suez canal decisions] DONE!
-defines
+defines DONE !
 harvest_condition_types [remove MAPI reductions and infra % reductions to flat values] Removed MAPI only!
 history:
 -buildings
@@ -23,18 +23,15 @@ Propertied women give 3% birth rate and +10% aristocrat and capitalist reinvestm
 Birth/Death rate replaced by growth rate[birth rate plus death rate] in child labor laws DONE!
 Disallow tier 5 assimilation in everything DONE!
 Disallow encourage national values under MC and Subjecthood DONE!
-LAW ADDITION:
--ideologies
--law_groups
+LAW Variation ADDITION: DONE!
 -laws
-interest_group_traits
-interest_groups
+interest_group_traits DONE !
+interest_groups DONE !
 journal_entries:
 -stm_victoria
 -cultural unification
 -economy management JE
 -establish_colonial_administration
--fix other JEs affected by law change 
 pop_types DONE! But revisit peasants
 Production_method_groups DONE!
 production_method DONE!
