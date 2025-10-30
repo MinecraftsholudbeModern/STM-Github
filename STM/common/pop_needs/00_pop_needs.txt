@@ -18,7 +18,7 @@ popneed_simple_clothing = {
 		goods = clothes
 
 		weight = 1
-		max_supply_share = 1.0
+		max_supply_share = 0.75
 		min_supply_share = 0.0
 	}
 }
@@ -38,7 +38,7 @@ popneed_crude_items = {
 		goods = furniture
 
 		weight = 1
-		max_supply_share = 1.0
+		max_supply_share = 0.75
 		min_supply_share = 0.0
 	}
 }
@@ -263,7 +263,7 @@ popneed_communication = {
 	default = transportation
 
 	entry = {
-		goods = transportation
+		goods = paper
 
 		weight = 1
 		max_supply_share = 0.75

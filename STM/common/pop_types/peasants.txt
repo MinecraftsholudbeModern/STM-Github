@@ -9,7 +9,7 @@
 	wage_weight = 0.2
 	paid_private_wage = yes
 	consumption_mult = 0.25 	# The portion of Peasant buy packages that are added as state region consumption
-	dependent_wage = 0.6	# per year
+	dependent_wage = 0.5	# per year
 	unemployment = no
 	sol_change_impact = 0.01
 

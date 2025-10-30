@@ -10,8 +10,8 @@ law_child_labor_allowed = {
 	progressiveness = -50
 
 	modifier = {
-		state_mortality_mult = 0.1
-		state_birth_rate_mult = 0.1
+		state_mortality_mult = 0.06
+		state_birth_rate_mult = 0.06
 
 		state_dependent_wage_mult = 0.30
 	}
@@ -45,8 +45,8 @@ law_restricted_child_labor = {
 	}
 
 	modifier = {
-		state_mortality_mult = 0.05
-		state_birth_rate_mult = 0.05
+		state_mortality_mult = 0.03
+		state_birth_rate_mult = 0.03
 
 		state_dependent_wage_mult = 0.15
 
