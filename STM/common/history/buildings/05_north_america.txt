@@ -2468,11 +2468,10 @@
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:HBC"
+					company={
+						type=company_hbc
+						country="c:GBR"
 						levels=1
-						region="STATE_MANITOBA"
 					}
 				}
 				reserves=1
@@ -2750,11 +2749,10 @@
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:HBC"
+					company={
+						type=company_hbc
+						country="c:GBR"
 						levels=1
-						region="STATE_MANITOBA"
 					}
 				}
 				reserves=1
@@ -2784,11 +2782,10 @@
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:HBC"
+					company={
+						type=company_hbc
+						country="c:GBR"
 						levels=1
-						region="STATE_MANITOBA"
 					}
 				}
 				reserves=1
@@ -2850,11 +2847,10 @@
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:HBC"
-						levels=2
-						region="STATE_MANITOBA"
+					company={
+						type=company_hbc
+						country="c:GBR"
+						levels=1
 					}
 				}
 				reserves=1

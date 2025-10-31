@@ -18,7 +18,9 @@ pm_automated_bakery = {
 			# input goods
 			goods_input_tools_add = 10		# x40 = 400
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			# profit = -400 (break-even when annual laborer wage > 8.32)
 			building_employment_laborers_add = -2500
@@ -42,7 +44,8 @@ pm_mechanized_looms = {
 			# input goods
 			goods_input_tools_add = 5				# x40 =  200
 		}
-		building_throughput_add = 0.05
+		unscaled = {
+		building_throughput_add = 0.05		}
 		level_scaled = {
 			# profit = -200 (break-even when annual laborer wage > 6.9)
 			building_employment_laborers_add = -1500
@@ -67,7 +70,9 @@ pm_automatic_power_looms = {
 			goods_input_tools_add = 5				# x40 =  200
 			goods_input_electricity_add = 10			# x30 =  300
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			# profit = -500 (break-even when annual laborer wage > 10.4)
 			building_employment_laborers_add = -2500
@@ -101,7 +106,9 @@ pm_automatic_bottle_blowers = {
 			goods_input_engines_add = 2
 			goods_input_oil_add = 5
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			building_employment_laborers_add = -2500
 		}
@@ -129,7 +136,6 @@ pm_watertube_boiler_expansion_industry = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 5
 		}
-		# building_throughput_add = 0.05
 		level_scaled = {
 			building_employment_laborers_add = -1500
 		}
@@ -158,7 +164,9 @@ pm_rotary_valve_engine_expansion_industry = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 10
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			building_employment_laborers_add = -2000
 		}
@@ -189,7 +197,9 @@ pm_assembly_lines_expansion_industry = {
 			goods_input_oil_add = 5
 			goods_input_electricity_add = 5
 		}
+		unscaled = {
 		building_throughput_add = 0.15
+		}
 		level_scaled = {
 			building_employment_laborers_add = -3000
 		}
@@ -743,7 +753,6 @@ pm_watertube_boiler_building_furniture_manufacturies = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 5
 		}
-		# building_throughput_add = 0.05
 		level_scaled = {
 			building_employment_laborers_add = -1500
 		}
@@ -773,7 +782,9 @@ pm_rotary_valve_engine_building_furniture_manufacturies = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 10
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			building_employment_laborers_add = -2000
 		}
@@ -804,7 +815,9 @@ pm_assembly_lines_building_furniture_manufacturies = {
 			goods_input_oil_add = 5
 			goods_input_electricity_add = 5
 		}
+		unscaled = {
 		building_throughput_add = 0.15
+		}
 		level_scaled = {
 			building_employment_laborers_add = -3000
 		}
@@ -834,7 +847,6 @@ pm_watertube_boiler_building_tooling_workshops = {
 		workforce_scaled = {
 			goods_input_coal_add = 10
 		}
-		# building_throughput_add = 0.05
 		level_scaled = {
 			building_employment_laborers_add = -1500
 		}
@@ -862,7 +874,9 @@ pm_rotary_valve_engine_building_tooling_workshops = {
 		workforce_scaled = {
 			goods_input_coal_add = 15
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			building_employment_laborers_add = -2000
 		}
@@ -891,7 +905,9 @@ pm_assembly_lines_building_tooling_workshops = {
 			goods_input_oil_add = 10
 			goods_input_electricity_add = 5
 		}
+		unscaled = {
 		building_throughput_add = 0.15
+		}
 		level_scaled = {
 			building_employment_laborers_add = -3000
 		}
@@ -923,7 +939,6 @@ pm_watertube_boiler_building_paper_mills = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 5
 		}
-		# building_throughput_add = 0.05
 		level_scaled = {
 			building_employment_laborers_add = -1500
 		}
@@ -953,7 +968,9 @@ pm_rotary_valve_engine_building_paper_mills = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 10
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			building_employment_laborers_add = -2000
 		}
@@ -979,7 +996,6 @@ pm_watertube_boiler_building_steel_mills = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 5
 		}
-		# building_throughput_add = 0.05
 		level_scaled = {
 			building_employment_laborers_add = -1500
 		}
@@ -1005,7 +1021,9 @@ pm_rotary_valve_engine_building_steel_mills = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 10
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			building_employment_laborers_add = -2000
 		}
@@ -1031,7 +1049,6 @@ pm_watertube_boiler_building_motor_industry = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 5
 		}
-		# building_throughput_add = 0.05
 		level_scaled = {
 			building_employment_laborers_add = -500
 			building_employment_machinists_add = -500
@@ -1058,7 +1075,9 @@ pm_rotary_valve_engine_building_motor_industry = {
 			goods_input_tools_add = 5
 			goods_input_coal_add = 10
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			building_employment_laborers_add = -1000
 			building_employment_machinists_add = -500
@@ -1085,7 +1104,9 @@ pm_assembly_lines_building_motor_industry = {
 			goods_input_oil_add = 5
 			goods_input_electricity_add = 5
 		}
+		unscaled = {
 		building_throughput_add = 0.15
+		}
 		level_scaled = {
 			building_employment_laborers_add = -1500
 			building_employment_machinists_add = -500
@@ -1114,7 +1135,9 @@ pm_assembly_lines_building_automotive_industry = {
 			goods_input_oil_add = 5
 			goods_input_electricity_add = 5
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			building_employment_laborers_add = -1500
 			building_employment_machinists_add = -500
@@ -1141,7 +1164,9 @@ pm_rotary_valve_engine_building_arms_industry = {
 		workforce_scaled = {
 			goods_input_coal_add = 15
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			building_employment_laborers_add = -2000
 		}
@@ -1166,7 +1191,9 @@ pm_assembly_lines_building_arms_industry = {
 			goods_input_oil_add = 10
 			goods_input_electricity_add = 5
 		}
+		unscaled = {
 		building_throughput_add = 0.15
+		}
 		level_scaled = {
 			building_employment_laborers_add = -2500
 		}
@@ -1192,7 +1219,9 @@ pm_rotary_valve_engine_building_munition_plants = {
 		workforce_scaled = {
 			goods_input_coal_add = 15
 		}
+		unscaled = {
 		building_throughput_add = 0.1
+		}
 		level_scaled = {
 			building_employment_laborers_add = -2000
 		}
@@ -1217,7 +1246,9 @@ pm_assembly_lines_building_munition_plants = {
 			goods_input_oil_add = 10
 			goods_input_electricity_add = 5
 		}
+		unscaled = {
 		building_throughput_add = 0.15
+		}
 		level_scaled = {
 			building_employment_laborers_add = -3000
 		}

@@ -3,3 +3,6 @@
 company_bmw: "Bayerische Motoren Werke"
 company_nissan: "Nissan"
 company_renault: "Renault"
+company_basic_liquor:0 "Premium Liquor Guilds Inc."
+company_basic_liquor_dynamic_name_tag_singular:0 "Beer"
+company_basic_liquor_dynamic_name_tag_plural:0 "Liquors"

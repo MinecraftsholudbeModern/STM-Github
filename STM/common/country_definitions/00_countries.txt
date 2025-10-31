@@ -2448,7 +2448,7 @@ UBD = {
 
 	tier = grand_principality
 
-	cultures = { latvian estonian lithuanian }
+	cultures = { east_german }
 	capital = STATE_RIGA
 }
 

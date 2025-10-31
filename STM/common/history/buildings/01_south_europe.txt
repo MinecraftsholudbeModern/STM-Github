@@ -1,4 +1,4 @@
-BUILDINGS={
+﻿BUILDINGS={
 	s:STATE_LOMBARDY={
 		region_state:AUS={
 			create_building={

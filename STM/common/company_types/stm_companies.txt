@@ -32,8 +32,8 @@ company_bmw = {
 	}
 	
 	possible = {
+		has_technology_researched = combustion_engine
 		any_scope_state = {
-			has_technology_researched = combustion_engine
 			state_region = s:STATE_BAVARIA
 			is_incorporated = yes
 			any_scope_building = {
@@ -50,8 +50,8 @@ company_bmw = {
 	}
 
 	ai_will_do = {
+		has_technology_researched = combustion_engine
 		any_scope_state = {
-			has_technology_researched = combustion_engine
 			state_region = s:STATE_BAVARIA
 			is_incorporated = yes
 		}
@@ -105,8 +105,9 @@ company_nissan = {
 	}
 	
 	possible = {
+	has_technology_researched = combustion_engine
 		any_scope_state = {
-		has_technology_researched = combustion_engine
+		
 			state_region = s:STATE_KANTO
 			is_incorporated = yes
 			any_scope_building = {
@@ -671,9 +672,8 @@ company_russian_american_company = {
 	}
 
 	prosperity_modifier = {
-		building_group_bg_extraction_construction_efficiency_add = 0.1
+		building_group_bg_extraction_construction_efficiency_add = 0.25
 		state_colony_growth_speed_mult = 0.1
-		goods_output_wood_mult = 0.15
 	}
 
 	ai_will_do = {
@@ -1109,7 +1109,7 @@ company_basic_food = {
 }
 
 company_basic_liquor = {
-	icon = "gfx/interface/icons/company_icons/basic_food.dds"
+	icon = "gfx\interface\icons\company_icons\historical_company_icons\basic_liquor.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	# category = aristocrat_owned

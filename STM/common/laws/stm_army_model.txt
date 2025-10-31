@@ -73,7 +73,6 @@ law_professional_army = {
 	is_visible = {
 		NOR = {
 				c:PRU ?= this
-				c:SWI ?= this
 				AND = {
 					c:NGF ?= this
 					c:NGF ?= { was_formed_from = PRU }
@@ -93,6 +92,7 @@ law_professional_army = {
 		state_building_barracks_max_level_add = 1000
 		state_building_conscription_center_max_level_add = 50
 		unit_experience_gain_mult = 1.0
+		country_military_goods_cost_mult = 0.02
 		country_institution_army_model_max_investment_add = 1
 	}
 	
@@ -102,7 +102,6 @@ law_professional_army = {
 		building_training_rate_mult = 0.05				
 		interest_group_ig_armed_forces_pol_str_mult = 0.05
 		state_radicals_from_political_movements_mult = -0.05		
-		country_military_goods_cost_mult = 0.01
 	}
 
 	can_impose = {
@@ -183,7 +182,7 @@ law_national_militia = {
 	unlocking_technologies = { mandatory_service }
 
 	modifier = {
-	#	unit_morale_loss_mult = 0.05
+		unit_morale_loss_mult = 0.05
 		state_conscription_rate_add = 0.05
 		country_leverage_resistance_mult = 0.5
 		country_officers_pol_str_mult = -0.25
@@ -267,7 +266,7 @@ law_mass_conscription = {
 		building_training_rate_mult = 0.05				
 	#	interest_group_ig_armed_forces_pol_str_mult = 0.05
 	#	state_radicals_from_political_movements_mult = -0.05		
-		country_military_goods_cost_mult = -0.01
+	#	country_military_goods_cost_mult = -0.01
 	}
 
 	can_impose = {

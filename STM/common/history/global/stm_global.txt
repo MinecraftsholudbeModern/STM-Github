@@ -1,0 +1,86 @@
+GLOBAL = {
+	c:GBR = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = -6.5
+		}
+	}
+	c:FRA = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = -1.6
+		}
+	}
+	c:RUS = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = -0.67
+		}
+	}
+	c:AUS = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = -0.39
+		}
+	}
+	c:PRU = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = 0.65
+		}
+	}
+	c:SPA = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = -1.71
+		}
+	}
+	c:NET = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = -3.0
+		}
+	}
+	c:BEL = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = 0.6
+		}
+	}
+	c:SWE = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = -0.4
+		}
+	}
+	c:DEN = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = -0.4
+		}
+	}
+	c:SAR = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = -1.7
+		}
+	}
+	c:SIC = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = -1.2
+		}
+	}
+	c:JAP = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = 1
+		}
+	}
+	c:CHI = {
+		add_treasury = {
+			value = gold_reserves_limit
+			multiply = 1
+		}
+	}
+}

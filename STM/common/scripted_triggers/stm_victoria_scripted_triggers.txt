@@ -1,0 +1,8 @@
+﻿
+
+ideology_jingoist_leader_valid_trigger = {
+	NOT = {
+		is_interest_group_type = ig_rural_folk
+	}
+}
+

@@ -1,20 +1,33 @@
-﻿pm_default_building_reichstag = {
-	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+﻿building_reichstag = {
+	building_group = bg_monuments
+	texture = "gfx/interface/icons/building_icons/reichstag.dds"
+	expandable = no
+	downsizeable = no
+	unique = yes
+	locator = "reichstag_locator"
 	
-	country_modifiers = {
-		workforce_scaled = {
-			country_authority_mult = 0.05
-
-			country_prestige_add = 25
-		}
+	entity_not_constructed = { }
+	entity_under_construction = { "building_construction_3x3_entity" }
+	entity_constructed = { "wonder_forbidden_city_01_entity"}
+	
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 4
+	}
+	
+	production_method_groups = {
+		pmg_base_building_reichstag
 	}
 
-
-	
-	building_modifiers = {
-		level_scaled = {
-			building_employment_clerks_add = 300
-			building_employment_bureaucrats_add = 200
-		}
+	unlocking_technologies = { 
+		steel_frame_buildings 
 	}
+	
+	required_construction = construction_cost_monument
+	
+	possible = {
+		state_region = s:STATE_BRANDENBURG
+	}
+	
+	ai_value = 10000
 }

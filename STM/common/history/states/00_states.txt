@@ -3231,7 +3231,6 @@ STATES = {
 		create_state = {
 			country = c:GBR
 			owned_provinces = { x688E79 x0A38AF x2BE1C8 xA06040 xCFCD2B xAA6FA1 x20E040 xA0C0E0 }
-			state_type = unincorporated
 		}
 
 		add_homeland = cu:irish

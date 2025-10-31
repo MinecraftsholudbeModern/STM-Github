@@ -28,7 +28,7 @@ LAW Variation ADDITION: DONE!
 interest_group_traits DONE !
 interest_groups DONE !
 journal_entries:
--stm_victoria
+-stm_victoria DONE!
 -cultural unification
 -economy management JE
 -establish_colonial_administration
