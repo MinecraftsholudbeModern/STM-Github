@@ -1814,7 +1814,7 @@ romantic_building_modifier = {
 
 zeppelins_military_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
-	unit_army_offense_add = 30
+	unit_army_offense_add = 10
 }
 
 zeppelins_society_modifier = {
