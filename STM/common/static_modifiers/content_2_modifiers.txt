@@ -521,7 +521,7 @@ war_hero_cult = {
 
 war_hero_fighter = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	unit_army_offense_add = 30
+	unit_army_offense_add = 15
 }
 
 zone_rouge = {
