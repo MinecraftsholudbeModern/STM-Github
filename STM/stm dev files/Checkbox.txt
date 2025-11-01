@@ -29,9 +29,9 @@ interest_group_traits DONE !
 interest_groups DONE !
 journal_entries:
 -stm_victoria DONE!
--cultural unification
--economy management JE
--establish_colonial_administration
+-cultural unification Postponed!
+-economy management JE TO BE DONE LATER!
+-establish_colonial_administration DONE!
 pop_types DONE! But revisit peasants
 Production_method_groups DONE!
 production_method DONE!

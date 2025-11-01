@@ -1,0 +1,36 @@
+je_economy_qol = { #JE for economic management
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_internal_affairs
+	
+	scripted_button = je_the_eastern_border_treaty_of_aigun
+
+	is_shown_when_inactive = {
+		root ?= this
+	}
+
+	possible = {
+		is_player = yes
+		is_subject = no
+	}
+
+	immediate = {
+	}
+
+
+	complete = {
+		is_ai = yes
+	}
+
+	on_complete = {
+	}
+
+	fail = {
+		is_subject = yes
+	}
+
+	on_fail = {
+	}
+
+	should_be_pinned_by_default = yes
+}

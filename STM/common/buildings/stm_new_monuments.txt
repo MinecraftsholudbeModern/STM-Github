@@ -1,6 +1,6 @@
 ﻿building_reichstag = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/reichstag.dds"
+	icon = "gfx/interface/icons/building_icons/reichstag.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
@@ -25,9 +25,11 @@
 	
 	required_construction = construction_cost_monument
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_BRANDENBURG
 	}
 	
 	ai_value = 10000
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }

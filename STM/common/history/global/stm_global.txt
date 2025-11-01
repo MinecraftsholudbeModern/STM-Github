@@ -83,4 +83,52 @@ GLOBAL = {
 			multiply = 1
 		}
 	}
+	c:RUS ?= {
+		every_scope_state = {
+            limit = {
+			is_homeland_of_country_cultures = owner 
+            }
+			add_modifier = {
+			name = russian_demography
+			months = 480 # 40 Years
+			is_decaying = yes
+			}
+        } 
+	}
+	c:FRA ?= {
+		every_scope_state = {
+            limit = {
+			OR = {
+				region = sr:region_france
+				region = sr:region_occitania
+			}
+            }
+			add_modifier = {
+			name = french_demography
+			months = 720 # 60 Years
+			is_decaying = yes
+			}
+        } 
+	}
+	every_country = {
+		limit = {
+			OR = {
+				country_has_primary_culture = cu:north_german
+				country_has_primary_culture = cu:south_german
+			}
+		}
+		every_scope_state = {
+			limit = {
+			NOT = {
+				state_region = {
+					is_homeland = cu:polish
+				}
+			} 
+			is_homeland_of_country_cultures = owner 
+			}
+			add_modifier = {
+			name = german_demography
+			}
+		}
+	}
 }

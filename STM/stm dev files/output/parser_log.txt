@@ -1,0 +1,118 @@
+[INFO] Loaded 53 goods with prices.
+[INFO] Parsing PM file: stm_government.txt
+[SKIP] PM 'pm_simple_organization' skipped (automation/placeholder)
+[SKIP] PM 'pm_horizontal_drawer_cabinets' skipped (automation/placeholder)
+[SKIP] PM 'pm_vertical_filing_cabinets' skipped (automation/placeholder)
+[SKIP] PM 'pm_switch_boards' skipped (automation/placeholder)
+[SKIP] PM 'pm_hereditary_bureaucrats' skipped (automation/placeholder)
+[SKIP] PM 'pm_professional_bureaucrats' skipped (automation/placeholder)
+[SKIP] PM 'pm_secular_bureaucrats' skipped (automation/placeholder)
+[SKIP] PM 'pm_religious_bureaucrats' skipped (automation/placeholder)
+[SKIP] PM 'pm_scholastic_education' skipped (automation/placeholder)
+[SKIP] PM 'pm_philosophy_department' skipped (automation/placeholder)
+[SKIP] PM 'pm_analytical_philosophy_department' skipped (automation/placeholder)
+[SKIP] PM 'pm_secular_academia' skipped (automation/placeholder)
+[SKIP] PM 'pm_religious_academia' skipped (automation/placeholder)
+[SKIP] PM 'pm_skyscraper_bureaucratic_nexus' skipped (automation/placeholder)
+[SKIP] PM 'pm_skyscraper_trade_nexus' skipped (automation/placeholder)
+[SKIP] PM 'pm_no_airships' skipped (automation/placeholder)
+[SKIP] PM 'pm_airship_mooring_post' skipped (automation/placeholder)
+[INFO] Parsing PM file: stm_industry.txt
+[SKIP] PM 'pm_automation_disabled' skipped (automation/placeholder)
+[SKIP] PM 'pm_automated_bakery' skipped (automation/placeholder)
+[SKIP] PM 'pm_mechanized_looms' skipped (automation/placeholder)
+[SKIP] PM 'pm_automatic_power_looms' skipped (automation/placeholder)
+[SKIP] PM 'pm_automatic_bottle_blowers' skipped (automation/placeholder)
+[SKIP] PM 'pm_watertube_boiler_expansion_industry' skipped (automation/placeholder)
+[SKIP] PM 'pm_rotary_valve_engine_expansion_industry' skipped (automation/placeholder)
+[SKIP] PM 'pm_assembly_lines_expansion_industry' skipped (automation/placeholder)
+[DEBUG] PM 'pm_ceramics_porcelain' → Profit: 1200.0, Employees: 4625
+[DEBUG] PM 'pm_bone_china_porcelain' → Profit: 2200.0, Employees: 4875
+[DEBUG] PM 'pm_modern_ceramics_porcelain' → Profit: 3000.0, Employees: 4500
+[DEBUG] PM 'pm_luxury_handsewn_clothes' → Profit: 1100.0, Employees: 4750
+[DEBUG] PM 'pm_luxury_dye_workshops' → Profit: 1650.0, Employees: 5250
+[DEBUG] PM 'pm_luxury_sewing_machines' → Profit: 3200.0, Employees: 5250
+[DEBUG] PM 'pm_luxury_electric_sewing_machines' → Profit: 3900.0, Employees: 5500
+[DEBUG] PM 'pm_luxury_handcrafted_furniture' → Profit: 920.0, Employees: 5750
+[DEBUG] PM 'pm_luxury_lathe' → Profit: 2400.0, Employees: 5250
+[DEBUG] PM 'pm_luxury_mechanized_workshops' → Profit: 3800.0, Employees: 5500
+[DEBUG] PM 'pm_modulation' → Profit: 1400.0, Employees: 6000
+[DEBUG] PM 'pm_vacuum_tubes' → Profit: 2000.0, Employees: 5500
+[DEBUG] PM 'pm_transistor' → Profit: 3000.0, Employees: 5000
+[DEBUG] PM 'pm_telephones' → Profit: 1400.0, Employees: 5000
+[DEBUG] PM 'pm_efficient_telephones' → Profit: 3000.0, Employees: 5000
+[DEBUG] PM 'pm_handsewn_drink_distillery_industry' → Profit: 750.0, Employees: 5750
+[DEBUG] PM 'pm_drink_workshops_distillery_industry' → Profit: 1050.0, Employees: 5250
+[DEBUG] PM 'pm_drink_machine_distillery_industry' → Profit: 1650.0, Employees: 6000
+[DEBUG] PM 'pm_electric_drink_machine_distillery_industry' → Profit: 3200.0, Employees: 5750
+[SKIP] PM 'pm_watertube_boiler_building_furniture_manufacturies' skipped (automation/placeholder)
+[SKIP] PM 'pm_rotary_valve_engine_building_furniture_manufacturies' skipped (automation/placeholder)
+[SKIP] PM 'pm_assembly_lines_building_furniture_manufacturies' skipped (automation/placeholder)
+[SKIP] PM 'pm_watertube_boiler_building_tooling_workshops' skipped (automation/placeholder)
+[SKIP] PM 'pm_rotary_valve_engine_building_tooling_workshops' skipped (automation/placeholder)
+[SKIP] PM 'pm_assembly_lines_building_tooling_workshops' skipped (automation/placeholder)
+[SKIP] PM 'pm_watertube_boiler_building_paper_mills' skipped (automation/placeholder)
+[SKIP] PM 'pm_rotary_valve_engine_building_paper_mills' skipped (automation/placeholder)
+[SKIP] PM 'pm_watertube_boiler_building_steel_mills' skipped (automation/placeholder)
+[SKIP] PM 'pm_rotary_valve_engine_building_steel_mills' skipped (automation/placeholder)
+[SKIP] PM 'pm_watertube_boiler_building_motor_industry' skipped (automation/placeholder)
+[SKIP] PM 'pm_rotary_valve_engine_building_motor_industry' skipped (automation/placeholder)
+[SKIP] PM 'pm_assembly_lines_building_motor_industry' skipped (automation/placeholder)
+[SKIP] PM 'pm_assembly_lines_building_automotive_industry' skipped (automation/placeholder)
+[SKIP] PM 'pm_rotary_valve_engine_building_arms_industry' skipped (automation/placeholder)
+[SKIP] PM 'pm_assembly_lines_building_arms_industry' skipped (automation/placeholder)
+[SKIP] PM 'pm_rotary_valve_engine_building_munition_plants' skipped (automation/placeholder)
+[SKIP] PM 'pm_assembly_lines_building_munition_plants' skipped (automation/placeholder)
+[DEBUG] PM 'pm_dye_production' → Profit: 1900.0, Employees: 5000
+[SKIP] PM 'pm_no_artificial_fibers' skipped (automation/placeholder)
+[DEBUG] PM 'pm_rayon' → Profit: 600.0, Employees: 1000
+[INFO] Parsing PM file: stm_new_monuments.txt
+[SKIP] PM 'pm_default_building_reichstag' skipped (automation/placeholder)
+[INFO] Parsing PM file: stm_private_infrastructure.txt
+[SKIP] PM 'pm_anchorage' skipped (automation/placeholder)
+[DEBUG] PM 'pm_basic_port' → Profit: 200.0, Employees: 1000
+[DEBUG] PM 'pm_industrial_port' → Profit: 750.0, Employees: 1000
+[DEBUG] PM 'pm_modern_port' → Profit: 1250.0, Employees: 1000
+[DEBUG] PM 'pm_early_trains' → Profit: 240.0, Employees: 1000
+[DEBUG] PM 'pm_steam_trains' → Profit: 300.0, Employees: 1000
+[DEBUG] PM 'pm_steam_trains_principle_transport_3' → Profit: 360.0, Employees: 1000
+[DEBUG] PM 'pm_electric_trains' → Profit: 510.0, Employees: 1000
+[DEBUG] PM 'pm_electric_trains_principle_transport_3' → Profit: 690.0, Employees: 1000
+[DEBUG] PM 'pm_diesel_trains' → Profit: 660.0, Employees: 1000
+[DEBUG] PM 'pm_diesel_trains_principle_transport_3' → Profit: 820.0, Employees: 1000
+[SKIP] PM 'pm_no_passenger_trains' skipped (automation/placeholder)
+[DEBUG] PM 'pm_wooden_passenger_carriages' → Profit: 140.0, Employees: 100
+[DEBUG] PM 'pm_steel_passenger_carriages' → Profit: 200.0, Employees: 200
+[SKIP] PM 'pm_trade_center' skipped (automation/placeholder)
+[SKIP] PM 'pm_trade_center_principle_external_trade_2' skipped (automation/placeholder)
+[SKIP] PM 'pm_trade_center_trade_quantity_limited' skipped (automation/placeholder)
+[SKIP] PM 'pm_trade_center_trade_quantity_normal' skipped (automation/placeholder)
+[SKIP] PM 'pm_trade_center_trade_quantity_high' skipped (automation/placeholder)
+[SKIP] PM 'pm_trade_center_trade_quantity_very_high' skipped (automation/placeholder)
+[SKIP] PM 'pm_financial_district_privately_owned' skipped (automation/placeholder)
+[SKIP] PM 'pm_financial_district_publicly_traded' skipped (automation/placeholder)
+[SKIP] PM 'pm_financial_district_principle_divine_economics_2' skipped (automation/placeholder)
+[SKIP] PM 'pm_manor_house_privately_owned' skipped (automation/placeholder)
+[SKIP] PM 'pm_manor_house_principle_divine_economics_2' skipped (automation/placeholder)
+[SKIP] PM 'pm_manor_house_bureaucrat_ownership' skipped (automation/placeholder)
+[SKIP] PM 'pm_manor_house_clergy_ownership' skipped (automation/placeholder)
+[INFO] Parsing PM file: stm_subsistence.txt
+[DEBUG] PM 'pm_home_workshops_no_building_subsistence_farms' → Profit: 20.0, Employees: 10000
+[DEBUG] PM 'pm_home_workshops_building_subsistence_farms' → Profit: 22.5, Employees: 10000
+[SKIP] PM 'pm_serfdom_no' skipped (automation/placeholder)
+[DEBUG] PM 'pm_corvee_labor' → Profit: 5.0, Employees: 10000
+[DEBUG] PM 'pm_homesteading_building_subsistence' → Profit: 5.0, Employees: 100
+[DEBUG] PM 'pm_serfdom' → Profit: 10.0, Employees: 10000
+[DEBUG] PM 'pm_home_workshops_no_building_subsistence_orchards' → Profit: 19.9, Employees: 10000
+[DEBUG] PM 'pm_home_workshops_building_subsistence_orchards' → Profit: 22.5, Employees: 10000
+[DEBUG] PM 'pm_serfdom_building_subsistence_orchards' → Profit: 9.9, Employees: 10000
+[DEBUG] PM 'pm_home_workshops_no_building_subsistence_pastures' → Profit: 19.9, Employees: 10000
+[DEBUG] PM 'pm_home_workshops_building_subsistence_pastures' → Profit: 22.5, Employees: 10000
+[DEBUG] PM 'pm_serfdom_building_subsistence_pastures' → Profit: 9.9, Employees: 10000
+[DEBUG] PM 'pm_home_workshops_no_building_subsistence_fishing_villages' → Profit: 20.0, Employees: 10000
+[DEBUG] PM 'pm_home_workshops_building_subsistence_fishing_villages' → Profit: 22.5, Employees: 10000
+[DEBUG] PM 'pm_serfdom_building_subsistence_fishing_villages' → Profit: 10.0, Employees: 10000
+[DEBUG] PM 'pm_home_workshops_no_building_subsistence_rice_paddies' → Profit: 40.0, Employees: 10000
+[DEBUG] PM 'pm_home_workshops_building_subsistence_rice_paddies' → Profit: 45.0, Employees: 10000
+[DEBUG] PM 'pm_serfdom_building_subsistence_rice_paddies' → Profit: 20.0, Employees: 10000
+[DONE] Excel written → D:\Files\Vic3 mods\STM\output\productivity_report.xlsx

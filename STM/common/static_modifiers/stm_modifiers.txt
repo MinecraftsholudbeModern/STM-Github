@@ -1,0 +1,17 @@
+french_demography = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	state_birth_rate_mult = -0.5
+	state_mortality_mult = -0.5
+}
+
+german_demography = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_birth_rate_mult = 0.1
+	state_mortality_mult = 0.05
+}
+
+russian_demography = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_birth_rate_mult = 0.2
+	state_mortality_mult = 0.1
+}
