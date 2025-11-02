@@ -10,9 +10,9 @@
 	unemployment = yes
 	ignores_employment_proportionality = yes
 
-	# 75% - 100% politically engaged
-	political_engagement_base = 0.75
-	political_engagement_literacy_factor = 0.25
+	# 50% - 100% politically engaged
+	political_engagement_base = 0.5
+	political_engagement_literacy_factor = 0.5
 
 	political_engagement_mult = {
 		value = 1

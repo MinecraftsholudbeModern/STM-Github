@@ -296,7 +296,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 			}
 		}
 	}
@@ -846,7 +846,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 			}
 		}
 	}
@@ -1612,7 +1612,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 			}
 		}
 	}
@@ -1664,7 +1664,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -1863,7 +1863,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 			}
 		}
 	}
@@ -2351,7 +2351,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 			}	
 		}
 	}
@@ -3329,7 +3329,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 			}
 		}
 	}
@@ -4008,7 +4008,7 @@
 			}
 		}
 	}
-	s:STATE_NORTHERN_SERBIA={
+	s:STATE_WESTERN_SERBIA={
 		region_state:SER={
 			create_building={
 				building="building_livestock_ranch"
@@ -4017,7 +4017,7 @@
 						type="building_manor_house"
 						country="c:SER"
 						levels=1
-						region="STATE_NORTHERN_SERBIA"
+						region="STATE_WESTERN_SERBIA"
 					}
 				}
 				reserves=1
@@ -4030,7 +4030,7 @@
 						type="building_manor_house"
 						country="c:SER"
 						levels=1
-						region="STATE_NORTHERN_SERBIA"
+						region="STATE_WESTERN_SERBIA"
 					}
 				}
 				reserves=1
@@ -4043,7 +4043,7 @@
 						type="building_manor_house"
 						country="c:SER"
 						levels=1
-						region="STATE_NORTHERN_SERBIA"
+						region="STATE_WESTERN_SERBIA"
 					}
 				}
 				reserves=1
@@ -4051,7 +4051,7 @@
 			}
 		}
 	}
-	s:STATE_SOUTHERN_SERBIA={
+	s:STATE_EASTERN_SERBIA={
 		region_state:TUR={
 			create_building={
 				building="building_livestock_ranch"
@@ -4060,7 +4060,7 @@
 						type="building_manor_house"
 						country="c:TUR"
 						levels=1
-						region="STATE_SOUTHERN_SERBIA"
+						region="STATE_EASTERN_SERBIA"
 					}
 					building={
 						type="building_manor_house"
@@ -4079,7 +4079,7 @@
 						type="building_manor_house"
 						country="c:TUR"
 						levels=1
-						region="STATE_SOUTHERN_SERBIA"
+						region="STATE_EASTERN_SERBIA"
 					}
 				}
 				reserves=1
@@ -4292,7 +4292,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 			}
 		}
 	}

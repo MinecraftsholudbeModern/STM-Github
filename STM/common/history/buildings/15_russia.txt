@@ -636,7 +636,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 			}
 		}
 	}
@@ -1468,7 +1468,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_regular_trading" }
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 			}
 			create_building={
 				building="building_logging_camp"

@@ -75,6 +75,6 @@ BuggedBarracks_decision = {
     }
     
     ai_chance = {
-        base  = 1000000
+        value  = 1000000
     }
 }

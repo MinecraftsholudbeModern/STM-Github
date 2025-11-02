@@ -6,8 +6,8 @@
 
 modifier_uk_proud_pb = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-	interest_group_approval_add = 8
-	interest_group_pol_str_mult = 0.5
+	interest_group_approval_add = 10
+	interest_group_pol_str_mult = 0.75
 }
 
 modifier_risorgimento_support = {

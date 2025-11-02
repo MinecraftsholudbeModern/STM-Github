@@ -21,6 +21,8 @@
 	pm_vacuum_tubes:0 "Vacuum tubes"
 	pm_transistor:0 "Transistor"
     
+    pm_efficient_telephones:0 "Modern Telephones"
+    
     pm_watertube_boiler_expansion_industry:0 "Boiler Tubes"
     pm_rotary_valve_engine_expansion_industry:0 "Rotary Valve Engines"
     pm_assembly_lines_expansion_industry:0 "Assembly Lines"
@@ -30,3 +32,11 @@
   pmg_base_porcelain_industry:0 "Base"
   pmg_base_distillery_industry:0 "Base"
   pmg_base_radios_industry:0 "Base"
+  pmg_automation_expansion_industry:0 "Automation Base"
+  
+    je_prestige_goods_liquor: "$prestige_good_liquor$"
+    je_prestige_goods_liquor_reason: "[SCOPE.sCompany('relevant_company').GetName] has established itself as an important actor within our economy. The company seeks to leverage its current prosperity to develop its own brand of @prestige_good_liquor! #b $prestige_good_liquor$#!. If successful, it will be able to expand its competitiveness within the global @liquor! #b $Liquor$#! market."
+	je_prestige_goods_liquor_goal: "Maintain the following for #v [GetPlayer.MakeScope.ScriptValue('prestige_good_journal_entry_months')] months#! (currently #v [ROOT.GetCountry.MakeScope.Var('prestige_clothes_timer_var').GetValue]#!): #indent_newline:3 "
+	je_prestige_goods_liquor_complete_tt: "Has completed the #b $je_prestige_goods_liquor$#! [concept_journal_entry]"
+	je_prestige_goods_liquor_reward_tt: "[SCOPE.sCompany('relevant_company').GetName] will be able to produce @prestige_good_liquor! #b $prestige_good_liquor$#!"
+

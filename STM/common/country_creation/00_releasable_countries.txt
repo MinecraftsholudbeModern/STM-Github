@@ -2269,20 +2269,6 @@ YUE = {
 	ai_will_do = { always = no }
 }
 
-SRB = {
-	states = {
-		STATE_SAXONY
-	}
-	ai_will_do = { always = no }
-	
-	possible = {
-		NOT = {
-			c:GER = {
-                is_country_alive = yes
-            }
-		}
-	}
-}
 
 BLH = {
 	states = {

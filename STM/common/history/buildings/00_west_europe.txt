@@ -6105,7 +6105,6 @@
 			}
 			create_building={
 				building="building_distillery_industry"
-				activate_production_methods={ "pm_drink_workshops_distillery_industry" }
 				add_ownership={
 					building={
 						type="building_financial_district"
@@ -7745,7 +7744,6 @@
 			}
 			create_building={
 				building="building_distillery_industry"
-				activate_production_methods={ "pm_drink_workshops_distillery_industry" }
 				add_ownership={
 					building={
 						type="building_financial_district"
