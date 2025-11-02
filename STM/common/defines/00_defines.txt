@@ -587,8 +587,8 @@ NEconomy = {
 	GOODS_DEFAULT_CONVOY_COST_MULTIPLIER = 1			# The convoy cost of shipping a single unit of goods (can be overriden in defines)
 	OVERSEAS_INFRASTRUCTURE_CONVOY_COST_MULTIPLIER = 2	# Convoy cost for each infrastructure usage in overseas state for port connection shipping lanes
 
-	DEFAULT_EXPORT_TARIFFS = low_tariffs					# The default export tariff level that is applied when nothing is set in history
-	DEFAULT_IMPORT_TARIFFS = low_tariffs					# The default import tariff level that is applied when nothing is set in history
+	DEFAULT_EXPORT_TARIFFS = no_tariffs_or_subventions					# The default export tariff level that is applied when nothing is set in history
+	DEFAULT_IMPORT_TARIFFS = no_tariffs_or_subventions					# The default import tariff level that is applied when nothing is set in history
 	TARIFF_LEVEL_COOLDOWN_GRACE_PERIOD_DAYS = 7					# After changing a tariff level, it takes this many days before the cooldown activates (to give you a chance to change your mind)
 	TARIFF_LEVEL_COOLDOWN_MONTHS = 3					# After changing a tariff level, you must wait this long to change it again
 

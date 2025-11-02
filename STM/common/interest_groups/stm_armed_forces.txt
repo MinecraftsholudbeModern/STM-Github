@@ -344,8 +344,8 @@
 				if = {
 					limit = {
 						owner = {
-							has_law_or_variant = law_type:law_peasant_levies
 							OR = {
+							has_law_or_variant = law_type:law_peasant_levies
 							c:PRU ?= this
 						AND = {
 							c:NGF ?= this
@@ -358,7 +358,7 @@
 						}
 						}
 					}
-					add = 75
+					add = 95
 				}
 			}
 		}

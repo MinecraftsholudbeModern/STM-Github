@@ -1,0 +1,48 @@
+﻿stm_force_privatization = {
+	is_shown = {
+		NOT = {
+			has_modifier = modifier_stm_force_privatization
+		}
+		OR = {
+			has_law = law_type:law_interventionism
+			has_law = law_type:law_agrarianism
+		}
+		is_player = yes
+	}
+
+	possible = {
+		NOT = {
+			has_modifier = modifier_stm_force_privatization
+		}
+	}
+
+	when_taken = {
+		add_modifier = modifier_stm_force_privatization
+	}
+
+	ai_chance = {
+		value = 0		
+	}
+}
+
+stm_stop_force_privatization = {
+	is_shown = {
+		has_modifier = modifier_stm_force_privatization
+		is_player = yes
+	}
+
+	possible = {
+		has_modifier = modifier_stm_force_privatization
+	}
+
+	when_taken = {
+		if = {
+			limit = { has_modifier = modifier_stm_force_privatization }
+			remove_modifier = modifier_stm_force_privatization
+		}
+	}
+
+	ai_chance = {
+		value = 0		
+	}
+}

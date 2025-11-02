@@ -53,6 +53,30 @@
 	s:STATE_LOWER_SILESIA={
 		region_state:PRU={
 			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_tooling_workshops"
+						country="c:PRU"
+						levels=1
+						region="STATE_LOWER_SILESIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
+			}
+			create_building={ 
+				building="building_railway"
+				add_ownership={
+					country={
+						country="c:PRU"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
+			}
+			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
@@ -85,7 +109,7 @@
 						type="building_arms_industry"
 						country="c:PRU"
 						levels=5
-						region="STATE_BRANDENBURG"
+						region="STATE_LOWER_SILESIA"
 					}
 				}
 				reserves=1
@@ -104,7 +128,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=5
-						region="STATE_LOWER_SILESIA"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -115,7 +139,7 @@
 				add_ownership={
 					country={
 						country="c:PRU"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -153,7 +177,7 @@
 					building={
 						type="building_iron_mine"
 						country="c:PRU"
-						levels=1
+						levels=2
 						region="STATE_LOWER_SILESIA"
 					}
 				}
@@ -167,7 +191,7 @@
 						type="building_manor_house"
 						country="c:PRU"
 						levels=10
-						region="STATE_LOWER_SILESIA"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -179,12 +203,12 @@
 					building={
 						type="building_manor_house"
 						country="c:PRU"
-						levels=2
-						region="STATE_LOWER_SILESIA"
+						levels=4
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming"  "pm_tools_disabled" "pm_apple_orchards" }
 			}
 		}
 	}
@@ -196,29 +220,36 @@
 					building={
 						type="building_textile_mills"
 						country="c:PRU"
-						levels=1
-						region="STATE_UPPER_SILESIA"
-					}
-					building={
-						type="building_financial_district"
-						country="c:PRU"
-						levels=1
+						levels=2
 						region="STATE_UPPER_SILESIA"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
+				activate_production_methods={ "pm_dye_workshops" "pm_traditional_looms"  }
 			}
 			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
 						country="c:PRU"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_iron_frame_buildings" }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_tooling_workshops"
+						country="c:PRU"
+						levels=1
+						region="STATE_UPPER_SILESIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_coal_mine"
@@ -233,7 +264,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=4
-						region="STATE_UPPER_SILESIA"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -252,7 +283,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=2
-						region="STATE_UPPER_SILESIA"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -271,7 +302,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=2
-						region="STATE_UPPER_SILESIA"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -283,8 +314,8 @@
 					building={
 						type="building_manor_house"
 						country="c:PRU"
-						levels=5
-						region="STATE_UPPER_SILESIA"
+						levels=4
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -297,11 +328,11 @@
 						type="building_manor_house"
 						country="c:PRU"
 						levels=2
-						region="STATE_UPPER_SILESIA"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_sugar_beets" "pm_tools"  }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_sugar_beets" "pm_tools"  }
 			}
 		}
 		region_state:AUS={
@@ -513,7 +544,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=3
-						region="STATE_WEST_PRUSSIA"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -574,12 +605,25 @@
 					building={
 						type="building_manor_house"
 						country="c:PRU"
-						levels=3
-						region="STATE_WEST_PRUSSIA"
+						levels=4
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools"  }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:PRU"
+						levels=2
+						region="STATE_BRANDENBURG"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_slaughterhouses" "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 			create_building={
 				building="building_port"
@@ -597,6 +641,17 @@
 	s:STATE_EAST_PRUSSIA={
 		region_state:PRU={
 			create_building={
+				building="building_university"
+				add_ownership={
+					country={
+						country="c:BAD"
+						levels=4
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
+			}
+			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
@@ -604,7 +659,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=2
-						region="STATE_EAST_PRUSSIA"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -622,7 +677,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=1
-						region="STATE_EAST_PRUSSIA"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -635,7 +690,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=4
-						region="STATE_EAST_PRUSSIA"
+						region="STATE_BRANDENBURG"
 					}
 					building={
 						type="building_logging_camp"
@@ -645,7 +700,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_rye_farm"
@@ -653,12 +708,36 @@
 					building={
 						type="building_manor_house"
 						country="c:PRU"
-						levels=2
-						region="STATE_EAST_PRUSSIA"
+						levels=4
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools"  }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:PRU"
+						levels=2
+						region="STATE_BRANDENBURG"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_slaughterhouses" "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:PRU"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
 			}
 		}
 	}
@@ -698,7 +777,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=2
-						region="STATE_POSEN"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -710,8 +789,8 @@
 					building={
 						type="building_manor_house"
 						country="c:PRU"
-						levels=2
-						region="STATE_POSEN"
+						levels=5
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -723,8 +802,8 @@
 					building={
 						type="building_manor_house"
 						country="c:PRU"
-						levels=15
-						region="STATE_POSEN"
+						levels=10
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1

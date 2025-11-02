@@ -20,6 +20,10 @@
 	pm_modulation:0 "Modulation"
 	pm_vacuum_tubes:0 "Vacuum tubes"
 	pm_transistor:0 "Transistor"
+    
+    pm_watertube_boiler_expansion_industry:0 "Boiler Tubes"
+    pm_rotary_valve_engine_expansion_industry:0 "Rotary Valve Engines"
+    pm_assembly_lines_expansion_industry:0 "Assembly Lines"
 
   pmg_base_luxury_clothes_industry:0 "Base"
   pmg_base_luxury_furniture_industry:0 "Base"

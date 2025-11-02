@@ -101,7 +101,6 @@ law_women_own_property = {
 	modifier = {
 		state_birth_rate_mult = 0.03
 		state_working_adult_ratio_add = 0.05
-		state_capitalists_investment_pool_efficiency_mult = 0.1
 		state_aristocrats_investment_pool_efficiency_mult = 0.1
 	}
 
@@ -144,7 +143,7 @@ law_women_in_the_workplace = {
 	modifier = {
 		state_working_adult_ratio_add = 0.1
 	#	state_birth_rate_mult = -0.05
-		state_capitalists_investment_pool_efficiency_mult = 0.1
+		state_capitalists_investment_pool_efficiency_mult = 0.05
 		state_aristocrats_investment_pool_efficiency_mult = 0.1
 	}
 

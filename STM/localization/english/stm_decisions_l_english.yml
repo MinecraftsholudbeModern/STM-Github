@@ -1,0 +1,15 @@
+﻿l_english:
+ DECISION_TOOLTIP_FORMAT:1 "#header $NAME$#!\n$TOOLTIP_DELIMITER$\n$TRIGGER_SUMMARY$\n\nWhen taken:\n$EFFECT_SUMMARY$"
+
+ dummy_decision:0 "Dummy decision"
+ dummy_decision_desc:0 "J'adore les boulettes chinoises"
+ dummy_decision_tooltip:0 "This tooltip explains things, such as why it makes sense that France (pardon: any great power with french as primary culture) can annex China.\nIn theory this is 100% accurate in at least one alternate timeline."
+
+ stm_force_privatization:0 "Privatize all buildings"
+ stm_force_privatization_desc:0 "Forces all buildings to privatize without a thousand clicks"
+ stm_force_privatization_tooltip:0 "What part did you not understand?"
+ 
+ stm_stop_force_privatization:0 "Stop Privatizing all buildings automatically"
+ stm_stop_force_privatization_desc:0 "Stops the automatic privatization decision you started before!"
+ stm_stop_force_privatization_tooltip:0 "What part did you not understand?"
+

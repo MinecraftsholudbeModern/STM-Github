@@ -51,12 +51,12 @@ law_religious_schools = {
 	}
 
 	modifier = {
-		country_institution_cost_institution_schools_mult = -0.2
+		country_institution_cost_institution_schools_mult = -0.1
 	}
 
 	institution = institution_schools
 	institution_modifier = {
-		state_conversion_mult = 0.2
+		state_conversion_mult = 0.25
 		state_education_access_add = 0.1
 		interest_group_ig_devout_pol_str_mult = 0.1
 	}
@@ -255,11 +255,15 @@ law_public_schools = {
 		law_state_religion
 		law_serfdom
 	}
+	
+	modifier = {
+		country_institution_cost_institution_schools_mult = 0.1
+	}
 
 	institution = institution_schools
 	institution_modifier = {
-		state_assimilation_mult = 0.2
-		state_education_access_wealth_add = 0.005
+		state_assimilation_mult = 0.25
+		state_education_access_wealth_add = 0.001
 		state_education_access_add = 0.1
 		country_education_fervor_add = 5
 	}
