@@ -1,4 +1,0 @@
-l_english:
-
-law_army_canton_system:0 "Prussian Canton System"
-law_army_canton_system_desc:0 "The Prussian Canton system was implemented by Frederik I after the disastrous 30 years war to further Prussian military power and gain a spot on the Great Powers Table!"
